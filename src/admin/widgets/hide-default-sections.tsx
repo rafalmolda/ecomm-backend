@@ -2,77 +2,97 @@ import { defineWidgetConfig } from "@medusajs/admin-sdk"
 import { useEffect } from "react"
 
 /**
- * Hide Medusa's default product-detail sections that are fully replaced by
- * our custom product-editor widget (title, description, media, variants,
- * metadata, organization, attributes). Pure CSS can't target them because
- * Medusa's core cards have no stable data-testids — so we walk the DOM,
- * match section headings by their text content, and set display:none on the
- * nearest card container.
+ * Hide Medusa's default product-detail cards that are fully replaced by our
+ * unified product-editor widget.
  *
- * A MutationObserver keeps this working across Medusa admin re-renders
- * (client-side navigation, variant edits, etc.) because the admin SPA can
- * remount cards without re-mounting our widget.
+ * Strategy: the product-editor widget marks its outer Container with
+ * id="lss-product-editor". We walk up the DOM from that element until we
+ * find the "slot" — the direct child of Medusa's main column grid — then:
+ *   1. Hide every sibling of the slot that comes AFTER it in the main
+ *      column (General info, Media, Options, Variants, Metadata, Attributes).
+ *   2. Hide every sibling of the main column in its parent grid (the
+ *      right sidebar: Sales Channels, Shipping, Organization, etc.).
  *
- * To re-show a section: remove its heading text from HIDE_HEADINGS and redeploy.
+ * Text-matching headings was too fragile — Medusa labels its rows with
+ * plain <span> elements so there's no stable selector. The structural
+ * approach is reliable across admin versions because it only relies on the
+ * one marker ID we control.
+ *
+ * If something important gets hidden and you need it back, the quickest
+ * workaround is to delete this widget file and rebuild.
  */
 
-// Exact heading text strings as rendered by Medusa v2 admin (English locale).
-// Our own widget uses headings that are NOT in this list ("Product editor",
-// "Long description", "Specifications", "Variants & pricing"), so it stays.
-const HIDE_HEADINGS = new Set([
-  "General",
-  "General information",
-  "Media",
-  "Organization",
-  "Organize",
-  "Attributes",
-  "Metadata",
-  "Sales Channels",
-  "Shipping Profile",
-  "Variants",
-])
+const ANCHOR_ID = "lss-product-editor"
 
-function walkUpToCard(start: HTMLElement): HTMLElement | null {
-  // Medusa's Container renders each card as a <div> with border/rounded
-  // classes. Walk up at most 8 levels until we find something that looks like
-  // the card boundary — either a <section>, a <div> with rounded corners, or
-  // the main layout grid child. Fall back to the direct parent.
-  let node: HTMLElement | null = start
-  for (let i = 0; i < 8 && node; i++) {
+function findSlot(anchor: HTMLElement): HTMLElement | null {
+  // Walk up until we hit a parent that has multiple children — that parent
+  // is the grid/column, and the current node is the "slot" (Medusa's card
+  // wrapper for our widget). Don't walk past <main>/<body>.
+  let node: HTMLElement = anchor
+  for (let i = 0; i < 12; i++) {
     const parent: HTMLElement | null = node.parentElement
-    if (!parent) return node
-    const cls = parent.className || ""
-    const isCard =
-      parent.tagName === "SECTION" ||
-      (typeof cls === "string" &&
-        (cls.includes("rounded-lg") ||
-          cls.includes("rounded-xl") ||
-          cls.includes("divide-y")))
-    if (isCard) return parent
+    if (!parent) return null
+    if (parent.tagName === "MAIN" || parent.tagName === "BODY") return null
+    if (parent.children.length > 1) return node
     node = parent
   }
-  return start.parentElement
+  return null
 }
 
 function hideDefaultSections() {
-  const headings = document.querySelectorAll<HTMLElement>("h1, h2, h3")
-  headings.forEach((h) => {
-    const text = (h.textContent || "").trim()
-    if (!HIDE_HEADINGS.has(text)) return
-    const card = walkUpToCard(h)
-    if (card && card.style.display !== "none") {
-      card.setAttribute("data-lss-hidden", text)
-      card.style.display = "none"
+  const anchor = document.getElementById(ANCHOR_ID)
+  if (!anchor) return
+
+  const slot = findSlot(anchor)
+  if (!slot) return
+
+  const mainColumn = slot.parentElement
+  if (!mainColumn) return
+
+  // 1. Hide siblings AFTER our slot in the main column.
+  let afterAnchor = false
+  for (const child of Array.from(mainColumn.children) as HTMLElement[]) {
+    if (child === slot) {
+      afterAnchor = true
+      continue
     }
-  })
+    if (!afterAnchor) continue
+    if (child.style.display !== "none") {
+      child.setAttribute("data-lss-hidden", "below-editor")
+      child.style.display = "none"
+    }
+  }
+
+  // 2. Hide siblings of the main column (the sidebar + any other columns).
+  //    Only do this if the grandparent is a grid-like container with exactly
+  //    2-3 columns — otherwise we might accidentally hide toolbar/header.
+  const gridParent = mainColumn.parentElement
+  if (!gridParent) return
+  const gridChildrenCount = gridParent.children.length
+  if (gridChildrenCount < 2 || gridChildrenCount > 4) return
+
+  const gridClass =
+    typeof gridParent.className === "string" ? gridParent.className : ""
+  const looksLikeGrid =
+    gridClass.includes("grid") ||
+    gridClass.includes("flex") ||
+    gridClass.includes("cols-")
+  if (!looksLikeGrid) return
+
+  for (const sibling of Array.from(gridParent.children) as HTMLElement[]) {
+    if (sibling === mainColumn) continue
+    if (sibling.style.display !== "none") {
+      sibling.setAttribute("data-lss-hidden", "sidebar")
+      sibling.style.display = "none"
+    }
+  }
 }
 
 const HideDefaultSectionsWidget = () => {
   useEffect(() => {
     hideDefaultSections()
-    // Medusa's admin re-renders cards on many events. Watch the whole body
-    // and re-hide whenever the DOM changes. Debounce via rAF so we batch
-    // mutations instead of firing on every individual mutation record.
+    // Medusa's admin SPA re-renders cards after mutations (save, toast, etc.).
+    // Watch the whole body and re-hide on any DOM change. Debounce via rAF.
     let pending = false
     const run = () => {
       pending = false

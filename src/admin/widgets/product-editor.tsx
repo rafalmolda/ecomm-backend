@@ -257,9 +257,15 @@ const ProductEditorWidget = ({ data }: Props) => {
   )
   const [thumbnail, setThumbnail] = useState(data.thumbnail ?? "")
 
-  // Specifications — universal, language-neutral scientific fields stored in
-  // metadata. Displayed 1:1 on the storefront product page's Specifications
-  // panel. Form and Storage are static i18n strings so they're not editable.
+  // Specifications — mirrored 1:1 with the storefront's Specifications panel.
+  //
+  //  - CAS, Molecular Formula, Purity:  metadata.{cas_number,
+  //    molecular_formula, purity_percentage}
+  //  - Form, Storage:  metadata.form / metadata.storage. Empty falls back to
+  //    the static i18n strings (specFormValue / specStorageValue). Setting
+  //    them on a product overrides those defaults for that product only.
+  //  - SKU, Size:  come from the first variant. Editing them here writes
+  //    back to variant[0] on save (also syncs with the Variants table below).
   const [casNumber, setCasNumber] = useState(
     (metadata.cas_number as string) ?? ""
   )
@@ -268,6 +274,12 @@ const ProductEditorWidget = ({ data }: Props) => {
   )
   const [purityPercentage, setPurityPercentage] = useState(
     (metadata.purity_percentage as string) ?? ""
+  )
+  const [formOverride, setFormOverride] = useState(
+    (metadata.form as string) ?? ""
+  )
+  const [storageOverride, setStorageOverride] = useState(
+    (metadata.storage as string) ?? ""
   )
 
   // Medusa's admin widget `data` prop does NOT eagerly expand variants.prices
@@ -419,6 +431,8 @@ const ProductEditorWidget = ({ data }: Props) => {
           cas_number: casNumber,
           molecular_formula: molecularFormula,
           purity_percentage: purityPercentage,
+          form: formOverride,
+          storage: storageOverride,
         },
         variants: variants.map((v) => {
           const prices = [
@@ -503,7 +517,7 @@ const ProductEditorWidget = ({ data }: Props) => {
   }
 
   return (
-    <Container className="divide-y p-0">
+    <Container id="lss-product-editor" className="divide-y p-0">
       <div className="px-6 py-4">
         <Heading level="h2">Product editor</Heading>
         <Text className="text-ui-fg-subtle" size="small">
@@ -718,25 +732,48 @@ const ProductEditorWidget = ({ data }: Props) => {
         </div>
       </div>
 
-      {/* Specifications — language-neutral scientific fields */}
+      {/* Specifications — matches the storefront's Specifications panel 1:1 */}
       <div className="px-6 py-5">
         <Heading level="h3">Specifications</Heading>
         <Text size="small" className="text-ui-fg-subtle">
-          Scientific fields — same for both languages. These show on the
-          storefront product page under the &ldquo;Specifications&rdquo; panel.
-          Form and Storage are fixed strings in the i18n messages file and not
-          editable here.
+          Same 7 rows shown on the storefront product page.
+          <strong> SKU</strong> and <strong>Size</strong> come from the first
+          variant (edit them in the Variants table below).{" "}
+          <strong>Form</strong> and <strong>Storage</strong> are fixed strings
+          in the i18n messages file (src/messages/en.json &amp; th.json).
         </Text>
       </div>
-      <div className="grid grid-cols-1 gap-4 px-6 pb-5 md:grid-cols-3 md:gap-x-6">
+      <div className="grid grid-cols-1 gap-4 px-6 pb-5 md:grid-cols-2 md:gap-x-6">
         <div>
           <Label size="xsmall" className="text-ui-fg-subtle">
-            CAS Number
+            SKU
           </Label>
           <Input
-            value={casNumber}
-            onChange={(e) => setCasNumber(e.target.value)}
-            placeholder="137525-51-0"
+            value={variants[0]?.sku ?? ""}
+            onChange={(e) => updateVariant(0, { sku: e.target.value })}
+            placeholder="BPC-5MG"
+            disabled={variants.length === 0}
+          />
+        </div>
+        <div>
+          <Label size="xsmall" className="text-ui-fg-subtle">
+            Size
+          </Label>
+          <Input
+            value={variants[0]?.title ?? ""}
+            onChange={(e) => updateVariant(0, { title: e.target.value })}
+            placeholder="5mg"
+            disabled={variants.length === 0}
+          />
+        </div>
+        <div>
+          <Label size="xsmall" className="text-ui-fg-subtle">
+            Purity %
+          </Label>
+          <Input
+            value={purityPercentage}
+            onChange={(e) => setPurityPercentage(e.target.value)}
+            placeholder="99"
           />
         </div>
         <div>
@@ -751,12 +788,33 @@ const ProductEditorWidget = ({ data }: Props) => {
         </div>
         <div>
           <Label size="xsmall" className="text-ui-fg-subtle">
-            Purity %
+            CAS Number
           </Label>
           <Input
-            value={purityPercentage}
-            onChange={(e) => setPurityPercentage(e.target.value)}
-            placeholder="99"
+            value={casNumber}
+            onChange={(e) => setCasNumber(e.target.value)}
+            placeholder="137525-51-0"
+          />
+        </div>
+        <div className="md:col-span-1" />
+        <div>
+          <Label size="xsmall" className="text-ui-fg-subtle">
+            Form (blank = default &ldquo;Lyophilized Powder&rdquo;)
+          </Label>
+          <Input
+            value={formOverride}
+            onChange={(e) => setFormOverride(e.target.value)}
+            placeholder="Lyophilized Powder"
+          />
+        </div>
+        <div>
+          <Label size="xsmall" className="text-ui-fg-subtle">
+            Storage (blank = default &ldquo;2-8°C (refrigerated)&rdquo;)
+          </Label>
+          <Input
+            value={storageOverride}
+            onChange={(e) => setStorageOverride(e.target.value)}
+            placeholder="2-8°C (refrigerated)"
           />
         </div>
       </div>
