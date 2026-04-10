@@ -1,0 +1,13 @@
+<svg width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="18" cy="18" r="17" fill="#1a1a1a"/>
+  <circle cx="18" cy="18" r="16" stroke="#c8a96e" stroke-width="1" opacity="0.3"/>
+  <path d="M13 8 C13 8, 23 12, 23 18 C23 24, 13 28, 13 28" stroke="#c8a96e" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M23 8 C23 8, 13 12, 13 18 C13 24, 23 28, 23 28" stroke="#ffffff" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <line x1="15" y1="11.5" x2="21" y2="11.5" stroke="#c8a96e" stroke-width="0.8" opacity="0.5"/>
+  <line x1="14" y1="15" x2="22" y2="15" stroke="#c8a96e" stroke-width="0.8" opacity="0.5"/>
+  <line x1="14" y1="18" x2="22" y2="18" stroke="#c8a96e" stroke-width="0.8" opacity="0.6"/>
+  <line x1="14" y1="21" x2="22" y2="21" stroke="#c8a96e" stroke-width="0.8" opacity="0.5"/>
+  <line x1="15" y1="24.5" x2="21" y2="24.5" stroke="#c8a96e" stroke-width="0.8" opacity="0.5"/>
+  <circle cx="13" cy="8" r="1.5" fill="#c8a96e"/>
+  <circle cx="23" cy="28" r="1.5" fill="#c8a96e"/>
+</svg>
