@@ -74,6 +74,30 @@ module.exports = defineConfig({
       },
     },
     {
+      key: Modules.FILE,
+      resolve: "@medusajs/medusa/file",
+      options: {
+        providers: [
+          {
+            // The default file-local provider stores files in
+            // .medusa/server/static/ and serves them via Medusa's
+            // /static/<filename> endpoint. Without an explicit
+            // backend_url, the file-local module hardcodes
+            // http://localhost:9000/static in the URL it returns
+            // from uploads — which means uploaded file URLs don't
+            // work in the browser. Pin backend_url to the public
+            // api host so upload responses return correct URLs.
+            resolve: "@medusajs/medusa/file-local",
+            id: "local",
+            options: {
+              upload_dir: "static",
+              backend_url: (process.env.MEDUSA_BACKEND_URL || "http://localhost:9000") + "/static",
+            },
+          },
+        ],
+      },
+    },
+    {
       resolve: "@medusajs/medusa/auth",
       options: {
         providers: [

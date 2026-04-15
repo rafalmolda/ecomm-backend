@@ -50,6 +50,10 @@ function hideDefaultSections() {
   if (!mainColumn) return
 
   // 1. Hide siblings AFTER our slot in the main column.
+  //    EXCEPT: siblings that contain an element marked with
+  //    data-lss-keep="true" — those are other LifeSpanSupply widgets
+  //    (e.g. the 4-slot product gallery uploader) that intentionally
+  //    sit in the same zone and must stay visible.
   let afterAnchor = false
   for (const child of Array.from(mainColumn.children) as HTMLElement[]) {
     if (child === slot) {
@@ -57,6 +61,7 @@ function hideDefaultSections() {
       continue
     }
     if (!afterAnchor) continue
+    if (child.querySelector('[data-lss-keep="true"]')) continue
     if (child.style.display !== "none") {
       child.setAttribute("data-lss-hidden", "below-editor")
       child.style.display = "none"

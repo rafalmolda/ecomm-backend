@@ -135,7 +135,7 @@ const ProductGalleryImagesWidget = ({ data }: Props) => {
   }
 
   return (
-    <Container className="divide-y p-0">
+    <Container className="divide-y p-0" data-lss-keep="true">
       <div className="px-6 py-4">
         <Heading level="h2">Gallery images</Heading>
         <Text size="small" className="text-ui-fg-subtle">
