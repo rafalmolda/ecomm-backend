@@ -21,6 +21,9 @@ module.exports = defineConfig({
   },
   modules: [
     {
+      resolve: "./src/modules/affiliate",
+    },
+    {
       resolve: "@medusajs/medusa/payment",
       options: {
         providers: [
