@@ -24,6 +24,41 @@ module.exports = defineConfig({
       resolve: "./src/modules/affiliate",
     },
     {
+      key: Modules.CACHE,
+      resolve: "@medusajs/cache-redis",
+      options: { redisUrl: process.env.REDIS_URL },
+    },
+    {
+      key: Modules.EVENT_BUS,
+      resolve: "@medusajs/event-bus-redis",
+      options: { redisUrl: process.env.REDIS_URL },
+    },
+    {
+      key: Modules.WORKFLOW_ENGINE,
+      resolve: "@medusajs/workflow-engine-redis",
+      // Note: the module prints a deprecation warning asking to use `redisUrl`,
+      // but passing `redisUrl` directly crashes on startup because the loader
+      // still destructures `{ url }` from a nested `redis` object. The nested
+      // form is what actually works as of @medusajs/workflow-engine-redis@2.13.6.
+      // Upstream bug. Revisit when the package is patched.
+      options: {
+        redis: { url: process.env.REDIS_URL },
+      },
+    },
+    {
+      key: Modules.LOCKING,
+      resolve: "@medusajs/medusa/locking",
+      options: {
+        providers: [
+          {
+            resolve: "@medusajs/medusa/locking-redis",
+            id: "redis",
+            options: { redisUrl: process.env.REDIS_URL },
+          },
+        ],
+      },
+    },
+    {
       resolve: "@medusajs/medusa/payment",
       options: {
         providers: [
