@@ -15,15 +15,16 @@ import { useEffect, useRef, useState } from "react"
 
 /**
  * LifeSpanSupply unified product editor. Primary editing surface for every
- * field the business uses, with bilingual (EN/TH) inputs for the content
- * fields and a variants table supporting dual USD + THB pricing.
+ * field the business uses, with English-only content inputs and a variants
+ * table supporting tri-currency USD + THB + EUR pricing. Product translations
+ * are handled automatically via DeepL.
  *
  * Layout top to bottom:
  *   1. Featured image (thumbnail) — preview + URL + upload button
- *   2. Title:              [EN input]     |  [TH input]
- *   3. Short description:  [EN textarea]  |  [TH textarea]
- *   4. Long description:   [EN textarea]  |  [TH textarea]
- *   5. Variants table      (title, SKU, USD price, THB price, delete button)
+ *   2. Title:              [EN input]
+ *   3. Short description:  [EN textarea]
+ *   4. Long description:   [EN textarea]
+ *   5. Variants table      (title, SKU, USD price, THB price, EUR price, delete button)
  *      + "Add variant" button
  *   6. Single Save button
  *
@@ -33,11 +34,12 @@ import { useEffect, useRef, useState } from "react"
  *
  * The product update payload includes:
  *   - Core fields: title, description, thumbnail
- *   - metadata:    long_description, title_th, description_th, long_description_th
+ *   - metadata:    long_description, cas_number, molecular_formula, etc.
  *   - variants:    full array — existing variants with their id + prices,
  *                  new variants without an id (Medusa creates them).
- *                  Each variant's `prices` array always carries BOTH currency
- *                  codes so unset values don't silently persist the old price.
+ *                  Each variant's `prices` array always carries ALL THREE
+ *                  currency codes so unset values don't silently persist the
+ *                  old price.
  */
 
 type Props = DetailWidgetProps<AdminProduct>
@@ -57,6 +59,7 @@ type VariantRow = {
   sku: string
   usd: Money // major units (dollars)
   thb: Money // major units (baht)
+  eur: Money // major units (euros)
   stock: number // total across all location levels
   stockLevels: StockLevel[]
 }
@@ -197,6 +200,7 @@ function readVariantRow(v: AdminVariantLike): VariantRow {
   const prices = v.prices ?? []
   const usd = prices.find((p) => p.currency_code === "usd")
   const thb = prices.find((p) => p.currency_code === "thb")
+  const eur = prices.find((p) => p.currency_code === "eur")
 
   // Flatten inventory_items → location_levels into a single list. We sum
   // stocked_quantity across every level so the operator sees one "total
@@ -224,6 +228,7 @@ function readVariantRow(v: AdminVariantLike): VariantRow {
     sku: v.sku ?? "",
     usd: { amount: fromMinor(usd?.amount), id: usd?.id },
     thb: { amount: fromMinor(thb?.amount), id: thb?.id },
+    eur: { amount: fromMinor(eur?.amount), id: eur?.id },
     stock: totalStock,
     stockLevels,
   }
@@ -235,6 +240,7 @@ function newVariantRow(): VariantRow {
     sku: "",
     usd: { amount: 0 },
     thb: { amount: 0 },
+    eur: { amount: 0 },
     stock: 0,
     stockLevels: [],
   }
@@ -244,16 +250,9 @@ const ProductEditorWidget = ({ data }: Props) => {
   const metadata = (data.metadata ?? {}) as Record<string, unknown>
 
   const [titleEn, setTitleEn] = useState(data.title ?? "")
-  const [titleTh, setTitleTh] = useState((metadata.title_th as string) ?? "")
   const [descEn, setDescEn] = useState(data.description ?? "")
-  const [descTh, setDescTh] = useState(
-    (metadata.description_th as string) ?? ""
-  )
   const [longEn, setLongEn] = useState<LongSections>(() =>
     parseLong((metadata.long_description as string) ?? "")
-  )
-  const [longTh, setLongTh] = useState<LongSections>(() =>
-    parseLong((metadata.long_description_th as string) ?? "")
   )
   const [thumbnail, setThumbnail] = useState(data.thumbnail ?? "")
 
@@ -347,7 +346,7 @@ const ProductEditorWidget = ({ data }: Props) => {
 
   function updateVariantPrice(
     idx: number,
-    currency: "usd" | "thb",
+    currency: "usd" | "thb" | "eur",
     amount: number
   ) {
     setVariants((prev) =>
@@ -425,9 +424,6 @@ const ProductEditorWidget = ({ data }: Props) => {
         metadata: {
           ...metadata,
           long_description: composeLong(longEn),
-          title_th: titleTh,
-          description_th: descTh,
-          long_description_th: composeLong(longTh),
           cas_number: casNumber,
           molecular_formula: molecularFormula,
           purity_percentage: purityPercentage,
@@ -438,6 +434,7 @@ const ProductEditorWidget = ({ data }: Props) => {
           const prices = [
             { currency_code: "usd", amount: toMinor(v.usd.amount) },
             { currency_code: "thb", amount: toMinor(v.thb.amount) },
+            { currency_code: "eur", amount: toMinor(v.eur.amount) },
           ]
           if (v.id) {
             return {
@@ -521,8 +518,7 @@ const ProductEditorWidget = ({ data }: Props) => {
       <div className="px-6 py-4">
         <Heading level="h2">Product editor</Heading>
         <Text className="text-ui-fg-subtle" size="small">
-          Bilingual fields + dual-currency pricing. Empty Thai fields fall back
-          to the English version on lifespansupply.com/th.
+          English product content + tri-currency pricing. Product translations handled automatically via DeepL.
         </Text>
       </div>
 
@@ -587,7 +583,7 @@ const ProductEditorWidget = ({ data }: Props) => {
       </div>
 
       {/* Title */}
-      <div className="grid grid-cols-1 gap-4 px-6 py-5 md:grid-cols-2 md:gap-x-6">
+      <div className="grid grid-cols-1 gap-4 px-6 py-5">
         <div>
           <Label size="xsmall" className="text-ui-fg-subtle">
             Title (English)
@@ -598,20 +594,10 @@ const ProductEditorWidget = ({ data }: Props) => {
             placeholder="BPC-157"
           />
         </div>
-        <div>
-          <Label size="xsmall" className="text-ui-fg-subtle">
-            Title (ไทย)
-          </Label>
-          <Input
-            value={titleTh}
-            onChange={(e) => setTitleTh(e.target.value)}
-            placeholder="BPC-157"
-          />
-        </div>
       </div>
 
       {/* Short description */}
-      <div className="grid grid-cols-1 gap-4 px-6 py-5 md:grid-cols-2 md:gap-x-6">
+      <div className="grid grid-cols-1 gap-4 px-6 py-5">
         <div>
           <Label size="xsmall" className="text-ui-fg-subtle">
             Short description (English)
@@ -621,17 +607,6 @@ const ProductEditorWidget = ({ data }: Props) => {
             onChange={(e) => setDescEn(e.target.value)}
             rows={4}
             placeholder="One-sentence summary"
-          />
-        </div>
-        <div>
-          <Label size="xsmall" className="text-ui-fg-subtle">
-            Short description (ไทย)
-          </Label>
-          <Textarea
-            value={descTh}
-            onChange={(e) => setDescTh(e.target.value)}
-            rows={4}
-            placeholder="สรุปสั้น ๆ ภาษาไทย"
           />
         </div>
       </div>
@@ -645,7 +620,7 @@ const ProductEditorWidget = ({ data }: Props) => {
         </Text>
       </div>
 
-      <div className="grid grid-cols-1 gap-4 px-6 pb-5 md:grid-cols-2 md:gap-x-6">
+      <div className="grid grid-cols-1 gap-4 px-6 pb-5">
         <div>
           <Label size="xsmall" className="text-ui-fg-subtle">
             Product description (English)
@@ -659,22 +634,9 @@ const ProductEditorWidget = ({ data }: Props) => {
             placeholder="Intro paragraph — what is it, purity, sourcing…"
           />
         </div>
-        <div>
-          <Label size="xsmall" className="text-ui-fg-subtle">
-            คำอธิบายสินค้า (ไทย)
-          </Label>
-          <Textarea
-            value={longTh.product}
-            onChange={(e) =>
-              setLongTh((s) => ({ ...s, product: e.target.value }))
-            }
-            rows={6}
-            placeholder="คำอธิบายภาษาไทย"
-          />
-        </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-4 px-6 pb-5 md:grid-cols-2 md:gap-x-6">
+      <div className="grid grid-cols-1 gap-4 px-6 pb-5">
         <div>
           <Label size="xsmall" className="text-ui-fg-subtle">
             Research Applications (English)
@@ -688,22 +650,9 @@ const ProductEditorWidget = ({ data }: Props) => {
             placeholder="- Wound healing pathway studies&#10;- …"
           />
         </div>
-        <div>
-          <Label size="xsmall" className="text-ui-fg-subtle">
-            การประยุกต์ใช้ในการวิจัย (ไทย)
-          </Label>
-          <Textarea
-            value={longTh.applications}
-            onChange={(e) =>
-              setLongTh((s) => ({ ...s, applications: e.target.value }))
-            }
-            rows={6}
-            placeholder="- การศึกษา…&#10;- …"
-          />
-        </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-4 px-6 pb-5 md:grid-cols-2 md:gap-x-6">
+      <div className="grid grid-cols-1 gap-4 px-6 pb-5">
         <div>
           <Label size="xsmall" className="text-ui-fg-subtle">
             Preparation (English)
@@ -715,19 +664,6 @@ const ProductEditorWidget = ({ data }: Props) => {
             }
             rows={4}
             placeholder="Reconstitute with bacteriostatic water…"
-          />
-        </div>
-        <div>
-          <Label size="xsmall" className="text-ui-fg-subtle">
-            การเตรียม (ไทย)
-          </Label>
-          <Textarea
-            value={longTh.preparation}
-            onChange={(e) =>
-              setLongTh((s) => ({ ...s, preparation: e.target.value }))
-            }
-            rows={4}
-            placeholder="ละลายด้วย bacteriostatic water…"
           />
         </div>
       </div>
@@ -836,7 +772,7 @@ const ProductEditorWidget = ({ data }: Props) => {
         </div>
 
         <div className="overflow-x-auto">
-          <table className="w-full min-w-[720px] border-separate border-spacing-0 text-sm">
+          <table className="w-full min-w-[840px] border-separate border-spacing-0 text-sm">
             <thead>
               <tr className="text-left text-ui-fg-subtle">
                 <th className="border-b border-ui-border-base px-2 py-2 font-medium">
@@ -852,6 +788,9 @@ const ProductEditorWidget = ({ data }: Props) => {
                   THB
                 </th>
                 <th className="border-b border-ui-border-base px-2 py-2 font-medium">
+                  EUR
+                </th>
+                <th className="border-b border-ui-border-base px-2 py-2 font-medium">
                   Stock
                 </th>
                 <th className="w-10 border-b border-ui-border-base px-2 py-2"></th>
@@ -861,7 +800,7 @@ const ProductEditorWidget = ({ data }: Props) => {
               {variantsLoading && (
                 <tr>
                   <td
-                    colSpan={6}
+                    colSpan={7}
                     className="px-2 py-4 text-center text-ui-fg-muted"
                   >
                     Loading variants…
@@ -871,7 +810,7 @@ const ProductEditorWidget = ({ data }: Props) => {
               {!variantsLoading && variants.length === 0 && (
                 <tr>
                   <td
-                    colSpan={6}
+                    colSpan={7}
                     className="px-2 py-4 text-center text-ui-fg-muted"
                   >
                     No variants — click <strong>Add variant</strong> to create
@@ -931,6 +870,23 @@ const ProductEditorWidget = ({ data }: Props) => {
                         )
                       }
                       placeholder="1800"
+                    />
+                  </td>
+                  <td className="border-b border-ui-border-base px-2 py-2 align-top">
+                    <Input
+                      type="number"
+                      inputMode="decimal"
+                      step="0.01"
+                      min="0"
+                      value={v.eur.amount || ""}
+                      onChange={(e) =>
+                        updateVariantPrice(
+                          idx,
+                          "eur",
+                          parseFloat(e.target.value) || 0
+                        )
+                      }
+                      placeholder="49.00"
                     />
                   </td>
                   <td className="border-b border-ui-border-base px-2 py-2 align-top">
