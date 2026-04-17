@@ -173,6 +173,7 @@ const ProductEditorWidget = ({ data }: Props) => {
   const [formOverride, setFormOverride] = useState((metadata.form as string) ?? "")
   const [storageOverride, setStorageOverride] = useState((metadata.storage as string) ?? "")
   const [producent, setProducent] = useState((metadata.producent as string) ?? "")
+  const [outOfStock, setOutOfStock] = useState((metadata.out_of_stock as string) === "true")
 
   // --- Variants ---
   const [variants, setVariants] = useState<VariantRow[]>([])
@@ -261,6 +262,8 @@ const ProductEditorWidget = ({ data }: Props) => {
       nextMetadata.form = formOverride
       nextMetadata.storage = storageOverride
       nextMetadata.producent = producent
+      if (outOfStock) nextMetadata.out_of_stock = "true"
+      else delete nextMetadata.out_of_stock
       for (const slot of IMAGE_SLOTS) {
         const url = images[slot.idx]
         if (url) { nextMetadata[slot.key] = url } else { delete nextMetadata[slot.key] }
@@ -467,6 +470,23 @@ const ProductEditorWidget = ({ data }: Props) => {
           <Label size="xsmall" className="text-ui-fg-subtle">Storage (blank = default "2-8°C (refrigerated)")</Label>
           <Input value={storageOverride} onChange={(e) => setStorageOverride(e.target.value)} placeholder="2-8°C (refrigerated)" />
         </div>
+      </div>
+
+      {/* Stock status */}
+      <div className="px-6 py-5">
+        <Heading level="h3">Stock status</Heading>
+        <Text size="small" className="text-ui-fg-subtle">
+          When checked, the storefront hides the &ldquo;Add to cart&rdquo; button and shows an &ldquo;Out of stock&rdquo; label. Product stays visible in the catalog.
+        </Text>
+        <label className="mt-3 flex items-center gap-2 cursor-pointer select-none">
+          <input
+            type="checkbox"
+            checked={outOfStock}
+            onChange={(e) => setOutOfStock(e.target.checked)}
+            className="h-4 w-4"
+          />
+          <Text size="small">Mark this product as out of stock</Text>
+        </label>
       </div>
 
       {/* Variants & pricing */}
