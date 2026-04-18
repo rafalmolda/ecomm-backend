@@ -27,15 +27,18 @@ type ImageEntry = {
   slide1_path: string | null
 }
 
-function shortHash(text: string): string {
-  return crypto.createHash("md5").update(text).digest("hex").slice(0, 8)
+function contentHash(filePath: string): string {
+  const buf = fs.readFileSync(filePath)
+  return crypto.createHash("md5").update(buf).digest("hex").slice(0, 10)
 }
 
 function copyIfNeeded(srcPath: string, handle: string, slideIndex: number): string {
-  const base = path.basename(srcPath)
-  const hash = shortHash(srcPath)
+  // Hash the FILE CONTENTS so regenerated images get a new URL (busting browser
+  // + Cloudflare cache). An old hash-of-path would reuse the same filename and
+  // serve stale bytes even when the source was regenerated.
+  const hash = contentHash(srcPath)
   const ts = "2026-04-18"
-  const destName = `${ts}-${handle}-slide${slideIndex}-${hash}${path.extname(base)}`
+  const destName = `${ts}-${handle}-slide${slideIndex}-${hash}${path.extname(srcPath)}`
   const destPath = path.join(UPLOAD_DIR, destName)
   if (!fs.existsSync(destPath)) {
     fs.mkdirSync(UPLOAD_DIR, { recursive: true })
