@@ -42,10 +42,12 @@ export type PeptideKB = {
     muscle?: number
     recovery?: number
     anti_aging?: number
+    immunity?: number
     performance?: number
     sleep?: number
-    libido?: number
+    skin_hair?: number
     cognitive?: number
+    gut_health?: number
   }
 }
 
@@ -101,7 +103,7 @@ export const PEPTIDES: Record<string, PeptideKB> = {
     preparation:
       "For the 10mg vial: reconstitute with 2mL bacteriostatic water → 5 mg/mL. On a U-100 insulin syringe, 10 IU = 0.1 mL = 500 mcg. For nasal spray presentations the device is pre-calibrated — follow the included dosing card.",
     storage: STORAGE_LYOPHILIZED,
-    benefits: { libido: 5, anti_aging: 2, performance: 2 },
+    benefits: { skin_hair: 5, performance: 4, anti_aging: 3, cognitive: 3, recovery: 2 },
   },
 
   "cjc-1295-no-dac": {
@@ -181,7 +183,7 @@ export const PEPTIDES: Record<string, PeptideKB> = {
     preparation:
       "Reconstitute the 5mg vial with 1mL bacteriostatic water → 5 mg/mL. On a U-100 insulin syringe, 6 IU = 0.06 mL = 300 mcg. Nasal spray presentation (if selected) is pre-calibrated per-actuation.",
     storage: STORAGE_LYOPHILIZED,
-    benefits: { cognitive: 5, performance: 4, recovery: 2 },
+    benefits: { cognitive: 5, performance: 4, recovery: 2, anti_aging: 2, sleep: 2 },
   },
 
   retatrutide: {
@@ -197,7 +199,7 @@ export const PEPTIDES: Record<string, PeptideKB> = {
     preparation:
       "Reconstitute the 5mg vial with 2mL bacteriostatic water → 2.5 mg/mL. On a U-100 insulin syringe, 8 IU = 0.08 mL = 200 mcg as a starter dose per research protocols.",
     storage: STORAGE_LYOPHILIZED,
-    benefits: { fat_loss: 5, performance: 3, anti_aging: 2 },
+    benefits: { fat_loss: 5, performance: 3, anti_aging: 2, muscle: 2, recovery: 2 },
   },
 
   "nad-plus": {
@@ -261,7 +263,7 @@ export const PEPTIDES: Record<string, PeptideKB> = {
     preparation:
       "For the 50mg vial: reconstitute with 5mL bacteriostatic water → 10 mg/mL. Solution will be blue — this is normal copper salt coloration. On a U-100 insulin syringe, 10 IU = 0.1 mL = 1 mg. Topical preparations dilute to 0.1–0.5% in sterile saline. Do NOT freeze reconstituted solutions — copper salts drop out of solution.",
     storage: STORAGE_LYOPHILIZED,
-    benefits: { anti_aging: 5, recovery: 4, performance: 2 },
+    benefits: { skin_hair: 5, anti_aging: 5, recovery: 4, performance: 2 },
   },
 }
 
