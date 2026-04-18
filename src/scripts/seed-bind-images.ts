@@ -18,7 +18,9 @@ import * as path from "path"
 
 const MAP_PATH = "/root/product-sources/seed-image-map-2026-04-18.json"
 const UPLOAD_DIR = "/opt/apps/lifespansupply/backend/uploads"
-const STATIC_PREFIX = "/static"
+// Full origin so Next.js <Image> can proxy through /_next/image, matching the
+// URL format that the admin product-editor widget emits.
+const STATIC_PREFIX = "https://api.lifespansupply.com/static"
 
 type ImageEntry = {
   slide0_path: string | null
