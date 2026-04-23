@@ -24,6 +24,12 @@ module.exports = defineConfig({
       resolve: "./src/modules/affiliate",
     },
     {
+      resolve: "./src/modules/stock-notify",
+    },
+    {
+      resolve: "./src/modules/loyalty",
+    },
+    {
       key: Modules.CACHE,
       resolve: "@medusajs/cache-redis",
       options: { redisUrl: process.env.REDIS_URL },
@@ -79,18 +85,16 @@ module.exports = defineConfig({
       options: {
         providers: [
           {
-            // The default file-local provider stores files in
-            // .medusa/server/static/ and serves them via Medusa's
-            // /static/<filename> endpoint. Without an explicit
-            // backend_url, the file-local module hardcodes
-            // http://localhost:9000/static in the URL it returns
-            // from uploads — which means uploaded file URLs don't
-            // work in the browser. Pin backend_url to the public
-            // api host so upload responses return correct URLs.
+            // upload_dir is set to an absolute path OUTSIDE .medusa/server/
+            // because `npx medusa build` wipes the entire .medusa/server/
+            // directory — if files live there, every deploy loses all
+            // previously-uploaded product images. The absolute path persists
+            // across builds. backend_url is pinned so upload responses return
+            // correct public URLs (default hardcodes localhost:9000).
             resolve: "@medusajs/medusa/file-local",
             id: "local",
             options: {
-              upload_dir: "static",
+              upload_dir: "/opt/apps/lifespansupply/backend/uploads",
               backend_url: (process.env.MEDUSA_BACKEND_URL || "http://localhost:9000") + "/static",
             },
           },
