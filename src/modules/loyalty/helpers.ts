@@ -284,7 +284,6 @@ export async function getTierInfoForCustomer(
   customerId: string,
 ): Promise<TierInfo & { recent: Array<Record<string, unknown>> }> {
   const loyalty = container.resolve(LOYALTY_MODULE) as LoyaltyModuleService
-  const customerModule = container.resolve(Modules.CUSTOMER)
 
   const allRows = await loyalty.listLoyaltyLedgers(
     { customer_id: customerId },
@@ -299,8 +298,11 @@ export async function getTierInfoForCustomer(
     .reduce((s, r) => s + (r.delta || 0), 0)
   const balanceSum = allRows.reduce((s, r) => s + (r.delta || 0), 0)
 
-  const customer = await customerModule.retrieveCustomer(customerId).catch(() => null)
-  const tier = (((customer?.metadata || {}) as Record<string, unknown>).loyalty_tier as Tier) || "basic"
+  // Display tier comes from the live ledger, not metadata — avoids drift
+  // when metadata is stale (e.g. after manual DB adjustments or before a
+  // recompute cron runs). The sticky-downgrade logic lives on the write
+  // path in recomputeTierForCustomer; read path trusts the numbers.
+  const tier = tierForPoints(Math.max(0, rollingSum))
 
   const info = computeTierInfo(rollingSum, balanceSum, tier)
   const recent = allRows.slice(0, 10).map((r) => ({
