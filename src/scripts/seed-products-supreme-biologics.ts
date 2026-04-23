@@ -13,7 +13,7 @@ import { BRANDS, PEPTIDES, composeLongDescription, upsertProduct } from "./seed-
 type SBProduct = {
   peptideKey: string
   size: string
-  form: "Vial" | "Nasal Spray"
+  form: "Vial" | "Spray"
   skuSuffix: string
   categoryHandles: string[]
   usd: number
@@ -32,17 +32,17 @@ const PRODUCTS: SBProduct[] = [
   { peptideKey: "semax", size: "5mg", form: "Vial", skuSuffix: "SEM-5MG", categoryHandles: ["cognitive"], usd: 45, thb: 1600, eur: 41 },
   { peptideKey: "retatrutide", size: "5mg", form: "Vial", skuSuffix: "RETA-5MG", categoryHandles: ["glp-1-agonists"], usd: 189, thb: 6600, eur: 174 },
   { peptideKey: "nad-plus", size: "100mg", form: "Vial", skuSuffix: "NAD-100MG", categoryHandles: ["cellular-repair"], usd: 65, thb: 2300, eur: 60 },
-  { peptideKey: "pt-141", size: "150mg", form: "Nasal Spray", skuSuffix: "PT141-150SPRAY", categoryHandles: ["beauty"], usd: 79, thb: 2800, eur: 73 },
-  { peptideKey: "semax", size: "45mg", form: "Nasal Spray", skuSuffix: "SEM-45SPRAY", categoryHandles: ["cognitive"], usd: 69, thb: 2400, eur: 63 },
+  { peptideKey: "pt-141", size: "150mg", form: "Spray", skuSuffix: "PT141-150SPRAY", categoryHandles: ["beauty"], usd: 79, thb: 2800, eur: 73 },
+  { peptideKey: "semax", size: "45mg", form: "Spray", skuSuffix: "SEM-45SPRAY", categoryHandles: ["cognitive"], usd: 69, thb: 2400, eur: 63 },
 ]
 
-function buildHandle(peptideKey: string, size: string, form: "Vial" | "Nasal Spray"): string {
-  const suffix = form === "Nasal Spray" ? `-${size.toLowerCase()}-nasal-spray` : `-${size.toLowerCase()}`
+function buildHandle(peptideKey: string, size: string, form: "Vial" | "Spray"): string {
+  const suffix = form === "Spray" ? `-${size.toLowerCase()}-nasal-spray` : `-${size.toLowerCase()}`
   return `${peptideKey}${suffix}-${BRANDS.supreme.slug}`
 }
 
-function buildTitle(peptideName: string, size: string, form: "Vial" | "Nasal Spray"): string {
-  const formLabel = form === "Nasal Spray" ? " Nasal Spray" : ""
+function buildTitle(peptideName: string, size: string, form: "Vial" | "Spray"): string {
+  const formLabel = form === "Spray" ? " Spray" : ""
   return `${peptideName} ${size}${formLabel} — ${BRANDS.supreme.name}`
 }
 
@@ -64,7 +64,7 @@ export default async function seedSupremeBiologics({ container }: ExecArgs) {
       purity_percentage: "99",
       molecular_formula: kb.molecularFormula,
       cas_number: kb.casNumber,
-      form: p.form === "Nasal Spray" ? "Nasal Spray" : "Lyophilized Powder",
+      form: p.form === "Spray" ? "Spray" : "Lyophilized Powder",
       storage: kb.storage,
       size: p.size,
     }

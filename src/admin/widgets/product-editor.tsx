@@ -123,7 +123,7 @@ function newVariantRow(): VariantRow {
 
 // --- Image helpers ---
 
-const PRODUCENTS = ["FourNines", "Supreme Biologics", "Hangzhou Pep", "Calyssee"] as const
+const PRODUCENTS = ["FourNines", "Supreme Biologics", "Wolf", "Calyssee"] as const
 
 const IMAGE_SLOTS = [
   { idx: 0, label: "Vial — Featured image", key: "ui_image_0" },

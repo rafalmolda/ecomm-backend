@@ -126,8 +126,8 @@ export default async function seedGoalCategories({ container }: ExecArgs) {
     if (goalsToAdd.size === 0) continue
 
     const currentCatIds: string[] = (p.categories ?? [])
-      .map((c: { id?: string }) => c?.id)
-      .filter((id: string | undefined): id is string => typeof id === "string")
+      .map((c) => (c && typeof c === "object" && "id" in c ? (c as { id?: string }).id : undefined))
+      .filter((id): id is string => typeof id === "string")
     const newCatIds = [...goalsToAdd]
       .map((g) => catIdByHandle[g])
       .filter((id): id is string => Boolean(id))
@@ -140,7 +140,7 @@ export default async function seedGoalCategories({ container }: ExecArgs) {
     await updateProductsWorkflow(container).run({
       input: {
         selector: { id: p.id },
-        update: { categories: combined.map((id) => ({ id })) },
+        update: { category_ids: combined },
       },
     })
     linkedCount++

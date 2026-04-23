@@ -18,6 +18,7 @@ export const BRANDS = {
   supreme: { name: "Supreme Biologics", slug: "supreme-biologics", skuPrefix: "SB" },
   fournines: { name: "FourNines", slug: "fournines", skuPrefix: "4N" },
   calyssee: { name: "Calyssee", slug: "calyssee", skuPrefix: "C" },
+  wolf: { name: "Wolf", producent: "Wolf", slug: "wolf", skuPrefix: "WOLF" },
 } as const
 
 export type BrandKey = keyof typeof BRANDS
@@ -264,6 +265,71 @@ export const PEPTIDES: Record<string, PeptideKB> = {
       "For the 50mg vial: reconstitute with 5mL bacteriostatic water → 10 mg/mL. Solution will be blue — this is normal copper salt coloration. On a U-100 insulin syringe, 10 IU = 0.1 mL = 1 mg. Topical preparations dilute to 0.1–0.5% in sterile saline. Do NOT freeze reconstituted solutions — copper salts drop out of solution.",
     storage: STORAGE_LYOPHILIZED,
     benefits: { skin_hair: 5, anti_aging: 5, recovery: 4, performance: 2 },
+  },
+
+  "kisspeptin-10": {
+    displayName: "KissPeptin-10",
+    casNumber: "374675-21-2",
+    molecularFormula: "C63H83N17O14",
+    shortDescription:
+      "10-amino-acid C-terminal fragment of Kisspeptin-54 — a KISS1R (GPR54) agonist studied as the upstream regulator of the GnRH pulse generator.",
+    productDescription:
+      "Kisspeptin-10 is a decapeptide derived from the C-terminus of kisspeptin, the product of the KISS1 gene. Research models show it is the most potent known endogenous agonist of KISS1R (GPR54) and acts as the master upstream regulator of hypothalamic GnRH neurons — the gatekeeper of the entire HPG axis. Loss-of-function mutations in KISS1R cause hypogonadotropic hypogonadism in humans, and exogenous kisspeptin triggers robust LH/FSH surges in clinical investigational studies across both sexes.",
+    researchApplications:
+      "• **HPG axis research** — upstream GnRH pulse generator activation and LH/FSH response models.\n• **Reproductive endocrinology** — puberty initiation pathways and fertility investigations.\n• **Hypogonadism models** — restoration of gonadotropin secretion in functional hypogonadism studies.\n• **Neuroendocrine signaling** — KISS1/GPR54 pathway and sex-steroid feedback research.",
+    preparation:
+      "Reconstitute the 5mg vial with 2mL bacteriostatic water → 2.5 mg/mL. On a U-100 insulin syringe, 4 IU = 0.04 mL = 100 mcg. Half-life is short (minutes); pulsed or bolus protocols are standard.",
+    storage: STORAGE_LYOPHILIZED,
+    benefits: { performance: 4, muscle: 3, anti_aging: 2, recovery: 2 },
+  },
+
+  kpv: {
+    displayName: "KPV",
+    casNumber: "67727-97-3",
+    molecularFormula: "C16H30N4O4",
+    shortDescription:
+      "Lys-Pro-Val tripeptide — the C-terminal fragment of α-MSH (11-13), studied for anti-inflammatory and mucosal-healing effects without the pigmentary action of full-length α-MSH.",
+    productDescription:
+      "KPV is the three-amino-acid C-terminal tail of α-melanocyte-stimulating hormone (α-MSH 11-13). Unlike full-length α-MSH, KPV does not engage MC1R-driven pigmentation, but research models show it retains α-MSH's anti-inflammatory activity — suppressing NF-κB signaling, reducing pro-inflammatory cytokine production, and accelerating mucosal repair in models of colitis, dermatitis, and wound healing. Its small size allows oral, topical, and enteric-coated research formulations.",
+    researchApplications:
+      "• **Gut inflammation research** — IBD, ulcerative colitis, and intestinal barrier preclinical models.\n• **Dermal & wound-healing studies** — anti-inflammatory topical formulations.\n• **Cytokine modulation** — NF-κB and TNF-α suppression pathway research.\n• **Mast-cell biology** — histamine-release and allergic-response models.",
+    preparation:
+      "Reconstitute the 5mg vial with 2mL bacteriostatic water → 2.5 mg/mL. On a U-100 insulin syringe, 20 IU = 0.2 mL = 500 mcg. Oral/sublingual and topical research protocols use unreconstituted or water-dissolved powder at custom concentrations.",
+    storage: STORAGE_LYOPHILIZED,
+    benefits: { gut_health: 5, skin_hair: 4, recovery: 3, anti_aging: 2, immunity: 3 },
+  },
+
+  "slupp-332": {
+    displayName: "SLU-PP-332",
+    casNumber: "2097938-73-1",
+    molecularFormula: "C19H19ClN2O4S",
+    shortDescription:
+      "Small-molecule pan-ERRα/β/γ agonist — a non-peptide exercise-mimetic research compound developed at Saint Louis University.",
+    productDescription:
+      "SLU-PP-332 is a non-peptide small-molecule agonist of all three estrogen-related receptor isoforms (ERRα, ERRβ, ERRγ) — orphan nuclear receptors that act as master regulators of mitochondrial biogenesis, fatty-acid oxidation, and oxidative muscle-fiber phenotype. Research from the Burris group at Saint Louis University has shown that ERR activation recapitulates many of the transcriptional responses to endurance exercise — driving PGC-1α co-activation, increasing mitochondrial density, and enhancing fatigue resistance in rodent models. It is not a peptide; this is a synthetic research compound supplied as a lyophilized solid.",
+    researchApplications:
+      "• **Exercise-mimetic research** — PGC-1α / ERR transcriptional network activation models.\n• **Mitochondrial biogenesis** — oxidative muscle-fiber induction and respiratory capacity studies.\n• **Metabolic research** — fatty-acid oxidation, insulin sensitivity, and obesity models.\n• **Endurance phenotype investigations** — running capacity and fatigue-resistance endpoints in rodent studies.",
+    preparation:
+      "Reconstitute the 5mg vial with 2mL bacteriostatic water or sterile DMSO/saline per research protocol → 2.5 mg/mL. On a U-100 insulin syringe, 4 IU = 0.04 mL = 100 mcg. Solubility is limited in pure water — DMSO-assisted preparations are common in the published literature.",
+    storage: STORAGE_LYOPHILIZED,
+    benefits: { fat_loss: 4, performance: 5, muscle: 3, recovery: 3, anti_aging: 3 },
+  },
+
+  "bac-water": {
+    displayName: "BAC Water",
+    casNumber: "",
+    molecularFormula: "",
+    shortDescription:
+      "Bacteriostatic water for reconstitution — sterile water preserved with 0.9% benzyl alcohol, the standard solvent for lyophilized research peptides.",
+    productDescription:
+      "Bacteriostatic water is sterile, non-pyrogenic water preserved with 0.9% benzyl alcohol as a bacteriostatic agent. It is the standard solvent for reconstituting lyophilized research peptides and other research compounds. The benzyl alcohol preservative inhibits microbial growth, allowing a single vial to be punctured multiple times over a 28-day window when stored at 2–8°C. Always add bacteriostatic water slowly along the vial wall — never inject directly into the powder — and swirl gently to dissolve without foaming.",
+    researchApplications:
+      "• **Peptide reconstitution** — the standard diluent across nearly all lyophilized research peptide protocols.\n• **Multi-dose preparations** — bacteriostatic preservation allows stable repeat access from a single reconstituted vial.\n• **Serial-dilution workflows** — stepwise dilution for dose-response research studies.",
+    preparation:
+      "Ready to use. Withdraw the required volume (typically 1–3 mL) through a sterile filter needle and add slowly along the interior wall of the target vial. Swirl — do not shake. After first puncture, store at 2–8°C and use within 28 days.",
+    storage:
+      "Room temperature sealed. After first use: 2–8°C, discard 28 days after first puncture. Keep upright and protected from light.",
+    benefits: {},
   },
 }
 

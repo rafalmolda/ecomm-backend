@@ -12,7 +12,7 @@ import { BRANDS, PEPTIDES, composeLongDescription, upsertProduct } from "./seed-
 type FNProduct = {
   peptideKey: string
   size: string
-  form: "Vial" | "Nasal Spray"
+  form: "Vial" | "Spray"
   skuSuffix: string
   categoryHandles: string[]
   usd: number
@@ -30,16 +30,16 @@ const PRODUCTS: FNProduct[] = [
   { peptideKey: "epithalon", size: "50mg", form: "Vial", skuSuffix: "EPITH-50MG", categoryHandles: ["cellular-repair"], usd: 199, thb: 7000, eur: 183 },
   { peptideKey: "mots-c", size: "10mg", form: "Vial", skuSuffix: "MOTSC-10MG", categoryHandles: ["cellular-repair"], usd: 107, thb: 3750, eur: 98 },
   { peptideKey: "nad-plus", size: "100mg", form: "Vial", skuSuffix: "NAD-100MG", categoryHandles: ["cellular-repair"], usd: 78, thb: 2700, eur: 72 },
-  { peptideKey: "selank", size: "45mg", form: "Nasal Spray", skuSuffix: "SEL-45SPRAY", categoryHandles: ["cognitive"], usd: 69, thb: 2400, eur: 63 },
+  { peptideKey: "selank", size: "45mg", form: "Spray", skuSuffix: "SEL-45SPRAY", categoryHandles: ["cognitive"], usd: 69, thb: 2400, eur: 63 },
 ]
 
-function buildHandle(peptideKey: string, size: string, form: "Vial" | "Nasal Spray"): string {
-  const suffix = form === "Nasal Spray" ? `-${size.toLowerCase()}-nasal-spray` : `-${size.toLowerCase()}`
+function buildHandle(peptideKey: string, size: string, form: "Vial" | "Spray"): string {
+  const suffix = form === "Spray" ? `-${size.toLowerCase()}-nasal-spray` : `-${size.toLowerCase()}`
   return `${peptideKey}${suffix}-${BRANDS.fournines.slug}`
 }
 
-function buildTitle(peptideName: string, size: string, form: "Vial" | "Nasal Spray"): string {
-  const formLabel = form === "Nasal Spray" ? " Nasal Spray" : ""
+function buildTitle(peptideName: string, size: string, form: "Vial" | "Spray"): string {
+  const formLabel = form === "Spray" ? " Spray" : ""
   return `${peptideName} ${size}${formLabel} — ${BRANDS.fournines.name}`
 }
 
@@ -61,7 +61,7 @@ export default async function seedFourNines({ container }: ExecArgs) {
       purity_percentage: "99",
       molecular_formula: kb.molecularFormula,
       cas_number: kb.casNumber,
-      form: p.form === "Nasal Spray" ? "Nasal Spray" : "Lyophilized Powder",
+      form: p.form === "Spray" ? "Spray" : "Lyophilized Powder",
       storage: kb.storage,
       size: p.size,
     }
