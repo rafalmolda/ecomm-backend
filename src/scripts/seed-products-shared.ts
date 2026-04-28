@@ -80,7 +80,7 @@ export const PEPTIDES: Record<string, PeptideKB> = {
     casNumber: "77591-33-4",
     molecularFormula: "C212H350N56O78S",
     shortDescription:
-      "Thymosin β4 (TB-500) — 43-amino-acid actin-sequestering peptide studied for systemic soft-tissue repair and angiogenesis.",
+      "Thymosin Beta-4 (TB-500) — 43-amino-acid actin-sequestering peptide studied for systemic soft-tissue repair and angiogenesis.",
     productDescription:
       "Thymosin Beta-4 is a ubiquitous 43-amino-acid protein that binds monomeric G-actin and regulates cytoskeletal dynamics. Research models show it drives cell migration toward injury sites, upregulates VEGF-mediated angiogenesis, and modulates inflammatory cytokine profiles. Unlike BPC-157, which works best injected near the injury, TB4 operates systemically — remote injection delivers comparable effects across multiple tissue compartments.",
     researchApplications:
@@ -98,7 +98,7 @@ export const PEPTIDES: Record<string, PeptideKB> = {
     shortDescription:
       "Bremelanotide — a cyclic melanocortin peptide studied for its effects on the central MC3R/MC4R pathway.",
     productDescription:
-      "PT-141 (Bremelanotide) is a synthetic cyclic heptapeptide analog of α-MSH that acts primarily at melanocortin receptors MC3R and MC4R. Research models show it modulates central signaling pathways associated with pigmentation, appetite regulation, and autonomic response — distinct from peripherally-acting peptides. Initial development was for sunless tanning; later research focused on CNS-mediated endpoints.",
+      "PT-141 (Bremelanotide) is a synthetic cyclic heptapeptide analog of alpha-MSH that acts primarily at melanocortin receptors MC3R and MC4R. Research models show it modulates central signaling pathways associated with pigmentation, appetite regulation, and autonomic response — distinct from peripherally-acting peptides. Initial development was for sunless tanning; later research focused on CNS-mediated endpoints.",
     researchApplications:
       "• **Melanocortin pathway research** — MC3R/MC4R agonism studies.\n• **Central nervous system signaling** — probe for hypothalamic pathways.\n• **Pigmentation biology** — MSH-pathway activation studies.\n• **Autonomic response modeling** — investigation of sympathetic tone and cardiovascular responses.",
     preparation:
@@ -148,7 +148,7 @@ export const PEPTIDES: Record<string, PeptideKB> = {
     productDescription:
       "MOTS-c is a 16-amino-acid peptide encoded in the mitochondrial 12S rRNA region. Research models show it translocates to the nucleus under metabolic stress and regulates nuclear gene expression — a rare example of mitochondrial-to-nuclear retrograde signaling. Downstream effects include AMPK pathway activation, improved insulin sensitivity, and enhanced cellular energy metabolism.",
     researchApplications:
-      "• **Metabolic research** — insulin sensitivity and glucose uptake models.\n• **Exercise physiology** — AMPK/PGC-1α pathway investigation.\n• **Mitochondrial biogenesis studies** — preclinical models of age-related metabolic decline.\n• **Body composition research** — combined fat-loss and lean-mass protocols.",
+      "• **Metabolic research** — insulin sensitivity and glucose uptake models.\n• **Exercise physiology** — AMPK/PGC-1alpha pathway investigation.\n• **Mitochondrial biogenesis studies** — preclinical models of age-related metabolic decline.\n• **Body composition research** — combined fat-loss and lean-mass protocols.",
     preparation:
       "Reconstitute the 10mg vial with 2mL bacteriostatic water → 5 mg/mL. On a U-100 insulin syringe, 20 IU = 0.2 mL = 1 mg.",
     storage: STORAGE_LYOPHILIZED,
@@ -258,7 +258,7 @@ export const PEPTIDES: Record<string, PeptideKB> = {
     shortDescription:
       "Copper-binding tripeptide (Gly-His-Lys) — naturally occurring peptide studied for collagen synthesis, hair follicle biology, and dermal regeneration.",
     productDescription:
-      "GHK-Cu is a naturally-occurring copper tripeptide first isolated from human plasma. Research models show it delivers Cu²⁺ ions to copper-dependent enzymes (lysyl oxidase chief among them) that crosslink collagen and elastin fibers, producing denser, more resilient extracellular matrix. It modulates gene expression broadly — downregulating NF-κB inflammatory programs while upregulating antioxidant and repair pathways. Reconstituted solution is characteristically blue (copper salt in solution, not contamination).",
+      "GHK-Cu is a naturally-occurring copper tripeptide first isolated from human plasma. Research models show it delivers Cu²⁺ ions to copper-dependent enzymes (lysyl oxidase chief among them) that crosslink collagen and elastin fibers, producing denser, more resilient extracellular matrix. It modulates gene expression broadly — downregulating NF-kB inflammatory programs while upregulating antioxidant and repair pathways. Reconstituted solution is characteristically blue (copper salt in solution, not contamination).",
     researchApplications:
       "• **Dermal remodeling research** — collagen/elastin synthesis and wound contraction studies.\n• **Hair follicle biology** — dermal papilla cell proliferation and anagen induction.\n• **Gene expression studies** — transcriptional modulation of repair and anti-inflammatory programs.\n• **Post-procedure dermal research** — recovery following laser, microneedling, and chemical peel models.",
     preparation:
@@ -288,11 +288,11 @@ export const PEPTIDES: Record<string, PeptideKB> = {
     casNumber: "67727-97-3",
     molecularFormula: "C16H30N4O4",
     shortDescription:
-      "Lys-Pro-Val tripeptide — the C-terminal fragment of α-MSH (11-13), studied for anti-inflammatory and mucosal-healing effects without the pigmentary action of full-length α-MSH.",
+      "Lys-Pro-Val tripeptide — the C-terminal fragment of alpha-MSH (11-13), studied for anti-inflammatory and mucosal-healing effects without the pigmentary action of full-length alpha-MSH.",
     productDescription:
-      "KPV is the three-amino-acid C-terminal tail of α-melanocyte-stimulating hormone (α-MSH 11-13). Unlike full-length α-MSH, KPV does not engage MC1R-driven pigmentation, but research models show it retains α-MSH's anti-inflammatory activity — suppressing NF-κB signaling, reducing pro-inflammatory cytokine production, and accelerating mucosal repair in models of colitis, dermatitis, and wound healing. Its small size allows oral, topical, and enteric-coated research formulations.",
+      "KPV is the three-amino-acid C-terminal tail of alpha-melanocyte-stimulating hormone (alpha-MSH 11-13). Unlike full-length alpha-MSH, KPV does not engage MC1R-driven pigmentation, but research models show it retains alpha-MSH's anti-inflammatory activity — suppressing NF-kB signaling, reducing pro-inflammatory cytokine production, and accelerating mucosal repair in models of colitis, dermatitis, and wound healing. Its small size allows oral, topical, and enteric-coated research formulations.",
     researchApplications:
-      "• **Gut inflammation research** — IBD, ulcerative colitis, and intestinal barrier preclinical models.\n• **Dermal & wound-healing studies** — anti-inflammatory topical formulations.\n• **Cytokine modulation** — NF-κB and TNF-α suppression pathway research.\n• **Mast-cell biology** — histamine-release and allergic-response models.",
+      "• **Gut inflammation research** — IBD, ulcerative colitis, and intestinal barrier preclinical models.\n• **Dermal & wound-healing studies** — anti-inflammatory topical formulations.\n• **Cytokine modulation** — NF-kB and TNF-alpha suppression pathway research.\n• **Mast-cell biology** — histamine-release and allergic-response models.",
     preparation:
       "Reconstitute the 5mg vial with 2mL bacteriostatic water → 2.5 mg/mL. On a U-100 insulin syringe, 20 IU = 0.2 mL = 500 mcg. Oral/sublingual and topical research protocols use unreconstituted or water-dissolved powder at custom concentrations.",
     storage: STORAGE_LYOPHILIZED,
@@ -304,11 +304,11 @@ export const PEPTIDES: Record<string, PeptideKB> = {
     casNumber: "2097938-73-1",
     molecularFormula: "C19H19ClN2O4S",
     shortDescription:
-      "Small-molecule pan-ERRα/β/γ agonist — a non-peptide exercise-mimetic research compound developed at Saint Louis University.",
+      "Small-molecule pan-ERRalpha/beta/gamma agonist — a non-peptide exercise-mimetic research compound developed at Saint Louis University.",
     productDescription:
-      "SLU-PP-332 is a non-peptide small-molecule agonist of all three estrogen-related receptor isoforms (ERRα, ERRβ, ERRγ) — orphan nuclear receptors that act as master regulators of mitochondrial biogenesis, fatty-acid oxidation, and oxidative muscle-fiber phenotype. Research from the Burris group at Saint Louis University has shown that ERR activation recapitulates many of the transcriptional responses to endurance exercise — driving PGC-1α co-activation, increasing mitochondrial density, and enhancing fatigue resistance in rodent models. It is not a peptide; this is a synthetic research compound supplied as a lyophilized solid.",
+      "SLU-PP-332 is a non-peptide small-molecule agonist of all three estrogen-related receptor isoforms (ERRalpha, ERRbeta, ERRgamma) — orphan nuclear receptors that act as master regulators of mitochondrial biogenesis, fatty-acid oxidation, and oxidative muscle-fiber phenotype. Research from the Burris group at Saint Louis University has shown that ERR activation recapitulates many of the transcriptional responses to endurance exercise — driving PGC-1alpha co-activation, increasing mitochondrial density, and enhancing fatigue resistance in rodent models. It is not a peptide; this is a synthetic research compound supplied as a lyophilized solid.",
     researchApplications:
-      "• **Exercise-mimetic research** — PGC-1α / ERR transcriptional network activation models.\n• **Mitochondrial biogenesis** — oxidative muscle-fiber induction and respiratory capacity studies.\n• **Metabolic research** — fatty-acid oxidation, insulin sensitivity, and obesity models.\n• **Endurance phenotype investigations** — running capacity and fatigue-resistance endpoints in rodent studies.",
+      "• **Exercise-mimetic research** — PGC-1alpha / ERR transcriptional network activation models.\n• **Mitochondrial biogenesis** — oxidative muscle-fiber induction and respiratory capacity studies.\n• **Metabolic research** — fatty-acid oxidation, insulin sensitivity, and obesity models.\n• **Endurance phenotype investigations** — running capacity and fatigue-resistance endpoints in rodent studies.",
     preparation:
       "Reconstitute the 5mg vial with 2mL bacteriostatic water or sterile DMSO/saline per research protocol → 2.5 mg/mL. On a U-100 insulin syringe, 4 IU = 0.04 mL = 100 mcg. Solubility is limited in pure water — DMSO-assisted preparations are common in the published literature.",
     storage: STORAGE_LYOPHILIZED,
