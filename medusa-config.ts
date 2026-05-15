@@ -65,19 +65,16 @@ module.exports = defineConfig({
       },
     },
     {
+      // No `providers:` block — Medusa auto-registers the built-in system
+      // provider as `pp_system_default`, which is what we use. All real
+      // PayPal Orders v2 + capture work happens in the storefront's
+      // /api/paypal/* routes (server-side only, secret never on client),
+      // then /store/carts/:id/complete authorizes this no-op session and
+      // creates the order. PayPal is the source of truth for payment
+      // status; Medusa records the order with provider id `pp_system_default`.
+      // Banned from Stripe 2026-05-15 → @medusajs/medusa/payment-stripe
+      // provider removed.
       resolve: "@medusajs/medusa/payment",
-      options: {
-        providers: [
-          {
-            resolve: "@medusajs/medusa/payment-stripe",
-            id: "stripe",
-            options: {
-              apiKey: process.env.STRIPE_API_KEY,
-              webhookSecret: process.env.STRIPE_WEBHOOK_SECRET,
-            },
-          },
-        ],
-      },
     },
     {
       key: Modules.FILE,
