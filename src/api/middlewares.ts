@@ -1,5 +1,6 @@
 import { defineMiddlewares } from "@medusajs/medusa"
 import type { MedusaNextFunction, MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
+import { guardAddPromotion, guardCartUpdate } from "../utils/promo-rules"
 
 const STORE_URL = process.env.STORE_URL || "https://lifespansupply.com"
 
@@ -25,6 +26,17 @@ export default defineMiddlewares({
     {
       matcher: "/auth/customer/google/callback",
       middlewares: [googleCallbackRedirect],
+    },
+    {
+      // One code per order + first-order-only codes (see utils/promo-rules.ts)
+      matcher: "/store/carts/:id/promotions",
+      method: ["POST"],
+      middlewares: [guardAddPromotion],
+    },
+    {
+      matcher: "/store/carts/:id",
+      method: ["POST"],
+      middlewares: [guardCartUpdate],
     },
   ],
 })
