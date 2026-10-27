@@ -57,18 +57,36 @@ export async function POST(req: MedusaRequest, res: MedusaResponse): Promise<voi
     }
     const [tpl] = await promos.listPromotions(
       { code: [TEMPLATE_CODE] },
-      { relations: ["application_method", "application_method.target_rules", "rules"], take: 1 }
+      {
+        relations: [
+          "application_method",
+          "application_method.target_rules",
+          "application_method.target_rules.values",
+          "rules",
+          "rules.values",
+        ],
+        take: 1,
+      }
     )
     const am = tpl?.application_method
     if (!am) {
       res.status(500).json({ message: "template promotion WELCOME5 not found" })
       return
     }
+    const targetRules = ((am.target_rules ?? []) as any[]).map(mapRule)
+    const promoRules = ((tpl.rules ?? []) as any[]).map(mapRule)
+    // Safety: never create a code whose rules lost their values (that code
+    // would silently discount nothing). Fall back to WELCOME5 instead.
+    if ([...targetRules, ...promoRules].some((r) => r.values.length === 0)) {
+      console.error("[welcome-code] template rules came back without values; not creating", code)
+      res.status(500).json({ message: "template rules incomplete" })
+      return
+    }
     const application_method: Record<string, unknown> = {
       type: am.type,
       target_type: am.target_type,
       value: num(am.value),
-      target_rules: ((am.target_rules ?? []) as any[]).map(mapRule),
+      target_rules: targetRules,
     }
     if (am.allocation) application_method.allocation = am.allocation
     if (am.currency_code) application_method.currency_code = am.currency_code
@@ -83,7 +101,7 @@ export async function POST(req: MedusaRequest, res: MedusaResponse): Promise<voi
             status: "active",
             is_automatic: false,
             application_method,
-            rules: ((tpl.rules ?? []) as any[]).map(mapRule),
+            rules: promoRules,
           } as any,
         ],
       },
