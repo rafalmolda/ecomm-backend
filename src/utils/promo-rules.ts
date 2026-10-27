@@ -11,6 +11,7 @@
 import type { MedusaContainer } from "@medusajs/framework/types"
 import type { MedusaNextFunction, MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
 import { ContainerRegistrationKeys } from "@medusajs/framework/utils"
+import { createHmac } from "crypto"
 
 export const FIRST_ORDER_CODES = ["WELCOME5"]
 export const FIRST_ORDER_PREFIX = "WELCOME-"
@@ -23,7 +24,42 @@ export function isFirstOrderCode(code: string): boolean {
 export const PROMO_MSG = {
   one_code_only: "Only one discount code can be used per order.",
   first_order_only: "This code is for first orders only.",
+  code_email_mismatch: "This code belongs to a different email address.",
 } as const
+
+// ── Personal welcome codes (WELCOME-XXXXXX) ──────────────────────────────
+// The code is a fingerprint of the email: HMAC(LSS_INTERNAL_KEY, email).
+// Same email → same code, and we can check "does this code belong to this
+// email?" without storing anything. NEVER change LSS_INTERNAL_KEY once codes
+// are out, or every issued code stops matching its email.
+const CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"
+
+export function normalizeEmail(email: unknown): string {
+  return typeof email === "string" ? email.trim().toLowerCase() : ""
+}
+
+export function isPersonalCode(code: string): boolean {
+  return code.trim().toUpperCase().startsWith(FIRST_ORDER_PREFIX)
+}
+
+export function personalCodeFor(email: string): string | null {
+  const key = process.env.LSS_INTERNAL_KEY || ""
+  const e = normalizeEmail(email)
+  if (!key || !e) return null
+  const digest = createHmac("sha256", key).update(e).digest()
+  let out = ""
+  for (let i = 0; i < 6; i++) out += CODE_ALPHABET[digest[i] % CODE_ALPHABET.length]
+  return FIRST_ORDER_PREFIX + out
+}
+
+// true = code is a personal code that does NOT belong to this email.
+// Unknown (no key configured) → false, i.e. allow.
+function personalMismatch(code: string, email: string | null): boolean {
+  if (!isPersonalCode(code)) return false
+  if (!process.env.LSS_INTERNAL_KEY) return false
+  if (!email) return true
+  return personalCodeFor(email) !== code.trim().toUpperCase()
+}
 
 export type PromoCheck =
   | { ok: true }
@@ -82,6 +118,9 @@ export async function checkCart(container: MedusaContainer, cartId: string): Pro
   if (codes.length > 1) {
     return { ok: false, code: "one_code_only", message: PROMO_MSG.one_code_only }
   }
+  if (codes.length === 1 && personalMismatch(codes[0], email)) {
+    return { ok: false, code: "code_email_mismatch", message: PROMO_MSG.code_email_mismatch }
+  }
   if (codes.length === 1 && isFirstOrderCode(codes[0]) && email && (await hasPaidOrder(container, email))) {
     return { ok: false, code: "first_order_only", message: PROMO_MSG.first_order_only }
   }
@@ -121,6 +160,12 @@ export async function guardAddPromotion(req: MedusaRequest, res: MedusaResponse,
         code: "one_code_only",
         message: `${PROMO_MSG.one_code_only} Remove ${others[0]} first.`,
       })
+      return
+    }
+    // At this point the cart may not have an email yet (code typed in the
+    // cart before checkout) — then the binding is checked before payment.
+    if (email && personalMismatch(incoming[0], email)) {
+      res.status(400).json({ type: "not_allowed", code: "code_email_mismatch", message: PROMO_MSG.code_email_mismatch })
       return
     }
     if (isFirstOrderCode(incoming[0]) && email && (await hasPaidOrder(req.scope, email))) {
