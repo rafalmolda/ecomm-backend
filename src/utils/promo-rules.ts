@@ -25,6 +25,7 @@ export const PROMO_MSG = {
   one_code_only: "Only one discount code can be used per order.",
   first_order_only: "This code is for first orders only.",
   code_email_mismatch: "This code belongs to a different email address.",
+  circle_member_no_codes: "LifeSpan Circle members already get their discount automatically, so codes can't be combined with it.",
 } as const
 
 // ── Personal welcome codes (WELCOME-XXXXXX) ──────────────────────────────
@@ -76,7 +77,7 @@ function queryOf(container: MedusaContainer): GraphQuery {
 export async function cartCodes(
   container: MedusaContainer,
   cartId: string
-): Promise<{ codes: string[]; email: string | null }> {
+): Promise<{ codes: string[]; email: string | null; circleAuto: boolean }> {
   const { data } = await queryOf(container).graph({
     entity: "cart",
     fields: ["id", "email", "promotions.code", "promotions.is_automatic"],
@@ -86,7 +87,11 @@ export async function cartCodes(
   const codes = ((cart?.promotions ?? []) as Array<Record<string, any>>)
     .filter((p) => p && p.code && !p.is_automatic)
     .map((p) => String(p.code).toUpperCase())
-  return { codes: Array.from(new Set(codes)), email: (cart?.email as string) || null }
+  // Circle member discount = automatic promotion whose code starts CIRCLE-
+  const circleAuto = ((cart?.promotions ?? []) as Array<Record<string, any>>).some(
+    (p) => p && p.is_automatic && String(p.code ?? "").toUpperCase().startsWith("CIRCLE-")
+  )
+  return { codes: Array.from(new Set(codes)), email: (cart?.email as string) || null, circleAuto }
 }
 
 // A "paid order" = not canceled and at least one payment collection with
@@ -114,7 +119,10 @@ export async function hasPaidOrder(container: MedusaContainer, email: string): P
 }
 
 export async function checkCart(container: MedusaContainer, cartId: string): Promise<PromoCheck> {
-  const { codes, email } = await cartCodes(container, cartId)
+  const { codes, email, circleAuto } = await cartCodes(container, cartId)
+  if (codes.length > 0 && circleAuto) {
+    return { ok: false, code: "circle_member_no_codes", message: PROMO_MSG.circle_member_no_codes }
+  }
   if (codes.length > 1) {
     return { ok: false, code: "one_code_only", message: PROMO_MSG.one_code_only }
   }
@@ -152,7 +160,11 @@ export async function guardAddPromotion(req: MedusaRequest, res: MedusaResponse,
       return
     }
     const cartId = (req.params as Record<string, string>).id
-    const { codes, email } = await cartCodes(req.scope, cartId)
+    const { codes, email, circleAuto } = await cartCodes(req.scope, cartId)
+    if (circleAuto && !incoming[0].startsWith("CIRCLE-")) {
+      res.status(400).json({ type: "not_allowed", code: "circle_member_no_codes", message: PROMO_MSG.circle_member_no_codes })
+      return
+    }
     const others = codes.filter((c) => c !== incoming[0])
     if (others.length > 0) {
       res.status(400).json({
