@@ -1,520 +1,518 @@
 /**
- * Product copy v2 — THAI (th).
- * STUB: every value below is still the English text. Translators replace the values;
- * keep the keys, the `{placeholder}` tokens and the `**` markers. Rules: ./types.ts.
- * The script refuses to write `th` while this object is identical to en.ts.
+ * Product copy v2 — THAI (th). Translated from en.ts (2026-11-06).
+ * Type: ProductCopyLocale (./types.ts). Translator rules are in ./types.ts.
  */
 import type { ProductCopyLocale } from "./types"
 
 export const th: ProductCopyLocale = {
   "compounds": {
     "bpc-157": {
-      "identity": "a synthetic 15-amino-acid gastric pentadecapeptide studied in angiogenesis and mucosal biology",
-      "whatItIs": "BPC-157 is a synthetic 15-amino-acid peptide, also published as stable gastric pentadecapeptide BPC 157 and PL 14736. Its sequence derives from a protein isolated from gastric juice. Published preclinical work describes interactions with VEGFR2 signalling, the nitric oxide system and fibroblast migration. Researchers use it as a reference compound in studies of angiogenesis, connective-tissue biology and gastrointestinal mucosal biology in animal and cell models.",
+      "identity": "เพนตะเดคาเพปไทด์จากกระเพาะอาหารชนิดสังเคราะห์ที่มีกรดอะมิโน 15 ตัว ซึ่งศึกษาในงานวิจัยด้านการสร้างหลอดเลือดใหม่และชีววิทยาของเยื่อเมือก",
+      "whatItIs": "BPC-157 เป็นเพปไทด์สังเคราะห์ที่มีกรดอะมิโน 15 ตัว มีการตีพิมพ์ในชื่อ stable gastric pentadecapeptide BPC 157 และ PL 14736 ด้วย ลำดับกรดอะมิโนได้มาจากโปรตีนที่แยกได้จากน้ำย่อยในกระเพาะอาหาร งานวิจัยพรีคลินิกที่ตีพิมพ์อธิบายถึงปฏิสัมพันธ์กับการส่งสัญญาณผ่าน VEGFR2 ระบบไนตริกออกไซด์ และการเคลื่อนที่ของไฟโบรบลาสต์ นักวิจัยใช้เป็นสารอ้างอิงในการศึกษาการสร้างหลอดเลือดใหม่ ชีววิทยาของเนื้อเยื่อเกี่ยวพัน และชีววิทยาของเยื่อเมือกทางเดินอาหารในแบบจำลองสัตว์และเซลล์",
       "research": [
         {
-          "label": "Tendon and ligament injury models",
-          "text": "rodent models with histology and biomechanical readouts."
+          "label": "แบบจำลองการบาดเจ็บของเอ็นและเอ็นยึดข้อ",
+          "text": "แบบจำลองในสัตว์ฟันแทะที่วัดผลด้วยจุลกายวิภาคและค่าทางชีวกลศาสตร์"
         },
         {
-          "label": "Gastrointestinal mucosa models",
-          "text": "rodent lesion models with lesion area and mucosal histology as readouts."
+          "label": "แบบจำลองเยื่อเมือกทางเดินอาหาร",
+          "text": "แบบจำลองรอยโรคในสัตว์ฟันแทะที่วัดผลด้วยพื้นที่รอยโรคและจุลกายวิภาคของเยื่อเมือก"
         },
         {
-          "label": "Endothelial cell assays",
-          "text": "VEGFR2 phosphorylation, nitric oxide signalling and cell-migration readouts in vitro."
+          "label": "การทดสอบเซลล์บุผนังหลอดเลือด",
+          "text": "การวัดฟอสโฟรีเลชันของ VEGFR2 การส่งสัญญาณไนตริกออกไซด์ และการเคลื่อนที่ของเซลล์ในหลอดทดลอง"
         }
       ]
     },
     "aod-9604": {
-      "identity": "a synthetic growth hormone fragment (176–191) studied in lipid-metabolism research",
-      "whatItIs": "AOD-9604 is a synthetic peptide based on the C-terminal region (amino acids 176–191) of human growth hormone, with an added N-terminal tyrosine. Researchers study this fragment apart from the full hormone to examine which structural regions relate to lipid metabolism. Published preclinical work focused on adipocyte lipolysis and lipogenesis assays and on rodent metabolic models. Growth hormone fragments, including AOD-9604, are listed under S2 on the WADA Prohibited List.",
+      "identity": "ชิ้นส่วนสังเคราะห์ของฮอร์โมนการเจริญเติบโต (176–191) ที่ศึกษาในงานวิจัยด้านเมแทบอลิซึมของลิพิด",
+      "whatItIs": "AOD-9604 เป็นเพปไทด์สังเคราะห์ที่อิงจากบริเวณปลาย C (กรดอะมิโนตำแหน่ง 176–191) ของฮอร์โมนการเจริญเติบโตของมนุษย์ โดยเติมไทโรซีนที่ปลาย N นักวิจัยศึกษาชิ้นส่วนนี้แยกจากฮอร์โมนเต็มสาย เพื่อตรวจสอบว่าบริเวณโครงสร้างใดสัมพันธ์กับเมแทบอลิซึมของลิพิด งานวิจัยพรีคลินิกที่ตีพิมพ์มุ่งเน้นการทดสอบการสลายและการสังเคราะห์ลิพิดในเซลล์ไขมัน และแบบจำลองเมแทบอลิกในสัตว์ฟันแทะ ชิ้นส่วนของฮอร์โมนการเจริญเติบโต รวมถึง AOD-9604 อยู่ในหมวด S2 ของบัญชีรายการสารต้องห้ามของ WADA",
       "research": [
         {
-          "label": "Adipocyte assays",
-          "text": "lipolysis and lipogenesis readouts in isolated fat cells."
+          "label": "การทดสอบเซลล์ไขมัน",
+          "text": "การวัดการสลายและการสังเคราะห์ลิพิดในเซลล์ไขมันที่แยกออกมา"
         },
         {
-          "label": "Rodent metabolic models",
-          "text": "body-composition and plasma lipid readouts compared with full-length growth hormone."
+          "label": "แบบจำลองเมแทบอลิกในสัตว์ฟันแทะ",
+          "text": "การวัดองค์ประกอบของร่างกายและลิพิดในพลาสมา เปรียบเทียบกับฮอร์โมนการเจริญเติบโตเต็มสาย"
         },
         {
-          "label": "Structure–function studies",
-          "text": "comparison of growth hormone fragments with the parent hormone, including IGF-1 readouts."
+          "label": "การศึกษาความสัมพันธ์ระหว่างโครงสร้างและหน้าที่",
+          "text": "การเปรียบเทียบชิ้นส่วนของฮอร์โมนการเจริญเติบโตกับฮอร์โมนต้นแบบ รวมถึงการวัด IGF-1"
         }
       ]
     },
     "cjc-1295-no-dac": {
-      "identity": "Modified GRF (1-29), a GHRH analogue without the DAC linker",
-      "whatItIs": "CJC-1295 without DAC, also published as Modified GRF (1-29), is a synthetic analogue of the first 29 amino acids of growth hormone-releasing hormone (GHRH). Amino-acid substitutions give resistance to cleavage by dipeptidyl peptidase-4 (DPP-4). It has no drug affinity complex (DAC) linker, so it does not bind albumin, and its reported half-life is about 30 minutes. It is studied as a reference agonist at the pituitary GHRH receptor.",
+      "identity": "Modified GRF (1-29) อะนาล็อกของ GHRH ที่ไม่มีตัวเชื่อม DAC",
+      "whatItIs": "CJC-1295 ชนิดไม่มี DAC หรือที่ตีพิมพ์ในชื่อ Modified GRF (1-29) เป็นอะนาล็อกสังเคราะห์ของกรดอะมิโน 29 ตัวแรกของฮอร์โมนกระตุ้นการหลั่งฮอร์โมนการเจริญเติบโต (GHRH) การแทนที่กรดอะมิโนทำให้ทนต่อการตัดโดยเอนไซม์ dipeptidyl peptidase-4 (DPP-4) สารนี้ไม่มีตัวเชื่อม drug affinity complex (DAC) จึงไม่จับกับอัลบูมิน และมีรายงานค่าครึ่งชีวิตประมาณ 30 นาที ใช้ศึกษาในฐานะอะโกนิสต์อ้างอิงที่ตัวรับ GHRH ของต่อมใต้สมอง",
       "research": [
         {
-          "label": "Pituitary cell models",
-          "text": "GHRH-receptor activation with cAMP and growth hormone release as readouts."
+          "label": "แบบจำลองเซลล์ต่อมใต้สมอง",
+          "text": "การกระตุ้นตัวรับ GHRH โดยวัดผลด้วย cAMP และการหลั่งฮอร์โมนการเจริญเติบโต"
         },
         {
-          "label": "Animal endocrine studies",
-          "text": "growth hormone pulse profiles and IGF-1 readouts."
+          "label": "การศึกษาระบบต่อมไร้ท่อในสัตว์",
+          "text": "รูปแบบการหลั่งเป็นจังหวะของฮอร์โมนการเจริญเติบโตและการวัด IGF-1"
         },
         {
-          "label": "Peptide stability studies",
-          "text": "DPP-4 resistance compared with native GHRH(1-29)."
+          "label": "การศึกษาความเสถียรของเพปไทด์",
+          "text": "ความทนต่อ DPP-4 เปรียบเทียบกับ GHRH(1-29) ตามธรรมชาติ"
         }
       ]
     },
     "cjc-1295": {
-      "identity": "a DPP-4-resistant synthetic GHRH(1-29) analogue studied at the GHRH receptor",
-      "whatItIs": "CJC-1295 is a synthetic analogue of the first 29 amino acids of growth hormone-releasing hormone (GHRH), with amino-acid substitutions that give resistance to dipeptidyl peptidase-4 (DPP-4). In the literature the name covers two forms: one with a drug affinity complex (DAC) linker that binds albumin, and one without it, also called Modified GRF (1-29). Check the product label and the batch COA for the exact form. Both forms are studied as agonists at the pituitary GHRH receptor.",
+      "identity": "อะนาล็อกสังเคราะห์ของ GHRH(1-29) ที่ทนต่อ DPP-4 ซึ่งศึกษาที่ตัวรับ GHRH",
+      "whatItIs": "CJC-1295 เป็นอะนาล็อกสังเคราะห์ของกรดอะมิโน 29 ตัวแรกของฮอร์โมนกระตุ้นการหลั่งฮอร์โมนการเจริญเติบโต (GHRH) โดยมีการแทนที่กรดอะมิโนที่ทำให้ทนต่อเอนไซม์ dipeptidyl peptidase-4 (DPP-4) ในเอกสารวิชาการ ชื่อนี้ครอบคลุมสองรูปแบบ ได้แก่ รูปแบบที่มีตัวเชื่อม drug affinity complex (DAC) ซึ่งจับกับอัลบูมิน และรูปแบบที่ไม่มีตัวเชื่อมนี้ ซึ่งเรียกอีกชื่อว่า Modified GRF (1-29) โปรดตรวจสอบรูปแบบที่แน่นอนจากฉลากผลิตภัณฑ์และ COA ของล็อต ทั้งสองรูปแบบใช้ศึกษาในฐานะอะโกนิสต์ที่ตัวรับ GHRH ของต่อมใต้สมอง",
       "research": [
         {
-          "label": "GHRH-receptor pharmacology",
-          "text": "receptor binding and cAMP signalling in pituitary cell models."
+          "label": "เภสัชวิทยาของตัวรับ GHRH",
+          "text": "การจับกับตัวรับและการส่งสัญญาณ cAMP ในแบบจำลองเซลล์ต่อมใต้สมอง"
         },
         {
-          "label": "Endocrine axis studies",
-          "text": "growth hormone and IGF-1 readouts in animal models."
+          "label": "การศึกษาแกนต่อมไร้ท่อ",
+          "text": "การวัดฮอร์โมนการเจริญเติบโตและ IGF-1 ในแบบจำลองสัตว์"
         }
       ]
     },
     "dsip": {
-      "identity": "delta sleep-inducing peptide, a nonapeptide studied in sleep physiology and neuroendocrine research",
-      "whatItIs": "DSIP (delta sleep-inducing peptide) is a nonapeptide first isolated from the cerebral venous blood of rabbits during induced sleep. It is classed as a neuropeptide, but no specific receptor has been identified and its mechanism is not fully characterised. Published research links it to sleep architecture, stress-hormone regulation and corticotropin release. It is a reference compound for neuroendocrine and sleep-physiology studies in animal models.",
+      "identity": "delta sleep-inducing peptide โนนาเพปไทด์ที่ศึกษาในงานวิจัยด้านสรีรวิทยาการนอนหลับและประสาทต่อมไร้ท่อ",
+      "whatItIs": "DSIP (delta sleep-inducing peptide) เป็นโนนาเพปไทด์ที่แยกได้ครั้งแรกจากเลือดดำของสมองกระต่ายในระหว่างการนอนหลับที่ถูกเหนี่ยวนำ จัดเป็นนิวโรเพปไทด์ แต่ยังไม่มีการระบุตัวรับที่จำเพาะ และกลไกการทำงานยังไม่เป็นที่เข้าใจอย่างครบถ้วน งานวิจัยที่ตีพิมพ์เชื่อมโยงสารนี้กับโครงสร้างการนอนหลับ การควบคุมฮอร์โมนความเครียด และการหลั่งคอร์ติโคโทรปิน เป็นสารอ้างอิงสำหรับการศึกษาด้านประสาทต่อมไร้ท่อและสรีรวิทยาการนอนหลับในแบบจำลองสัตว์",
       "research": [
         {
-          "label": "Sleep-physiology models",
-          "text": "EEG recordings of slow-wave (delta) sleep in rodents and rabbits."
+          "label": "แบบจำลองสรีรวิทยาการนอนหลับ",
+          "text": "การบันทึก EEG ของการนอนหลับคลื่นช้า (เดลตา) ในสัตว์ฟันแทะและกระต่าย"
         },
         {
-          "label": "Neuroendocrine studies",
-          "text": "corticotropin and stress-hormone readouts in animal models."
+          "label": "การศึกษาด้านประสาทต่อมไร้ท่อ",
+          "text": "การวัดคอร์ติโคโทรปินและฮอร์โมนความเครียดในแบบจำลองสัตว์"
         }
       ]
     },
     "epithalon": {
-      "identity": "the synthetic tetrapeptide Ala-Glu-Asp-Gly, studied in telomerase and pineal-function research",
-      "whatItIs": "Epithalon (epitalon) is a synthetic tetrapeptide, Ala-Glu-Asp-Gly, modelled on epithalamin, a polypeptide extract of the bovine pineal gland. Vladimir Khavinson's group at the Saint Petersburg Institute of Bioregulation and Gerontology developed it. Reported mechanisms include induction of telomerase activity in cell culture and effects on pineal melatonin production. It is studied as a reference compound in research on cellular ageing and pineal gland function.",
+      "identity": "เตตระเพปไทด์สังเคราะห์ Ala-Glu-Asp-Gly ที่ศึกษาในงานวิจัยด้านเทโลเมอเรสและการทำงานของต่อมไพเนียล",
+      "whatItIs": "Epithalon (epitalon) เป็นเตตระเพปไทด์สังเคราะห์ Ala-Glu-Asp-Gly ที่จำลองแบบจาก epithalamin ซึ่งเป็นสารสกัดพอลิเพปไทด์จากต่อมไพเนียลของวัว คณะวิจัยของ Vladimir Khavinson ที่สถาบัน Saint Petersburg Institute of Bioregulation and Gerontology เป็นผู้พัฒนา กลไกที่มีรายงานได้แก่ การเหนี่ยวนำกิจกรรมของเทโลเมอเรสในเซลล์เพาะเลี้ยง และผลต่อการสร้างเมลาโทนินของต่อมไพเนียล ใช้ศึกษาเป็นสารอ้างอิงในงานวิจัยด้านการชราภาพของเซลล์และการทำงานของต่อมไพเนียล",
       "research": [
         {
-          "label": "Cell-culture models",
-          "text": "telomerase activity and telomere length readouts."
+          "label": "แบบจำลองเซลล์เพาะเลี้ยง",
+          "text": "การวัดกิจกรรมของเทโลเมอเรสและความยาวเทโลเมียร์"
         },
         {
-          "label": "Pineal function studies",
-          "text": "melatonin production readouts in animal models."
+          "label": "การศึกษาการทำงานของต่อมไพเนียล",
+          "text": "การวัดการสร้างเมลาโทนินในแบบจำลองสัตว์"
         },
         {
-          "label": "Ageing models",
-          "text": "biomarker readouts in aged rodents."
+          "label": "แบบจำลองการชราภาพ",
+          "text": "การวัดตัวบ่งชี้ทางชีวภาพในสัตว์ฟันแทะสูงอายุ"
         }
       ]
     },
     "ghk-cu": {
-      "identity": "the copper(II) complex of glycyl-L-histidyl-L-lysine, studied as a copper-delivery molecule",
-      "whatItIs": "GHK-Cu is the copper(II) complex of the tripeptide glycyl-L-histidyl-L-lysine. GHK was first isolated from human plasma and has since been found in saliva and urine. The peptide binds Cu²⁺ with high affinity and is studied as a copper-delivery molecule. Copper is a cofactor for lysyl oxidase, the enzyme that crosslinks collagen and elastin. GHK-Cu is also a cosmetic ingredient under the INCI name copper tripeptide-1. Its solutions are typically blue.",
+      "identity": "สารเชิงซ้อนคอปเปอร์(II) ของ glycyl-L-histidyl-L-lysine ที่ศึกษาในฐานะโมเลกุลนำส่งทองแดง",
+      "whatItIs": "GHK-Cu เป็นสารเชิงซ้อนคอปเปอร์(II) ของไตรเพปไทด์ glycyl-L-histidyl-L-lysine GHK แยกได้ครั้งแรกจากพลาสมาของมนุษย์ และต่อมาพบในน้ำลายและปัสสาวะ เพปไทด์นี้จับกับ Cu²⁺ ด้วยสัมพรรคภาพสูง และศึกษาในฐานะโมเลกุลนำส่งทองแดง ทองแดงเป็นโคแฟกเตอร์ของ lysyl oxidase ซึ่งเป็นเอนไซม์ที่สร้างพันธะเชื่อมข้ามของคอลลาเจนและอีลาสติน GHK-Cu ยังเป็นส่วนผสมเครื่องสำอางภายใต้ชื่อ INCI ว่า copper tripeptide-1 สารละลายของ GHK-Cu โดยทั่วไปมีสีฟ้า",
       "research": [
         {
-          "label": "Fibroblast cultures",
-          "text": "collagen, elastin and glycosaminoglycan synthesis readouts."
+          "label": "การเพาะเลี้ยงไฟโบรบลาสต์",
+          "text": "การวัดการสังเคราะห์คอลลาเจน อีลาสติน และไกลโคซามิโนไกลแคน"
         },
         {
-          "label": "Gene-expression studies",
-          "text": "transcriptional profiling of cells exposed to GHK."
+          "label": "การศึกษาการแสดงออกของยีน",
+          "text": "การวิเคราะห์โปรไฟล์การถอดรหัสของเซลล์ที่สัมผัสกับ GHK"
         },
         {
-          "label": "Dermal models",
-          "text": "extracellular-matrix histology in skin models."
+          "label": "แบบจำลองผิวหนังชั้นหนังแท้",
+          "text": "จุลกายวิภาคของเมทริกซ์นอกเซลล์ในแบบจำลองผิวหนัง"
         }
       ]
     },
     "ipamorelin": {
-      "identity": "a synthetic pentapeptide ghrelin-receptor (GHS-R1a) agonist studied in receptor-selectivity research",
-      "whatItIs": "Ipamorelin is a synthetic pentapeptide growth hormone secretagogue and an agonist of the ghrelin receptor (GHS-R1a) on pituitary somatotroph cells. The GHS-R1a pathway is separate from the GHRH receptor pathway. Published animal studies describe ipamorelin as selective: growth hormone release occurred without the marked ACTH or cortisol increase reported for older GHRP compounds. It is a reference compound for GHS-R1a pharmacology and receptor-selectivity studies.",
+      "identity": "เพนตะเพปไทด์สังเคราะห์ที่เป็นอะโกนิสต์ของตัวรับเกรลิน (GHS-R1a) ซึ่งศึกษาในงานวิจัยด้านความจำเพาะต่อตัวรับ",
+      "whatItIs": "Ipamorelin เป็นเพนตะเพปไทด์สังเคราะห์ในกลุ่มสารกระตุ้นการหลั่งฮอร์โมนการเจริญเติบโต และเป็นอะโกนิสต์ของตัวรับเกรลิน (GHS-R1a) บนเซลล์โซมาโทโทรฟของต่อมใต้สมอง วิถี GHS-R1a แยกจากวิถีของตัวรับ GHRH งานศึกษาในสัตว์ที่ตีพิมพ์อธิบายว่า ipamorelin มีความจำเพาะ กล่าวคือ เกิดการหลั่งฮอร์โมนการเจริญเติบโตโดยไม่มีการเพิ่มขึ้นของ ACTH หรือคอร์ติซอลอย่างชัดเจนดังที่รายงานในสาร GHRP รุ่นเก่า เป็นสารอ้างอิงสำหรับเภสัชวิทยาของ GHS-R1a และการศึกษาความจำเพาะต่อตัวรับ",
       "research": [
         {
-          "label": "Receptor pharmacology",
-          "text": "GHS-R1a binding and signalling assays."
+          "label": "เภสัชวิทยาของตัวรับ",
+          "text": "การทดสอบการจับและการส่งสัญญาณของ GHS-R1a"
         },
         {
-          "label": "Animal endocrine studies",
-          "text": "growth hormone, ACTH and cortisol readouts compared with other GHRP compounds."
+          "label": "การศึกษาระบบต่อมไร้ท่อในสัตว์",
+          "text": "การวัดฮอร์โมนการเจริญเติบโต ACTH และคอร์ติซอล เปรียบเทียบกับสาร GHRP อื่น"
         }
       ]
     },
     "kisspeptin-10": {
-      "identity": "the C-terminal decapeptide of kisspeptin, a KISS1R (GPR54) agonist",
-      "whatItIs": "Kisspeptin-10 is a decapeptide that corresponds to the C-terminal region of kisspeptin, the product of the KISS1 gene. It is an agonist at the kisspeptin receptor KISS1R, also known as GPR54. KISS1R is expressed on hypothalamic GnRH neurons, and kisspeptin signalling is studied as an upstream regulator of the hypothalamic-pituitary-gonadal axis. Kisspeptin-10 is a reference agonist in reproductive neuroendocrinology research in cell and animal models.",
+      "identity": "เดคาเพปไทด์ปลาย C ของคิสส์เพปติน ซึ่งเป็นอะโกนิสต์ของ KISS1R (GPR54)",
+      "whatItIs": "Kisspeptin-10 เป็นเดคาเพปไทด์ที่ตรงกับบริเวณปลาย C ของคิสส์เพปติน ซึ่งเป็นผลผลิตของยีน KISS1 เป็นอะโกนิสต์ที่ตัวรับคิสส์เพปติน KISS1R หรือที่รู้จักในชื่อ GPR54 KISS1R แสดงออกบนเซลล์ประสาท GnRH ในไฮโปทาลามัส และการส่งสัญญาณของคิสส์เพปตินถูกศึกษาในฐานะตัวควบคุมต้นทางของแกนไฮโปทาลามัส-ต่อมใต้สมอง-ต่อมเพศ Kisspeptin-10 เป็นอะโกนิสต์อ้างอิงในงานวิจัยด้านประสาทต่อมไร้ท่อของระบบสืบพันธุ์ในแบบจำลองเซลล์และสัตว์",
       "research": [
         {
-          "label": "Receptor assays",
-          "text": "KISS1R (GPR54) activation and downstream signalling in cell models."
+          "label": "การทดสอบตัวรับ",
+          "text": "การกระตุ้น KISS1R (GPR54) และการส่งสัญญาณปลายน้ำในแบบจำลองเซลล์"
         },
         {
-          "label": "Neuroendocrine studies",
-          "text": "GnRH and luteinising hormone (LH) readouts in animal models."
+          "label": "การศึกษาด้านประสาทต่อมไร้ท่อ",
+          "text": "การวัด GnRH และลูทิไนซิงฮอร์โมน (LH) ในแบบจำลองสัตว์"
         }
       ]
     },
     "kpv": {
-      "identity": "the tripeptide Lys-Pro-Val (α-MSH 11–13), studied in inflammation and epithelial biology",
-      "whatItIs": "KPV is the tripeptide Lys-Pro-Val, which corresponds to residues 11–13 at the C-terminus of α-melanocyte-stimulating hormone (α-MSH). Published work describes anti-inflammatory signalling activity for this fragment, including effects on NF-κB pathway readouts, without the MC1R-linked pigmentation activity of full-length α-MSH. Its small size has made it a subject of formulation research. It is studied as a reference fragment in inflammation and epithelial biology.",
+      "identity": "ไตรเพปไทด์ Lys-Pro-Val (α-MSH 11–13) ที่ศึกษาในงานวิจัยด้านการอักเสบและชีววิทยาของเยื่อบุผิว",
+      "whatItIs": "KPV เป็นไตรเพปไทด์ Lys-Pro-Val ซึ่งตรงกับกรดอะมิโนตำแหน่ง 11–13 ที่ปลาย C ของ α-melanocyte-stimulating hormone (α-MSH) งานวิจัยที่ตีพิมพ์อธิบายฤทธิ์การส่งสัญญาณต้านการอักเสบของชิ้นส่วนนี้ รวมถึงผลต่อค่าการวัดของวิถี NF-κB โดยไม่มีฤทธิ์ด้านการสร้างเม็ดสีที่เชื่อมโยงกับ MC1R ของ α-MSH เต็มสาย ขนาดที่เล็กทำให้สารนี้เป็นหัวข้อของงานวิจัยด้านสูตรตำรับ ใช้ศึกษาเป็นชิ้นส่วนอ้างอิงในงานวิจัยด้านการอักเสบและชีววิทยาของเยื่อบุผิว",
       "research": [
         {
-          "label": "Intestinal inflammation models",
-          "text": "rodent colitis models with cytokine and histology readouts."
+          "label": "แบบจำลองการอักเสบของลำไส้",
+          "text": "แบบจำลองลำไส้ใหญ่อักเสบในสัตว์ฟันแทะที่วัดผลด้วยไซโตไคน์และจุลกายวิภาค"
         },
         {
-          "label": "Epithelial cell assays",
-          "text": "NF-κB activation and pro-inflammatory cytokine readouts."
+          "label": "การทดสอบเซลล์เยื่อบุผิว",
+          "text": "การวัดการกระตุ้น NF-κB และไซโตไคน์ที่ก่อการอักเสบ"
         }
       ]
     },
     "tirzepatide": {
-      "identity": "a 39-amino-acid dual GIP and GLP-1 receptor agonist peptide",
-      "whatItIs": "{name} is a single 39-amino-acid peptide that acts as an agonist at both the glucose-dependent insulinotropic polypeptide (GIP) receptor and the GLP-1 receptor. A C20 fatty-diacid side chain binds albumin and extends the plasma half-life. The dual-receptor design makes it a reference compound for incretin pharmacology. Research compares its signalling at each receptor, and its metabolic readouts in animal models, with those of single-receptor GLP-1 agonists.",
+      "identity": "เพปไทด์ที่มีกรดอะมิโน 39 ตัว ซึ่งเป็นอะโกนิสต์คู่ของตัวรับ GIP และ GLP-1",
+      "whatItIs": "{name} เป็นเพปไทด์สายเดียวที่มีกรดอะมิโน 39 ตัว ซึ่งออกฤทธิ์เป็นอะโกนิสต์ทั้งที่ตัวรับ glucose-dependent insulinotropic polypeptide (GIP) และตัวรับ GLP-1 สายข้างกรดไขมันไดแอซิด C20 จับกับอัลบูมินและยืดค่าครึ่งชีวิตในพลาสมา การออกแบบที่ทำงานกับสองตัวรับทำให้เป็นสารอ้างอิงสำหรับเภสัชวิทยาของอินครีติน งานวิจัยเปรียบเทียบการส่งสัญญาณที่แต่ละตัวรับ และค่าการวัดทางเมแทบอลิกในแบบจำลองสัตว์ กับอะโกนิสต์ GLP-1 ที่ทำงานกับตัวรับเดียว",
       "research": [
         {
-          "label": "Receptor pharmacology",
-          "text": "cAMP signalling and receptor-bias assays at the GIP and GLP-1 receptors."
+          "label": "เภสัชวิทยาของตัวรับ",
+          "text": "การทดสอบการส่งสัญญาณ cAMP และความเอนเอียงของตัวรับที่ตัวรับ GIP และ GLP-1"
         },
         {
-          "label": "Rodent metabolic models",
-          "text": "glucose tolerance, insulin secretion, food intake and body-weight readouts in diet-induced obese animals."
+          "label": "แบบจำลองเมแทบอลิกในสัตว์ฟันแทะ",
+          "text": "การวัดความทนต่อกลูโคส การหลั่งอินซูลิน การกินอาหาร และน้ำหนักตัว ในสัตว์ที่อ้วนจากการเหนี่ยวนำด้วยอาหาร"
         }
       ]
     },
     "retatrutide": {
-      "identity": "a single peptide agonist at the GIP, GLP-1 and glucagon receptors",
-      "whatItIs": "{name} is a single synthetic peptide that acts as an agonist at three receptors: the glucose-dependent insulinotropic polypeptide (GIP) receptor, the GLP-1 receptor and the glucagon receptor. The glucagon-receptor activity is the main difference from dual GIP/GLP-1 agonists. It is a reference compound for multi-receptor incretin and glucagon pharmacology, and research compares it with single- and dual-receptor agonists in cell assays and animal models.",
+      "identity": "เพปไทด์สายเดียวที่เป็นอะโกนิสต์ของตัวรับ GIP, GLP-1 และกลูคากอน",
+      "whatItIs": "{name} เป็นเพปไทด์สังเคราะห์สายเดียวที่ออกฤทธิ์เป็นอะโกนิสต์ที่ตัวรับสามชนิด ได้แก่ ตัวรับ glucose-dependent insulinotropic polypeptide (GIP) ตัวรับ GLP-1 และตัวรับกลูคากอน ฤทธิ์ที่ตัวรับกลูคากอนเป็นความแตกต่างหลักจากอะโกนิสต์คู่ GIP/GLP-1 เป็นสารอ้างอิงสำหรับเภสัชวิทยาของอินครีตินและกลูคากอนแบบหลายตัวรับ และงานวิจัยเปรียบเทียบสารนี้กับอะโกนิสต์แบบตัวรับเดียวและสองตัวรับในการทดสอบระดับเซลล์และแบบจำลองสัตว์",
       "research": [
         {
-          "label": "Receptor pharmacology",
-          "text": "cAMP signalling at the GIP, GLP-1 and glucagon receptors in cell assays."
+          "label": "เภสัชวิทยาของตัวรับ",
+          "text": "การส่งสัญญาณ cAMP ที่ตัวรับ GIP, GLP-1 และกลูคากอนในการทดสอบระดับเซลล์"
         },
         {
-          "label": "Rodent metabolic models",
-          "text": "energy expenditure, glucose and body-weight readouts."
+          "label": "แบบจำลองเมแทบอลิกในสัตว์ฟันแทะ",
+          "text": "การวัดการใช้พลังงาน กลูโคส และน้ำหนักตัว"
         },
         {
-          "label": "Hepatic lipid studies",
-          "text": "liver fat and lipid-metabolism readouts linked to glucagon-receptor activity."
+          "label": "การศึกษาลิพิดในตับ",
+          "text": "การวัดไขมันในตับและเมแทบอลิซึมของลิพิดที่เชื่อมโยงกับฤทธิ์ที่ตัวรับกลูคากอน"
         }
       ]
     },
     "mots-c": {
-      "identity": "a 16-amino-acid mitochondrial-derived peptide studied in AMPK signalling and energy-metabolism research",
-      "whatItIs": "MOTS-c is a 16-amino-acid peptide encoded by a short open reading frame in the mitochondrial 12S rRNA gene, and it belongs to the mitochondrial-derived peptide class. Published work reports that it can move to the nucleus under metabolic stress and influence nuclear gene expression. It is also linked to AMPK pathway activation and to cellular energy metabolism in skeletal muscle models. It is a reference compound for mitochondrial-to-nuclear signalling and cellular energy-metabolism research.",
+      "identity": "เพปไทด์ที่มีกรดอะมิโน 16 ตัวซึ่งมีต้นกำเนิดจากไมโทคอนเดรีย ศึกษาในงานวิจัยด้านการส่งสัญญาณ AMPK และเมแทบอลิซึมของพลังงาน",
+      "whatItIs": "MOTS-c เป็นเพปไทด์ที่มีกรดอะมิโน 16 ตัว ถอดรหัสจากกรอบการอ่านแบบเปิดขนาดสั้นในยีน 12S rRNA ของไมโทคอนเดรีย และจัดอยู่ในกลุ่มเพปไทด์ที่มีต้นกำเนิดจากไมโทคอนเดรีย งานวิจัยที่ตีพิมพ์รายงานว่าสารนี้สามารถเคลื่อนเข้าสู่นิวเคลียสภายใต้ภาวะเครียดทางเมแทบอลิก และมีอิทธิพลต่อการแสดงออกของยีนในนิวเคลียส นอกจากนี้ยังเชื่อมโยงกับการกระตุ้นวิถี AMPK และเมแทบอลิซึมของพลังงานระดับเซลล์ในแบบจำลองกล้ามเนื้อลาย เป็นสารอ้างอิงสำหรับงานวิจัยด้านการส่งสัญญาณจากไมโทคอนเดรียสู่นิวเคลียสและเมแทบอลิซึมของพลังงานระดับเซลล์",
       "research": [
         {
-          "label": "Skeletal muscle cell models",
-          "text": "AMPK activation and glucose-uptake readouts."
+          "label": "แบบจำลองเซลล์กล้ามเนื้อลาย",
+          "text": "การวัดการกระตุ้น AMPK และการนำกลูโคสเข้าเซลล์"
         },
         {
-          "label": "Rodent metabolic models",
-          "text": "insulin sensitivity and energy-metabolism readouts."
+          "label": "แบบจำลองเมแทบอลิกในสัตว์ฟันแทะ",
+          "text": "การวัดความไวต่ออินซูลินและเมแทบอลิซึมของพลังงาน"
         }
       ]
     },
     "nad-plus": {
-      "identity": "nicotinamide adenine dinucleotide, a redox coenzyme studied in energy metabolism",
-      "whatItIs": "NAD+ (nicotinamide adenine dinucleotide) is a dinucleotide coenzyme, not a peptide, present in all living cells. It carries electrons in the redox reactions of glycolysis and mitochondrial respiration. It is also a substrate for NAD+-consuming enzymes, including sirtuins, poly(ADP-ribose) polymerases (PARPs) and CD38. Published research reports that tissue NAD+ levels decline with age in animal models. It is a reference compound in cellular energy-metabolism and sirtuin research.",
+      "identity": "nicotinamide adenine dinucleotide โคเอนไซม์รีดอกซ์ที่ศึกษาในงานวิจัยด้านเมแทบอลิซึมของพลังงาน",
+      "whatItIs": "NAD+ (nicotinamide adenine dinucleotide) เป็นโคเอนไซม์ชนิดไดนิวคลีโอไทด์ ไม่ใช่เพปไทด์ และพบในเซลล์สิ่งมีชีวิตทุกชนิด ทำหน้าที่นำพาอิเล็กตรอนในปฏิกิริยารีดอกซ์ของไกลโคไลซิสและการหายใจระดับไมโทคอนเดรีย นอกจากนี้ยังเป็นสับสเตรตของเอนไซม์ที่ใช้ NAD+ ได้แก่ เซอร์ทูอิน poly(ADP-ribose) polymerase (PARP) และ CD38 งานวิจัยที่ตีพิมพ์รายงานว่าระดับ NAD+ ในเนื้อเยื่อลดลงตามอายุในแบบจำลองสัตว์ เป็นสารอ้างอิงในงานวิจัยด้านเมแทบอลิซึมของพลังงานระดับเซลล์และเซอร์ทูอิน",
       "research": [
         {
-          "label": "Cell assays",
-          "text": "NAD+/NADH ratio, sirtuin activity and PARP activity readouts."
+          "label": "การทดสอบระดับเซลล์",
+          "text": "การวัดอัตราส่วน NAD+/NADH กิจกรรมของเซอร์ทูอิน และกิจกรรมของ PARP"
         },
         {
-          "label": "Mitochondrial studies",
-          "text": "respiration and redox-state measurements in isolated mitochondria and cells."
+          "label": "การศึกษาไมโทคอนเดรีย",
+          "text": "การวัดการหายใจและสถานะรีดอกซ์ในไมโทคอนเดรียที่แยกออกมาและในเซลล์"
         },
         {
-          "label": "Ageing models",
-          "text": "tissue NAD+ measurement in aged rodents."
+          "label": "แบบจำลองการชราภาพ",
+          "text": "การวัด NAD+ ในเนื้อเยื่อของสัตว์ฟันแทะสูงอายุ"
         }
       ]
     },
     "pt-141": {
-      "identity": "bremelanotide, a cyclic heptapeptide MC3R/MC4R agonist studied in central signalling",
-      "whatItIs": "PT-141 (bremelanotide) is a synthetic cyclic heptapeptide analogue of α-melanocyte-stimulating hormone (α-MSH). It acts mainly as an agonist at the melanocortin receptors MC3R and MC4R, which are expressed in the central nervous system. Its development began in melanocortin research on pigmentation, and later work focused on central melanocortin signalling. It is a reference compound for MC4R pharmacology and hypothalamic pathway research.",
+      "identity": "bremelanotide เฮปตะเพปไทด์แบบวงที่เป็นอะโกนิสต์ของ MC3R/MC4R ซึ่งศึกษาในงานวิจัยด้านการส่งสัญญาณในระบบประสาทส่วนกลาง",
+      "whatItIs": "PT-141 (bremelanotide) เป็นอะนาล็อกเฮปตะเพปไทด์แบบวงชนิดสังเคราะห์ของ α-melanocyte-stimulating hormone (α-MSH) ออกฤทธิ์หลักเป็นอะโกนิสต์ที่ตัวรับเมลาโนคอร์ติน MC3R และ MC4R ซึ่งแสดงออกในระบบประสาทส่วนกลาง การพัฒนาเริ่มจากงานวิจัยเมลาโนคอร์ตินด้านการสร้างเม็ดสี และงานในระยะต่อมามุ่งเน้นการส่งสัญญาณเมลาโนคอร์ตินในระบบประสาทส่วนกลาง เป็นสารอ้างอิงสำหรับเภสัชวิทยาของ MC4R และงานวิจัยด้านวิถีในไฮโปทาลามัส",
       "research": [
         {
-          "label": "Receptor pharmacology",
-          "text": "MC3R and MC4R binding and cAMP signalling assays."
+          "label": "เภสัชวิทยาของตัวรับ",
+          "text": "การทดสอบการจับกับ MC3R และ MC4R และการส่งสัญญาณ cAMP"
         },
         {
-          "label": "Central signalling studies",
-          "text": "hypothalamic melanocortin pathway readouts in rodent behavioural models."
+          "label": "การศึกษาการส่งสัญญาณในระบบประสาทส่วนกลาง",
+          "text": "การวัดวิถีเมลาโนคอร์ตินในไฮโปทาลามัสในแบบจำลองพฤติกรรมของสัตว์ฟันแทะ"
         }
       ]
     },
     "selank": {
-      "identity": "a synthetic heptapeptide analogue of tuftsin studied in GABAergic and neuropeptide research",
-      "whatItIs": "Selank (TP-7) is a synthetic heptapeptide developed from tuftsin, an endogenous immunomodulatory tetrapeptide, and it is classed as a tuftsin analogue. Russian research groups developed it as a research tool. Published animal work links it to GABAergic modulation, BDNF expression in the hippocampus and inhibition of enkephalin-degrading enzymes. It is a reference compound in stress-response, anxiety-model and neuropeptide research in rodents.",
+      "identity": "เฮปตะเพปไทด์สังเคราะห์ที่เป็นอะนาล็อกของทัฟท์ซิน ซึ่งศึกษาในงานวิจัยด้านระบบ GABA และนิวโรเพปไทด์",
+      "whatItIs": "Selank (TP-7) เป็นเฮปตะเพปไทด์สังเคราะห์ที่พัฒนาจากทัฟท์ซิน ซึ่งเป็นเตตระเพปไทด์ปรับภูมิคุ้มกันที่ร่างกายสร้างขึ้นเอง และจัดเป็นอะนาล็อกของทัฟท์ซิน คณะวิจัยในรัสเซียพัฒนาขึ้นเพื่อเป็นเครื่องมือวิจัย งานศึกษาในสัตว์ที่ตีพิมพ์เชื่อมโยงสารนี้กับการปรับระบบ GABA การแสดงออกของ BDNF ในฮิปโปแคมปัส และการยับยั้งเอนไซม์ที่ย่อยสลายเอนเคฟาลิน เป็นสารอ้างอิงในงานวิจัยด้านการตอบสนองต่อความเครียด แบบจำลองความวิตกกังวล และนิวโรเพปไทด์ในสัตว์ฟันแทะ",
       "research": [
         {
-          "label": "Rodent behavioural models",
-          "text": "anxiety-related behaviour tests with neurochemical readouts."
+          "label": "แบบจำลองพฤติกรรมในสัตว์ฟันแทะ",
+          "text": "การทดสอบพฤติกรรมที่เกี่ยวข้องกับความวิตกกังวลร่วมกับการวัดทางประสาทเคมี"
         },
         {
-          "label": "Gene-expression studies",
-          "text": "GABA-system and BDNF expression readouts in brain tissue."
+          "label": "การศึกษาการแสดงออกของยีน",
+          "text": "การวัดการแสดงออกของระบบ GABA และ BDNF ในเนื้อเยื่อสมอง"
         }
       ]
     },
     "semax": {
-      "identity": "the synthetic heptapeptide MEHFPGP, an ACTH(4–10) analogue studied in neurotrophin research",
-      "whatItIs": "Semax is a synthetic heptapeptide, Met-Glu-His-Phe-Pro-Gly-Pro (MEHFPGP). Its sequence is derived from the N-terminal region of adrenocorticotropic hormone (ACTH), and it is classed as an ACTH(4–10) analogue. Published animal work links it to BDNF and NGF expression in the hippocampus and cortex and to changes in enkephalin degradation. It is a reference compound for neurotrophic pathway and cerebral ischaemia research in rodent models.",
+      "identity": "เฮปตะเพปไทด์สังเคราะห์ MEHFPGP อะนาล็อกของ ACTH(4–10) ที่ศึกษาในงานวิจัยด้านนิวโรโทรฟิน",
+      "whatItIs": "Semax เป็นเฮปตะเพปไทด์สังเคราะห์ Met-Glu-His-Phe-Pro-Gly-Pro (MEHFPGP) ลำดับกรดอะมิโนได้มาจากบริเวณปลาย N ของฮอร์โมนอะดรีโนคอร์ติโคโทรปิก (ACTH) และจัดเป็นอะนาล็อกของ ACTH(4–10) งานศึกษาในสัตว์ที่ตีพิมพ์เชื่อมโยงสารนี้กับการแสดงออกของ BDNF และ NGF ในฮิปโปแคมปัสและเปลือกสมอง และกับการเปลี่ยนแปลงของการย่อยสลายเอนเคฟาลิน เป็นสารอ้างอิงสำหรับงานวิจัยด้านวิถีนิวโรโทรฟิกและภาวะสมองขาดเลือดในแบบจำลองสัตว์ฟันแทะ",
       "research": [
         {
-          "label": "Neurotrophin studies",
-          "text": "BDNF and NGF expression readouts in rodent brain tissue."
+          "label": "การศึกษานิวโรโทรฟิน",
+          "text": "การวัดการแสดงออกของ BDNF และ NGF ในเนื้อเยื่อสมองของสัตว์ฟันแทะ"
         },
         {
-          "label": "Cerebral ischaemia models",
-          "text": "gene-expression and histology readouts in rodents."
+          "label": "แบบจำลองภาวะสมองขาดเลือด",
+          "text": "การวัดการแสดงออกของยีนและจุลกายวิภาคในสัตว์ฟันแทะ"
         },
         {
-          "label": "Behavioural models",
-          "text": "learning and memory tests in rodents."
+          "label": "แบบจำลองพฤติกรรม",
+          "text": "การทดสอบการเรียนรู้และความจำในสัตว์ฟันแทะ"
         }
       ]
     },
     "ss-31": {
-      "identity": "elamipretide, a mitochondria-targeted tetrapeptide that binds cardiolipin, studied in bioenergetics research",
-      "whatItIs": "SS-31 (elamipretide; also published as Bendavia and MTP-131) is a cell-permeable aromatic-cationic tetrapeptide. It accumulates in the inner mitochondrial membrane, where it binds cardiolipin, the phospholipid that supports the electron-transport-chain complexes and cristae structure. Preclinical studies report effects on cristae architecture, cardiolipin peroxidation and reactive-oxygen-species production. It is a reference compound for mitochondrial bioenergetics and cardiolipin biology in cell, isolated-mitochondria and animal models.",
+      "identity": "elamipretide เตตระเพปไทด์ที่มุ่งเป้าไปยังไมโทคอนเดรียและจับกับคาร์ดิโอลิพิน ซึ่งศึกษาในงานวิจัยด้านชีวพลังงาน",
+      "whatItIs": "SS-31 (elamipretide หรือที่ตีพิมพ์ในชื่อ Bendavia และ MTP-131) เป็นเตตระเพปไทด์ชนิดอะโรมาติก-แคทไอออนิกที่ผ่านเยื่อหุ้มเซลล์ได้ สะสมอยู่ในเยื่อหุ้มชั้นในของไมโทคอนเดรีย ซึ่งจับกับคาร์ดิโอลิพิน ฟอสโฟลิพิดที่ค้ำจุนคอมเพล็กซ์ของห่วงโซ่การขนส่งอิเล็กตรอนและโครงสร้างคริสตี งานศึกษาพรีคลินิกรายงานผลต่อโครงสร้างคริสตี การเกิดเปอร์ออกซิเดชันของคาร์ดิโอลิพิน และการสร้างอนุมูลออกซิเจนที่ว่องไว เป็นสารอ้างอิงสำหรับชีวพลังงานของไมโทคอนเดรียและชีววิทยาของคาร์ดิโอลิพินในแบบจำลองเซลล์ ไมโทคอนเดรียที่แยกออกมา และสัตว์",
       "research": [
         {
-          "label": "Isolated mitochondria",
-          "text": "respiration, ATP synthesis and reactive-oxygen-species readouts."
+          "label": "ไมโทคอนเดรียที่แยกออกมา",
+          "text": "การวัดการหายใจ การสังเคราะห์ ATP และอนุมูลออกซิเจนที่ว่องไว"
         },
         {
-          "label": "Ischaemia–reperfusion models",
-          "text": "cardiac and renal tissue readouts in animals."
+          "label": "แบบจำลองภาวะขาดเลือดและการกลับมาของเลือด",
+          "text": "การวัดเนื้อเยื่อหัวใจและไตในสัตว์"
         },
         {
-          "label": "Membrane biology",
-          "text": "cardiolipin binding and peroxidation assays."
+          "label": "ชีววิทยาของเยื่อหุ้มเซลล์",
+          "text": "การทดสอบการจับกับคาร์ดิโอลิพินและการเกิดเปอร์ออกซิเดชัน"
         }
       ]
     },
     "tesamorelin": {
-      "identity": "a synthetic GHRH(1-44) analogue studied in growth hormone axis research",
-      "whatItIs": "Tesamorelin is a synthetic analogue of the full 44-amino-acid human growth hormone-releasing hormone (GHRH), with a trans-3-hexenoyl group at the N-terminus. The modification increases resistance to DPP-4 degradation. It acts at pituitary GHRH receptors, and published studies report pulsatile release of endogenous growth hormone with higher IGF-1 concentrations. It is a reference compound for GHRH-receptor pharmacology and growth hormone axis research.",
+      "identity": "อะนาล็อกสังเคราะห์ของ GHRH(1-44) ที่ศึกษาในงานวิจัยด้านแกนฮอร์โมนการเจริญเติบโต",
+      "whatItIs": "Tesamorelin เป็นอะนาล็อกสังเคราะห์ของฮอร์โมนกระตุ้นการหลั่งฮอร์โมนการเจริญเติบโตของมนุษย์ (GHRH) แบบเต็มสาย 44 กรดอะมิโน โดยมีหมู่ trans-3-hexenoyl ที่ปลาย N การดัดแปลงนี้เพิ่มความทนต่อการย่อยสลายโดย DPP-4 สารนี้ออกฤทธิ์ที่ตัวรับ GHRH ของต่อมใต้สมอง และงานศึกษาที่ตีพิมพ์รายงานการหลั่งฮอร์โมนการเจริญเติบโตที่ร่างกายสร้างเองแบบเป็นจังหวะ ร่วมกับความเข้มข้นของ IGF-1 ที่สูงขึ้น เป็นสารอ้างอิงสำหรับเภสัชวิทยาของตัวรับ GHRH และงานวิจัยด้านแกนฮอร์โมนการเจริญเติบโต",
       "research": [
         {
-          "label": "Receptor pharmacology",
-          "text": "GHRH-receptor activation and cAMP readouts in pituitary cells."
+          "label": "เภสัชวิทยาของตัวรับ",
+          "text": "การวัดการกระตุ้นตัวรับ GHRH และ cAMP ในเซลล์ต่อมใต้สมอง"
         },
         {
-          "label": "Endocrine studies",
-          "text": "growth hormone pulse and IGF-1 readouts."
+          "label": "การศึกษาด้านต่อมไร้ท่อ",
+          "text": "การวัดจังหวะการหลั่งฮอร์โมนการเจริญเติบโตและ IGF-1"
         },
         {
-          "label": "Body-composition studies",
-          "text": "adipose-tissue imaging endpoints in published research."
+          "label": "การศึกษาองค์ประกอบของร่างกาย",
+          "text": "จุดยุติจากการถ่ายภาพเนื้อเยื่อไขมันในงานวิจัยที่ตีพิมพ์"
         }
       ]
     },
     "thymosin-beta-4": {
-      "identity": "a 43-amino-acid G-actin-sequestering peptide studied in cytoskeleton and cell-migration research",
-      "whatItIs": "Thymosin beta-4 (Tβ4) is a naturally occurring 43-amino-acid peptide and one of the main G-actin-sequestering molecules in mammalian cells. By binding monomeric actin, it regulates the pool of actin available for filament assembly, which affects cell motility. The synthetic fragment TB-500 is modelled on its actin-binding region. Thymosin beta-4 is a reference compound for actin-cytoskeleton and cell-migration research in cell and animal models.",
+      "identity": "เพปไทด์ที่มีกรดอะมิโน 43 ตัวซึ่งจับเก็บ G-actin ศึกษาในงานวิจัยด้านโครงร่างเซลล์และการเคลื่อนที่ของเซลล์",
+      "whatItIs": "Thymosin beta-4 (Tβ4) เป็นเพปไทด์ที่พบตามธรรมชาติ มีกรดอะมิโน 43 ตัว และเป็นหนึ่งในโมเลกุลหลักที่จับเก็บ G-actin ในเซลล์สัตว์เลี้ยงลูกด้วยนม การจับกับแอกทินโมโนเมอร์ทำให้สารนี้ควบคุมปริมาณแอกทินที่พร้อมสำหรับการประกอบเป็นเส้นใย ซึ่งมีผลต่อการเคลื่อนที่ของเซลล์ ชิ้นส่วนสังเคราะห์ TB-500 จำลองแบบจากบริเวณที่จับกับแอกทิน Thymosin beta-4 เป็นสารอ้างอิงสำหรับงานวิจัยด้านโครงร่างแอกทินของเซลล์และการเคลื่อนที่ของเซลล์ในแบบจำลองเซลล์และสัตว์",
       "research": [
         {
-          "label": "Cell-migration assays",
-          "text": "actin dynamics and endothelial or keratinocyte migration readouts."
+          "label": "การทดสอบการเคลื่อนที่ของเซลล์",
+          "text": "การวัดพลวัตของแอกทินและการเคลื่อนที่ของเซลล์บุผนังหลอดเลือดหรือเคราติโนไซต์"
         },
         {
-          "label": "Rodent tissue-injury models",
-          "text": "dermal and cardiac histology readouts, including angiogenesis markers."
+          "label": "แบบจำลองการบาดเจ็บของเนื้อเยื่อในสัตว์ฟันแทะ",
+          "text": "การวัดจุลกายวิภาคของผิวหนังชั้นหนังแท้และหัวใจ รวมถึงตัวบ่งชี้การสร้างหลอดเลือดใหม่"
         }
       ]
     },
     "bacteriostatic-water": {
-      "identity": "sterile water with 0.9% benzyl alcohol, a laboratory diluent for lyophilized peptides",
-      "whatItIs": "Bacteriostatic water is sterile water that contains 0.9% benzyl alcohol as a preservative, which is the standard composition for this diluent. The benzyl alcohol limits microbial growth in the vial after the stopper is punctured. Laboratories use it to reconstitute lyophilized peptides and to prepare working solutions. It is not suitable for every compound, and some peptides need a different solvent, such as acetic acid water. Check compatibility on the compound data sheet.",
+      "identity": "น้ำปราศจากเชื้อที่มีเบนซิลแอลกอฮอล์ 0.9% ตัวทำละลายสำหรับห้องปฏิบัติการที่ใช้กับเพปไทด์แบบผงแห้ง",
+      "whatItIs": "น้ำแบคทีริโอสแตติกคือน้ำปราศจากเชื้อที่มีเบนซิลแอลกอฮอล์ 0.9% เป็นสารกันเสีย ซึ่งเป็นองค์ประกอบมาตรฐานของตัวทำละลายชนิดนี้ เบนซิลแอลกอฮอล์จำกัดการเติบโตของจุลินทรีย์ในขวดหลังจากเจาะจุกแล้ว ห้องปฏิบัติการใช้น้ำนี้ละลายเพปไทด์แบบผงแห้ง (lyophilized) และเตรียมสารละลายใช้งาน น้ำนี้ไม่เหมาะกับสารทุกชนิด และเพปไทด์บางชนิดต้องใช้ตัวทำละลายอื่น เช่น น้ำกรดอะซิติก โปรดตรวจสอบความเข้ากันได้จากเอกสารข้อมูลของสาร",
       "research": [
         {
-          "label": "Reconstitution",
-          "text": "dissolution of lyophilized research peptides for bench work."
+          "label": "การละลายผงแห้ง",
+          "text": "การละลายเพปไทด์วิจัยแบบผงแห้งสำหรับงานในห้องปฏิบัติการ"
         },
         {
-          "label": "Working solutions",
-          "text": "dilution steps in methods that specify a preserved aqueous diluent."
+          "label": "สารละลายใช้งาน",
+          "text": "ขั้นตอนการเจือจางในวิธีการที่กำหนดให้ใช้ตัวทำละลายน้ำที่มีสารกันเสีย"
         }
       ]
     },
     "acetic-acid-water": {
-      "identity": "dilute acetic acid in sterile water, a laboratory diluent for poorly soluble peptides",
-      "whatItIs": "Acetic acid water is a dilute solution of acetic acid in sterile water. Laboratories use it as a diluent for peptides that dissolve poorly in neutral water, because a mildly acidic solvent can increase the solubility of some peptide sequences. The acetic acid concentration is as printed on the vial label. Before use, confirm on the compound data sheet that an acidic diluent is compatible with the peptide and with the planned assay.",
+      "identity": "กรดอะซิติกเจือจางในน้ำปราศจากเชื้อ ตัวทำละลายสำหรับห้องปฏิบัติการที่ใช้กับเพปไทด์ที่ละลายยาก",
+      "whatItIs": "น้ำกรดอะซิติกคือสารละลายกรดอะซิติกเจือจางในน้ำปราศจากเชื้อ ห้องปฏิบัติการใช้เป็นตัวทำละลายสำหรับเพปไทด์ที่ละลายได้น้อยในน้ำที่เป็นกลาง เนื่องจากตัวทำละลายที่เป็นกรดอ่อนสามารถเพิ่มความสามารถในการละลายของลำดับเพปไทด์บางชนิด ความเข้มข้นของกรดอะซิติกเป็นไปตามที่พิมพ์บนฉลากขวด ก่อนใช้งาน โปรดยืนยันจากเอกสารข้อมูลของสารว่าตัวทำละลายที่เป็นกรดเข้ากันได้กับเพปไทด์และกับการทดสอบที่วางแผนไว้",
       "research": [
         {
-          "label": "Poorly soluble peptides",
-          "text": "reconstitution where neutral water or bacteriostatic water gives incomplete dissolution."
+          "label": "เพปไทด์ที่ละลายยาก",
+          "text": "การละลายผงแห้งในกรณีที่น้ำที่เป็นกลางหรือน้ำแบคทีริโอสแตติกละลายได้ไม่สมบูรณ์"
         },
         {
-          "label": "Solvent selection",
-          "text": "comparison of diluents during laboratory method development."
+          "label": "การเลือกตัวทำละลาย",
+          "text": "การเปรียบเทียบตัวทำละลายในระหว่างการพัฒนาวิธีการในห้องปฏิบัติการ"
         }
       ]
     },
     "dual-chamber-device": {
-      "identity": "a reusable aluminium device for Supreme Biologics dual-chamber cartridges, with no needle included",
-      "whatItIs": "This is a reusable aluminium device from Supreme Biologics for its dual-chamber cartridges. It holds one Supreme Biologics dual-chamber cartridge at a time and contains no compound of its own. No needle is included, and the cartridges are sold separately on their own product pages. The device fits only the Supreme Biologics dual-chamber system. The Supreme Biologics reusable pen for single-chamber refill cartridges is a separate system.",
+      "identity": "อุปกรณ์อะลูมิเนียมแบบใช้ซ้ำสำหรับคาร์ทริดจ์แบบสองช่องของ Supreme Biologics ไม่มีเข็มรวมมาด้วย",
+      "whatItIs": "นี่คืออุปกรณ์อะลูมิเนียมแบบใช้ซ้ำจาก Supreme Biologics สำหรับคาร์ทริดจ์แบบสองช่องของแบรนด์ ใส่คาร์ทริดจ์แบบสองช่องของ Supreme Biologics ได้ครั้งละหนึ่งชิ้น และไม่มีสารใดบรรจุอยู่ในตัวอุปกรณ์ ไม่มีเข็มรวมมาด้วย และคาร์ทริดจ์จำหน่ายแยกในหน้าสินค้าของตนเอง อุปกรณ์นี้ใช้ได้กับระบบคาร์ทริดจ์แบบสองช่องของ Supreme Biologics เท่านั้น ปากกาใช้ซ้ำของ Supreme Biologics สำหรับคาร์ทริดจ์รีฟิลแบบช่องเดียวเป็นอีกระบบหนึ่ง",
       "research": [
         {
-          "label": "Compatible with",
-          "text": "Supreme Biologics dual-chamber cartridges listed on this site."
+          "label": "ใช้ร่วมกันได้กับ",
+          "text": "คาร์ทริดจ์แบบสองช่องของ Supreme Biologics ที่แสดงบนเว็บไซต์นี้"
         },
         {
-          "label": "Not compatible with",
-          "text": "single-chamber refill cartridges for the Supreme Biologics reusable pen, or cartridges from other manufacturers."
+          "label": "ใช้ร่วมกันไม่ได้กับ",
+          "text": "คาร์ทริดจ์รีฟิลแบบช่องเดียวสำหรับปากกาใช้ซ้ำของ Supreme Biologics หรือคาร์ทริดจ์จากผู้ผลิตรายอื่น"
         }
       ]
     }
   },
   "diluentNames": {
     "bacteriostatic-water": {
-      "title": "Bacteriostatic Water",
-      "noun": "bacteriostatic water"
+      "title": "น้ำแบคทีริโอสแตติก",
+      "noun": "น้ำแบคทีริโอสแตติก"
     },
     "acetic-acid-water": {
-      "title": "Acetic Acid Water",
-      "noun": "acetic acid water"
+      "title": "น้ำกรดอะซิติก",
+      "noun": "น้ำกรดอะซิติก"
     }
   },
   "headings": {
-    "whatItIs": "What it is",
-    "researchContext": "Research context",
-    "laboratoryUse": "Laboratory use",
-    "compatibility": "Compatibility",
-    "quality": "Quality and testing",
-    "storage": "Storage and handling",
-    "inTheBox": "In the box",
-    "manufacturer": "Manufacturer and delivery"
+    "whatItIs": "คืออะไร",
+    "researchContext": "บริบทการวิจัย",
+    "laboratoryUse": "การใช้งานในห้องปฏิบัติการ",
+    "compatibility": "ความเข้ากันได้",
+    "quality": "คุณภาพและการทดสอบ",
+    "storage": "การจัดเก็บและการจัดการ",
+    "inTheBox": "สิ่งที่อยู่ในกล่อง",
+    "manufacturer": "ผู้ผลิตและการจัดส่ง"
   },
   "formats": {
-    "vial": "lyophilized vial",
-    "pen": "ready-mixed pen",
-    "multidose": "reusable pen with single-chamber refill",
-    "dual": "dual-chamber cartridges",
-    "spray": "spray-format vial",
-    "diluent": "diluent vial",
-    "device": "dual-chamber cartridge device"
+    "vial": "ขวดผงแห้ง (lyophilized)",
+    "pen": "ปากกาแบบผสมสำเร็จ",
+    "multidose": "ปากกาใช้ซ้ำพร้อมคาร์ทริดจ์รีฟิลแบบช่องเดียว",
+    "dual": "คาร์ทริดจ์แบบสองช่อง",
+    "spray": "ขวดแบบสเปรย์",
+    "diluent": "ขวดตัวทำละลาย",
+    "device": "อุปกรณ์สำหรับคาร์ทริดจ์แบบสองช่อง"
   },
   "list": {
     "separator": ", ",
-    "lastSeparator": " and "
+    "lastSeparator": " และ "
   },
   "sized": "{name} {size}",
   "quality": {
-    "purity": "Stated purity: {purity}%. The batch COA gives the analytical method and results.",
-    "purityUnknown": "Purity: see the batch COA.",
-    "cas": "CAS number: {cas}.",
-    "formula": "Molecular formula: {formula}.",
-    "coaRef": "Refer to the batch certificate of analysis (COA) for the batch number and test data.",
-    "deviceNoCoa": "The device contains no compound, so no certificate of analysis applies.",
-    "deviceInspect": "Check the device for damage on arrival.",
-    "compositionBac": "Composition: sterile water with 0.9% benzyl alcohol.",
-    "compositionAa": "Composition: dilute acetic acid in sterile water. The concentration is as printed on the vial label.",
-    "checkLot": "Check the lot number and expiry date on the label.",
-    "checkSolution": "Do not use the solution if it is cloudy, discoloured or contains particles, or if the seal is damaged."
+    "purity": "ความบริสุทธิ์ที่ระบุ: {purity}% COA ของล็อตระบุวิธีวิเคราะห์และผลการทดสอบ",
+    "purityUnknown": "ความบริสุทธิ์: ดูใน COA ของล็อต",
+    "cas": "หมายเลข CAS: {cas}",
+    "formula": "สูตรโมเลกุล: {formula}",
+    "coaRef": "ดูหมายเลขล็อตและข้อมูลการทดสอบได้จากใบรับรองผลการวิเคราะห์ (COA) ของล็อต",
+    "deviceNoCoa": "อุปกรณ์นี้ไม่มีสารบรรจุอยู่ จึงไม่มีใบรับรองผลการวิเคราะห์",
+    "deviceInspect": "ตรวจสอบความเสียหายของอุปกรณ์เมื่อได้รับสินค้า",
+    "compositionBac": "องค์ประกอบ: น้ำปราศจากเชื้อที่มีเบนซิลแอลกอฮอล์ 0.9%",
+    "compositionAa": "องค์ประกอบ: กรดอะซิติกเจือจางในน้ำปราศจากเชื้อ ความเข้มข้นเป็นไปตามที่พิมพ์บนฉลากขวด",
+    "checkLot": "ตรวจสอบหมายเลขล็อตและวันหมดอายุบนฉลาก",
+    "checkSolution": "ห้ามใช้สารละลายหากขุ่น เปลี่ยนสี หรือมีอนุภาค หรือหากซีลเสียหาย"
   },
   "storage": {
     "powder": [
-      "Lyophilized powder: store at -20°C for long-term storage, or at 2–8°C for short-term storage.",
-      "Keep dry and protected from light.",
-      "After reconstitution, store at 2–8°C and use within 30 days."
+      "ผงแห้ง (lyophilized): เก็บที่ -20°C สำหรับการเก็บระยะยาว หรือที่ 2–8°C สำหรับการเก็บระยะสั้น",
+      "เก็บให้แห้งและพ้นแสง",
+      "หลังละลายผงแล้ว ให้เก็บที่ 2–8°C และใช้ภายใน 30 วัน"
     ],
     "dualDry": [
-      "Unmixed cartridges (lyophilized powder): store at -20°C for long-term storage, or at 2–8°C for short-term storage.",
-      "Keep dry and protected from light.",
-      "After the diluent is added and mixed, store at 2–8°C and use within 30 days."
+      "คาร์ทริดจ์ที่ยังไม่ผสม (ผงแห้ง): เก็บที่ -20°C สำหรับการเก็บระยะยาว หรือที่ 2–8°C สำหรับการเก็บระยะสั้น",
+      "เก็บให้แห้งและพ้นแสง",
+      "หลังเติมตัวทำละลายและผสมแล้ว ให้เก็บที่ 2–8°C และใช้ภายใน 30 วัน"
     ],
     "dualWithDiluent": [
-      "Unmixed cartridges contain liquid diluent in one chamber: store at 2–8°C unless the label states otherwise.",
-      "Keep protected from light.",
-      "After mixing, store at 2–8°C and use within 30 days."
+      "คาร์ทริดจ์ที่ยังไม่ผสมมีตัวทำละลายชนิดของเหลวอยู่ในช่องหนึ่ง: เก็บที่ 2–8°C เว้นแต่ฉลากจะระบุเป็นอย่างอื่น",
+      "เก็บให้พ้นแสง",
+      "หลังผสมแล้ว ให้เก็บที่ 2–8°C และใช้ภายใน 30 วัน"
     ],
     "liquid": [
-      "Supplied as ready-mixed liquid: store at 2–8°C and keep protected from light.",
-      "After first use, keep at 2–8°C and use within 30 days.",
-      "Follow the expiry date on the product label."
+      "จัดส่งเป็นของเหลวแบบผสมสำเร็จ: เก็บที่ 2–8°C และเก็บให้พ้นแสง",
+      "หลังใช้งานครั้งแรก ให้เก็บที่ 2–8°C และใช้ภายใน 30 วัน",
+      "ปฏิบัติตามวันหมดอายุบนฉลากผลิตภัณฑ์"
     ],
     "device": [
-      "Keep the device clean and dry between uses.",
-      "Store cartridges as described on their own product pages."
+      "ดูแลอุปกรณ์ให้สะอาดและแห้งระหว่างการใช้งานแต่ละครั้ง",
+      "เก็บคาร์ทริดจ์ตามที่ระบุในหน้าสินค้าของคาร์ทริดจ์นั้น"
     ],
     "aceticAcid": [
-      "Store sealed at room temperature.",
-      "Single-use only: discard any remaining volume after first puncture."
+      "เก็บแบบปิดผนึกที่อุณหภูมิห้อง",
+      "ใช้ครั้งเดียวเท่านั้น: ทิ้งส่วนที่เหลือทั้งหมดหลังเจาะครั้งแรก"
     ],
     "bacRoomTemp": [
-      "Store sealed vials at room temperature, upright and protected from light.",
-      "After first puncture, store at 2–8°C and follow the discard date on the product label."
+      "เก็บขวดที่ปิดผนึกไว้ที่อุณหภูมิห้อง ตั้งตรง และพ้นแสง",
+      "หลังเจาะครั้งแรก ให้เก็บที่ 2–8°C และปฏิบัติตามวันที่ต้องทิ้งบนฉลากผลิตภัณฑ์"
     ],
     "bacLabel": [
-      "Keep the vial sealed until first use.",
-      "Follow the storage and opened-vial instructions on the product label."
+      "เก็บขวดให้ปิดผนึกไว้จนกว่าจะใช้งานครั้งแรก",
+      "ปฏิบัติตามคำแนะนำการจัดเก็บและการเก็บขวดที่เปิดแล้วบนฉลากผลิตภัณฑ์"
     ]
   },
   "box": {
     "vial": [
-      "One vial of {sized} as lyophilized powder. The stated amount is the total in the vial.",
-      "Diluent is not included. Bacteriostatic water and acetic acid water are sold separately."
+      "{sized} 1 ขวด ในรูปแบบผงแห้ง (lyophilized) ปริมาณที่ระบุคือปริมาณรวมในขวด",
+      "ไม่รวมตัวทำละลาย น้ำแบคทีริโอสแตติกและน้ำกรดอะซิติกจำหน่ายแยกต่างหาก"
     ],
     "pen": [
-      "One {brand} pen containing {sized} as ready-mixed liquid.",
-      "The stated amount is the total in the pen, not the amount per click.",
-      "No diluent is needed."
+      "ปากกา {brand} 1 ด้าม บรรจุ {sized} ในรูปแบบของเหลวผสมสำเร็จ",
+      "ปริมาณที่ระบุคือปริมาณรวมในปากกา ไม่ใช่ปริมาณต่อการกดหนึ่งครั้ง",
+      "ไม่จำเป็นต้องใช้ตัวทำละลาย"
     ],
     "multidose": [
-      "**First purchase** — the Supreme Biologics reusable pen with one matching {sized} single-chamber refill cartridge.",
-      "**Refill only** — one {sized} single-chamber refill cartridge for an existing compatible pen.",
-      "The refill contains ready-mixed liquid. The label states the total per cartridge, not the amount per click."
+      "**ซื้อครั้งแรก** — ปากกาใช้ซ้ำของ Supreme Biologics พร้อมคาร์ทริดจ์รีฟิลแบบช่องเดียว {sized} ที่เข้าชุดกัน 1 ชิ้น",
+      "**รีฟิลเท่านั้น** — คาร์ทริดจ์รีฟิลแบบช่องเดียว {sized} 1 ชิ้น สำหรับปากกาที่เข้ากันได้ซึ่งมีอยู่แล้ว",
+      "รีฟิลบรรจุของเหลวแบบผสมสำเร็จ ฉลากระบุปริมาณรวมต่อคาร์ทริดจ์ ไม่ใช่ปริมาณต่อการกดหนึ่งครั้ง"
     ],
-    "dualOptions": "Options (amount per cartridge × cartridges per box): {options}.",
-    "dualWithDiluentIntro": "One box of {count} dual-chamber cartridges. The selected amount is per cartridge, and the price is for one complete box.",
-    "dualWithDiluentNote": "Peptide powder and clear diluent are held in separate chambers until mixing. The diluent is included.",
-    "dualDryIntro": "One box of glass dual-chamber cartridges, with no needle.",
-    "dualDryNote": "The peptide chamber holds lyophilized powder. The diluent chamber ships empty, and bacteriostatic water is not included.",
-    "deviceSoldSeparately": "The compatible Supreme Biologics dual-chamber device is sold separately.",
-    "defaultCartridgeCount": "four",
+    "dualOptions": "ตัวเลือก (ปริมาณต่อคาร์ทริดจ์ × จำนวนคาร์ทริดจ์ต่อกล่อง): {options}",
+    "dualWithDiluentIntro": "คาร์ทริดจ์แบบสองช่อง 1 กล่อง จำนวน {count} ชิ้น ปริมาณที่เลือกเป็นปริมาณต่อคาร์ทริดจ์ และราคาเป็นราคาต่อหนึ่งกล่องเต็ม",
+    "dualWithDiluentNote": "ผงเพปไทด์และตัวทำละลายใสแยกอยู่คนละช่องจนกว่าจะผสม รวมตัวทำละลายมาด้วย",
+    "dualDryIntro": "คาร์ทริดจ์แก้วแบบสองช่อง 1 กล่อง ไม่มีเข็ม",
+    "dualDryNote": "ช่องเพปไทด์บรรจุผงแห้ง (lyophilized) ช่องตัวทำละลายจัดส่งแบบว่างเปล่า และไม่รวมน้ำแบคทีริโอสแตติก",
+    "deviceSoldSeparately": "อุปกรณ์สำหรับคาร์ทริดจ์แบบสองช่องของ Supreme Biologics ที่เข้ากันได้จำหน่ายแยกต่างหาก",
+    "defaultCartridgeCount": "4",
     "spray": [
-      "One spray-format vial with a stated total of {sized}.",
-      "See the product label for the concentration and pack contents."
+      "ขวดแบบสเปรย์ 1 ขวด ปริมาณรวมที่ระบุ {sized}",
+      "ดูความเข้มข้นและสิ่งที่อยู่ในบรรจุภัณฑ์ได้จากฉลากผลิตภัณฑ์"
     ],
-    "diluent": "One {size} vial of {noun}.",
-    "diluentNoSize": "One vial of {noun}.",
+    "diluent": "{noun} 1 ขวด ขนาด {size}",
+    "diluentNoSize": "{noun} 1 ขวด",
     "device": [
-      "One reusable dual-chamber cartridge device (1 piece).",
-      "No needle is included.",
-      "Cartridges are sold separately."
+      "อุปกรณ์สำหรับคาร์ทริดจ์แบบสองช่องแบบใช้ซ้ำ 1 ชิ้น",
+      "ไม่มีเข็มรวมมาด้วย",
+      "คาร์ทริดจ์จำหน่ายแยกต่างหาก"
     ]
   },
   "manufacturer": {
-    "vial": "{brand} manufactures this {name} product and supplies it as one sealed vial of lyophilized powder.",
-    "pen": "{brand} manufactures this {name} product as a ready-mixed pen.",
-    "multidose": "Supreme Biologics manufactures both the reusable pen and the {name} single-chamber refill cartridges.",
-    "dual": "Supreme Biologics manufactures these {name} dual-chamber cartridges.",
-    "dualCustom": "Custom box combinations are available on request via LINE.",
-    "spray": "{brand} manufactures this {name} product in a spray-format vial.",
-    "diluent": "{brand} manufactures this {size} {noun} vial.",
-    "diluentNoSize": "{brand} manufactures this {noun} vial.",
-    "device": "Supreme Biologics manufactures this device for its own dual-chamber cartridge system.",
-    "otherFormats": "Other {brand} formats on this site: {list}.",
-    "alsoAvailable": "{name} is also available from {list}.",
-    "sizedFormat": "{size} {format}",
-    "delivery": "Orders are dispatched within 24 hours. Delivery takes 3–5 business days in Asia and about 9 days to Europe and other regions.",
-    "researchUse": "For laboratory research use only. Not for human or veterinary use."
+    "vial": "{brand} เป็นผู้ผลิตผลิตภัณฑ์ {name} นี้ และจัดส่งเป็นผงแห้ง (lyophilized) ในขวดปิดผนึก 1 ขวด",
+    "pen": "{brand} เป็นผู้ผลิตผลิตภัณฑ์ {name} นี้ในรูปแบบปากกาแบบผสมสำเร็จ",
+    "multidose": "Supreme Biologics เป็นผู้ผลิตทั้งปากกาใช้ซ้ำและคาร์ทริดจ์รีฟิลแบบช่องเดียวของ {name}",
+    "dual": "Supreme Biologics เป็นผู้ผลิตคาร์ทริดจ์แบบสองช่องของ {name} นี้",
+    "dualCustom": "สามารถขอชุดกล่องแบบกำหนดเองได้ทาง LINE",
+    "spray": "{brand} เป็นผู้ผลิตผลิตภัณฑ์ {name} นี้ในรูปแบบขวดสเปรย์",
+    "diluent": "{brand} เป็นผู้ผลิต{noun}ขวดนี้ ขนาด {size}",
+    "diluentNoSize": "{brand} เป็นผู้ผลิต{noun}ขวดนี้",
+    "device": "Supreme Biologics ผลิตอุปกรณ์นี้สำหรับระบบคาร์ทริดจ์แบบสองช่องของแบรนด์เอง",
+    "otherFormats": "รูปแบบอื่นของ {brand} บนเว็บไซต์นี้: {list}",
+    "alsoAvailable": "{name} มีจำหน่ายจาก {list} ด้วย",
+    "sizedFormat": "{format} {size}",
+    "delivery": "จัดส่งคำสั่งซื้อภายใน 24 ชั่วโมง ระยะเวลาจัดส่ง 3–5 วันทำการในเอเชีย และประมาณ 9 วันไปยังยุโรปและภูมิภาคอื่น",
+    "researchUse": "สำหรับการวิจัยในห้องปฏิบัติการเท่านั้น ห้ามใช้ในมนุษย์หรือสัตว์"
   },
   "short": {
-    "lead": "{sized} — {identity}.",
-    "vial": "{lead} Supplied by {brand} as one vial of lyophilized powder, {suffix}",
-    "pen": "{lead} Supplied by {brand} as ready-mixed liquid in a pen, {suffix}",
-    "multidose": "{lead} Single-chamber refill for the Supreme Biologics reusable pen, {suffix}",
-    "dual": "{lead} Supreme Biologics dual-chamber cartridges, sold by the box, {suffix}",
-    "spray": "{lead} Supplied by {brand} in a spray-format vial, {suffix}",
-    "diluent": "{lead} Supplied by {brand}, {suffix}",
-    "device": "{identityCapitalized}. Cartridges are sold separately. Supreme Biologics hardware, {suffix}",
-    "suffix": "for laboratory research use only."
+    "lead": "{sized} — {identity}",
+    "vial": "{lead} จัดจำหน่ายโดย {brand} เป็นผงแห้ง (lyophilized) 1 ขวด {suffix}",
+    "pen": "{lead} จัดจำหน่ายโดย {brand} เป็นของเหลวแบบผสมสำเร็จในปากกา {suffix}",
+    "multidose": "{lead} คาร์ทริดจ์รีฟิลแบบช่องเดียวสำหรับปากกาใช้ซ้ำของ Supreme Biologics {suffix}",
+    "dual": "{lead} คาร์ทริดจ์แบบสองช่องของ Supreme Biologics จำหน่ายเป็นกล่อง {suffix}",
+    "spray": "{lead} จัดจำหน่ายโดย {brand} ในรูปแบบขวดสเปรย์ {suffix}",
+    "diluent": "{lead} จัดจำหน่ายโดย {brand} {suffix}",
+    "device": "{identityCapitalized} คาร์ทริดจ์จำหน่ายแยกต่างหาก ฮาร์ดแวร์ของ Supreme Biologics {suffix}",
+    "suffix": "สำหรับการวิจัยในห้องปฏิบัติการเท่านั้น"
   }
 }

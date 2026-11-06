@@ -1,520 +1,519 @@
 /**
  * Product copy v2 — GERMAN (de).
- * STUB: every value below is still the English text. Translators replace the values;
- * keep the keys, the `{placeholder}` tokens and the `**` markers. Rules: ./types.ts.
- * The script refuses to write `de` while this object is identical to en.ts.
+ * Translated from en.ts (2026-11-06). Keep the keys, the `{placeholder}` tokens and the
+ * `**` markers identical to en.ts. Rules: ./types.ts.
  */
 import type { ProductCopyLocale } from "./types"
 
 export const de: ProductCopyLocale = {
   "compounds": {
     "bpc-157": {
-      "identity": "a synthetic 15-amino-acid gastric pentadecapeptide studied in angiogenesis and mucosal biology",
-      "whatItIs": "BPC-157 is a synthetic 15-amino-acid peptide, also published as stable gastric pentadecapeptide BPC 157 and PL 14736. Its sequence derives from a protein isolated from gastric juice. Published preclinical work describes interactions with VEGFR2 signalling, the nitric oxide system and fibroblast migration. Researchers use it as a reference compound in studies of angiogenesis, connective-tissue biology and gastrointestinal mucosal biology in animal and cell models.",
+      "identity": "ein synthetisches gastrisches Pentadecapeptid aus 15 Aminosäuren, untersucht in der Angiogenese- und Schleimhautbiologie",
+      "whatItIs": "BPC-157 ist ein synthetisches Peptid aus 15 Aminosäuren, das auch als stabiles gastrisches Pentadecapeptid BPC 157 und PL 14736 publiziert ist. Seine Sequenz leitet sich von einem aus Magensaft isolierten Protein ab. Publizierte präklinische Arbeiten beschreiben Wechselwirkungen mit der VEGFR2-Signalgebung, dem Stickstoffmonoxid-System und der Fibroblastenmigration. Forschende nutzen es als Referenzsubstanz in Studien zur Angiogenese, zur Bindegewebsbiologie und zur gastrointestinalen Schleimhautbiologie in Tier- und Zellmodellen.",
       "research": [
         {
-          "label": "Tendon and ligament injury models",
-          "text": "rodent models with histology and biomechanical readouts."
+          "label": "Modelle für Sehnen- und Bänderverletzungen",
+          "text": "Nagetiermodelle mit histologischen und biomechanischen Messgrößen."
         },
         {
-          "label": "Gastrointestinal mucosa models",
-          "text": "rodent lesion models with lesion area and mucosal histology as readouts."
+          "label": "Modelle der gastrointestinalen Schleimhaut",
+          "text": "Läsionsmodelle an Nagetieren mit Läsionsfläche und Schleimhauthistologie als Messgrößen."
         },
         {
-          "label": "Endothelial cell assays",
-          "text": "VEGFR2 phosphorylation, nitric oxide signalling and cell-migration readouts in vitro."
+          "label": "Endothelzell-Assays",
+          "text": "VEGFR2-Phosphorylierung, Stickstoffmonoxid-Signalgebung und Zellmigration als Messgrößen in vitro."
         }
       ]
     },
     "aod-9604": {
-      "identity": "a synthetic growth hormone fragment (176–191) studied in lipid-metabolism research",
-      "whatItIs": "AOD-9604 is a synthetic peptide based on the C-terminal region (amino acids 176–191) of human growth hormone, with an added N-terminal tyrosine. Researchers study this fragment apart from the full hormone to examine which structural regions relate to lipid metabolism. Published preclinical work focused on adipocyte lipolysis and lipogenesis assays and on rodent metabolic models. Growth hormone fragments, including AOD-9604, are listed under S2 on the WADA Prohibited List.",
+      "identity": "ein synthetisches Wachstumshormon-Fragment (176–191), untersucht in der Lipidstoffwechselforschung",
+      "whatItIs": "AOD-9604 ist ein synthetisches Peptid auf Basis der C-terminalen Region (Aminosäuren 176–191) des humanen Wachstumshormons, mit einem zusätzlichen N-terminalen Tyrosin. Forschende untersuchen das Fragment getrennt vom vollständigen Hormon, um zu klären, welche Strukturbereiche den Lipidstoffwechsel betreffen. Publizierte präklinische Arbeiten konzentrierten sich auf Lipolyse- und Lipogenese-Assays an Adipozyten sowie auf metabolische Nagetiermodelle. Wachstumshormon-Fragmente, darunter AOD-9604, stehen unter S2 auf der WADA-Verbotsliste.",
       "research": [
         {
-          "label": "Adipocyte assays",
-          "text": "lipolysis and lipogenesis readouts in isolated fat cells."
+          "label": "Adipozyten-Assays",
+          "text": "Lipolyse und Lipogenese als Messgrößen in isolierten Fettzellen."
         },
         {
-          "label": "Rodent metabolic models",
-          "text": "body-composition and plasma lipid readouts compared with full-length growth hormone."
+          "label": "Metabolische Nagetiermodelle",
+          "text": "Körperzusammensetzung und Plasmalipide als Messgrößen im Vergleich mit vollständigem Wachstumshormon."
         },
         {
-          "label": "Structure–function studies",
-          "text": "comparison of growth hormone fragments with the parent hormone, including IGF-1 readouts."
+          "label": "Struktur-Funktions-Studien",
+          "text": "Vergleich von Wachstumshormon-Fragmenten mit dem Ausgangshormon, einschließlich IGF-1-Messgrößen."
         }
       ]
     },
     "cjc-1295-no-dac": {
-      "identity": "Modified GRF (1-29), a GHRH analogue without the DAC linker",
-      "whatItIs": "CJC-1295 without DAC, also published as Modified GRF (1-29), is a synthetic analogue of the first 29 amino acids of growth hormone-releasing hormone (GHRH). Amino-acid substitutions give resistance to cleavage by dipeptidyl peptidase-4 (DPP-4). It has no drug affinity complex (DAC) linker, so it does not bind albumin, and its reported half-life is about 30 minutes. It is studied as a reference agonist at the pituitary GHRH receptor.",
+      "identity": "Modified GRF (1-29), ein GHRH-Analogon ohne DAC-Linker",
+      "whatItIs": "CJC-1295 ohne DAC, auch als Modified GRF (1-29) publiziert, ist ein synthetisches Analogon der ersten 29 Aminosäuren des Growth-Hormone-Releasing-Hormons (GHRH). Aminosäure-Substitutionen verleihen Resistenz gegen die Spaltung durch Dipeptidylpeptidase-4 (DPP-4). Es besitzt keinen Drug-Affinity-Complex-Linker (DAC), bindet daher nicht an Albumin, und seine berichtete Halbwertszeit beträgt etwa 30 Minuten. Es wird als Referenzagonist am hypophysären GHRH-Rezeptor untersucht.",
       "research": [
         {
-          "label": "Pituitary cell models",
-          "text": "GHRH-receptor activation with cAMP and growth hormone release as readouts."
+          "label": "Hypophysenzell-Modelle",
+          "text": "GHRH-Rezeptor-Aktivierung mit cAMP und Wachstumshormon-Freisetzung als Messgrößen."
         },
         {
-          "label": "Animal endocrine studies",
-          "text": "growth hormone pulse profiles and IGF-1 readouts."
+          "label": "Endokrinologische Tierstudien",
+          "text": "Pulsprofile des Wachstumshormons und IGF-1-Messgrößen."
         },
         {
-          "label": "Peptide stability studies",
-          "text": "DPP-4 resistance compared with native GHRH(1-29)."
+          "label": "Studien zur Peptidstabilität",
+          "text": "DPP-4-Resistenz im Vergleich mit nativem GHRH(1-29)."
         }
       ]
     },
     "cjc-1295": {
-      "identity": "a DPP-4-resistant synthetic GHRH(1-29) analogue studied at the GHRH receptor",
-      "whatItIs": "CJC-1295 is a synthetic analogue of the first 29 amino acids of growth hormone-releasing hormone (GHRH), with amino-acid substitutions that give resistance to dipeptidyl peptidase-4 (DPP-4). In the literature the name covers two forms: one with a drug affinity complex (DAC) linker that binds albumin, and one without it, also called Modified GRF (1-29). Check the product label and the batch COA for the exact form. Both forms are studied as agonists at the pituitary GHRH receptor.",
+      "identity": "ein DPP-4-resistentes synthetisches GHRH(1-29)-Analogon, untersucht am GHRH-Rezeptor",
+      "whatItIs": "CJC-1295 ist ein synthetisches Analogon der ersten 29 Aminosäuren des Growth-Hormone-Releasing-Hormons (GHRH), mit Aminosäure-Substitutionen, die Resistenz gegen Dipeptidylpeptidase-4 (DPP-4) verleihen. In der Literatur umfasst der Name zwei Formen: eine mit einem Drug-Affinity-Complex-Linker (DAC), der an Albumin bindet, und eine ohne ihn, auch Modified GRF (1-29) genannt. Prüfen Sie die genaue Form auf dem Produktetikett und im COA der Charge. Beide Formen werden als Agonisten am hypophysären GHRH-Rezeptor untersucht.",
       "research": [
         {
-          "label": "GHRH-receptor pharmacology",
-          "text": "receptor binding and cAMP signalling in pituitary cell models."
+          "label": "GHRH-Rezeptor-Pharmakologie",
+          "text": "Rezeptorbindung und cAMP-Signalgebung in Hypophysenzell-Modellen."
         },
         {
-          "label": "Endocrine axis studies",
-          "text": "growth hormone and IGF-1 readouts in animal models."
+          "label": "Studien zur endokrinen Achse",
+          "text": "Wachstumshormon und IGF-1 als Messgrößen in Tiermodellen."
         }
       ]
     },
     "dsip": {
-      "identity": "delta sleep-inducing peptide, a nonapeptide studied in sleep physiology and neuroendocrine research",
-      "whatItIs": "DSIP (delta sleep-inducing peptide) is a nonapeptide first isolated from the cerebral venous blood of rabbits during induced sleep. It is classed as a neuropeptide, but no specific receptor has been identified and its mechanism is not fully characterised. Published research links it to sleep architecture, stress-hormone regulation and corticotropin release. It is a reference compound for neuroendocrine and sleep-physiology studies in animal models.",
+      "identity": "das Delta-Schlaf-induzierende Peptid, ein Nonapeptid, untersucht in der Schlafphysiologie und der neuroendokrinen Forschung",
+      "whatItIs": "DSIP (Delta-Schlaf-induzierendes Peptid) ist ein Nonapeptid, das erstmals aus dem zerebralen Venenblut von Kaninchen während induzierten Schlafs isoliert wurde. Es wird als Neuropeptid eingeordnet, doch kein spezifischer Rezeptor ist identifiziert, und sein Mechanismus ist nicht vollständig charakterisiert. Publizierte Forschung verknüpft es mit der Schlafarchitektur, der Regulation von Stresshormonen und der Corticotropin-Freisetzung. Es ist eine Referenzsubstanz für neuroendokrine und schlafphysiologische Studien in Tiermodellen.",
       "research": [
         {
-          "label": "Sleep-physiology models",
-          "text": "EEG recordings of slow-wave (delta) sleep in rodents and rabbits."
+          "label": "Schlafphysiologische Modelle",
+          "text": "EEG-Aufzeichnungen des langsamwelligen Schlafs (Delta-Schlaf) bei Nagetieren und Kaninchen."
         },
         {
-          "label": "Neuroendocrine studies",
-          "text": "corticotropin and stress-hormone readouts in animal models."
+          "label": "Neuroendokrine Studien",
+          "text": "Corticotropin und Stresshormone als Messgrößen in Tiermodellen."
         }
       ]
     },
     "epithalon": {
-      "identity": "the synthetic tetrapeptide Ala-Glu-Asp-Gly, studied in telomerase and pineal-function research",
-      "whatItIs": "Epithalon (epitalon) is a synthetic tetrapeptide, Ala-Glu-Asp-Gly, modelled on epithalamin, a polypeptide extract of the bovine pineal gland. Vladimir Khavinson's group at the Saint Petersburg Institute of Bioregulation and Gerontology developed it. Reported mechanisms include induction of telomerase activity in cell culture and effects on pineal melatonin production. It is studied as a reference compound in research on cellular ageing and pineal gland function.",
+      "identity": "das synthetische Tetrapeptid Ala-Glu-Asp-Gly, untersucht in der Telomerase- und Zirbeldrüsenforschung",
+      "whatItIs": "Epithalon (Epitalon) ist ein synthetisches Tetrapeptid, Ala-Glu-Asp-Gly, nach dem Vorbild von Epithalamin, einem Polypeptidextrakt aus der Zirbeldrüse des Rindes. Entwickelt hat es die Gruppe um Vladimir Khavinson am Sankt Petersburger Institut für Bioregulation und Gerontologie. Zu den berichteten Mechanismen zählen die Induktion von Telomerase-Aktivität in Zellkulturen und Effekte auf die Melatoninproduktion der Zirbeldrüse. Es wird als Referenzsubstanz in der Forschung zu zellulärer Alterung und Zirbeldrüsenfunktion untersucht.",
       "research": [
         {
-          "label": "Cell-culture models",
-          "text": "telomerase activity and telomere length readouts."
+          "label": "Zellkulturmodelle",
+          "text": "Telomerase-Aktivität und Telomerlänge als Messgrößen."
         },
         {
-          "label": "Pineal function studies",
-          "text": "melatonin production readouts in animal models."
+          "label": "Studien zur Zirbeldrüsenfunktion",
+          "text": "Melatoninproduktion als Messgröße in Tiermodellen."
         },
         {
-          "label": "Ageing models",
-          "text": "biomarker readouts in aged rodents."
+          "label": "Alterungsmodelle",
+          "text": "Biomarker-Messgrößen bei gealterten Nagetieren."
         }
       ]
     },
     "ghk-cu": {
-      "identity": "the copper(II) complex of glycyl-L-histidyl-L-lysine, studied as a copper-delivery molecule",
-      "whatItIs": "GHK-Cu is the copper(II) complex of the tripeptide glycyl-L-histidyl-L-lysine. GHK was first isolated from human plasma and has since been found in saliva and urine. The peptide binds Cu²⁺ with high affinity and is studied as a copper-delivery molecule. Copper is a cofactor for lysyl oxidase, the enzyme that crosslinks collagen and elastin. GHK-Cu is also a cosmetic ingredient under the INCI name copper tripeptide-1. Its solutions are typically blue.",
+      "identity": "der Kupfer(II)-Komplex von Glycyl-L-histidyl-L-lysin, untersucht als Kupfer-Transportmolekül",
+      "whatItIs": "GHK-Cu ist der Kupfer(II)-Komplex des Tripeptids Glycyl-L-histidyl-L-lysin. GHK wurde erstmals aus menschlichem Plasma isoliert und später auch in Speichel und Urin nachgewiesen. Das Peptid bindet Cu²⁺ mit hoher Affinität und wird als Kupfer-Transportmolekül untersucht. Kupfer ist ein Cofaktor der Lysyloxidase, des Enzyms, das Kollagen und Elastin quervernetzt. GHK-Cu ist außerdem ein kosmetischer Inhaltsstoff mit der INCI-Bezeichnung Copper Tripeptide-1. Seine Lösungen sind typischerweise blau.",
       "research": [
         {
-          "label": "Fibroblast cultures",
-          "text": "collagen, elastin and glycosaminoglycan synthesis readouts."
+          "label": "Fibroblastenkulturen",
+          "text": "Synthese von Kollagen, Elastin und Glykosaminoglykanen als Messgrößen."
         },
         {
-          "label": "Gene-expression studies",
-          "text": "transcriptional profiling of cells exposed to GHK."
+          "label": "Genexpressionsstudien",
+          "text": "Transkriptionsprofile von Zellen, die GHK ausgesetzt wurden."
         },
         {
-          "label": "Dermal models",
-          "text": "extracellular-matrix histology in skin models."
+          "label": "Dermale Modelle",
+          "text": "Histologie der extrazellulären Matrix in Hautmodellen."
         }
       ]
     },
     "ipamorelin": {
-      "identity": "a synthetic pentapeptide ghrelin-receptor (GHS-R1a) agonist studied in receptor-selectivity research",
-      "whatItIs": "Ipamorelin is a synthetic pentapeptide growth hormone secretagogue and an agonist of the ghrelin receptor (GHS-R1a) on pituitary somatotroph cells. The GHS-R1a pathway is separate from the GHRH receptor pathway. Published animal studies describe ipamorelin as selective: growth hormone release occurred without the marked ACTH or cortisol increase reported for older GHRP compounds. It is a reference compound for GHS-R1a pharmacology and receptor-selectivity studies.",
+      "identity": "ein synthetisches Pentapeptid und Agonist des Ghrelin-Rezeptors (GHS-R1a), untersucht in der Forschung zur Rezeptorselektivität",
+      "whatItIs": "Ipamorelin ist ein synthetisches Pentapeptid aus der Klasse der Wachstumshormon-Sekretagoga und ein Agonist des Ghrelin-Rezeptors (GHS-R1a) auf somatotropen Zellen der Hypophyse. Der GHS-R1a-Signalweg ist vom Signalweg des GHRH-Rezeptors getrennt. Publizierte Tierstudien beschreiben Ipamorelin als selektiv: Die Wachstumshormon-Freisetzung erfolgte ohne den deutlichen ACTH- oder Cortisolanstieg, der für ältere GHRP-Verbindungen berichtet wurde. Es ist eine Referenzsubstanz für die GHS-R1a-Pharmakologie und für Studien zur Rezeptorselektivität.",
       "research": [
         {
-          "label": "Receptor pharmacology",
-          "text": "GHS-R1a binding and signalling assays."
+          "label": "Rezeptorpharmakologie",
+          "text": "GHS-R1a-Bindungs- und Signal-Assays."
         },
         {
-          "label": "Animal endocrine studies",
-          "text": "growth hormone, ACTH and cortisol readouts compared with other GHRP compounds."
+          "label": "Endokrinologische Tierstudien",
+          "text": "Wachstumshormon, ACTH und Cortisol als Messgrößen im Vergleich mit anderen GHRP-Verbindungen."
         }
       ]
     },
     "kisspeptin-10": {
-      "identity": "the C-terminal decapeptide of kisspeptin, a KISS1R (GPR54) agonist",
-      "whatItIs": "Kisspeptin-10 is a decapeptide that corresponds to the C-terminal region of kisspeptin, the product of the KISS1 gene. It is an agonist at the kisspeptin receptor KISS1R, also known as GPR54. KISS1R is expressed on hypothalamic GnRH neurons, and kisspeptin signalling is studied as an upstream regulator of the hypothalamic-pituitary-gonadal axis. Kisspeptin-10 is a reference agonist in reproductive neuroendocrinology research in cell and animal models.",
+      "identity": "das C-terminale Decapeptid von Kisspeptin, ein Agonist am KISS1R (GPR54)",
+      "whatItIs": "Kisspeptin-10 ist ein Decapeptid, das der C-terminalen Region von Kisspeptin entspricht, dem Produkt des KISS1-Gens. Es ist ein Agonist am Kisspeptin-Rezeptor KISS1R, auch bekannt als GPR54. KISS1R wird auf hypothalamischen GnRH-Neuronen exprimiert, und die Kisspeptin-Signalgebung wird als vorgeschalteter Regulator der Hypothalamus-Hypophysen-Gonaden-Achse untersucht. Kisspeptin-10 ist ein Referenzagonist in der reproduktiven Neuroendokrinologie in Zell- und Tiermodellen.",
       "research": [
         {
-          "label": "Receptor assays",
-          "text": "KISS1R (GPR54) activation and downstream signalling in cell models."
+          "label": "Rezeptor-Assays",
+          "text": "Aktivierung von KISS1R (GPR54) und nachgeschaltete Signalgebung in Zellmodellen."
         },
         {
-          "label": "Neuroendocrine studies",
-          "text": "GnRH and luteinising hormone (LH) readouts in animal models."
+          "label": "Neuroendokrine Studien",
+          "text": "GnRH und luteinisierendes Hormon (LH) als Messgrößen in Tiermodellen."
         }
       ]
     },
     "kpv": {
-      "identity": "the tripeptide Lys-Pro-Val (α-MSH 11–13), studied in inflammation and epithelial biology",
-      "whatItIs": "KPV is the tripeptide Lys-Pro-Val, which corresponds to residues 11–13 at the C-terminus of α-melanocyte-stimulating hormone (α-MSH). Published work describes anti-inflammatory signalling activity for this fragment, including effects on NF-κB pathway readouts, without the MC1R-linked pigmentation activity of full-length α-MSH. Its small size has made it a subject of formulation research. It is studied as a reference fragment in inflammation and epithelial biology.",
+      "identity": "das Tripeptid Lys-Pro-Val (α-MSH 11–13), untersucht in der Entzündungs- und Epithelbiologie",
+      "whatItIs": "KPV ist das Tripeptid Lys-Pro-Val, das den Resten 11–13 am C-Terminus des α-Melanozyten-stimulierenden Hormons (α-MSH) entspricht. Publizierte Arbeiten beschreiben für dieses Fragment eine antientzündliche Signalaktivität, einschließlich Effekten auf Messgrößen des NF-κB-Signalwegs, ohne die MC1R-vermittelte Pigmentierungsaktivität des vollständigen α-MSH. Wegen seiner geringen Größe ist es Gegenstand der Formulierungsforschung. Es wird als Referenzfragment in der Entzündungs- und Epithelbiologie untersucht.",
       "research": [
         {
-          "label": "Intestinal inflammation models",
-          "text": "rodent colitis models with cytokine and histology readouts."
+          "label": "Modelle intestinaler Entzündung",
+          "text": "Kolitismodelle an Nagetieren mit Zytokinen und Histologie als Messgrößen."
         },
         {
-          "label": "Epithelial cell assays",
-          "text": "NF-κB activation and pro-inflammatory cytokine readouts."
+          "label": "Epithelzell-Assays",
+          "text": "NF-κB-Aktivierung und proinflammatorische Zytokine als Messgrößen."
         }
       ]
     },
     "tirzepatide": {
-      "identity": "a 39-amino-acid dual GIP and GLP-1 receptor agonist peptide",
-      "whatItIs": "{name} is a single 39-amino-acid peptide that acts as an agonist at both the glucose-dependent insulinotropic polypeptide (GIP) receptor and the GLP-1 receptor. A C20 fatty-diacid side chain binds albumin and extends the plasma half-life. The dual-receptor design makes it a reference compound for incretin pharmacology. Research compares its signalling at each receptor, and its metabolic readouts in animal models, with those of single-receptor GLP-1 agonists.",
+      "identity": "ein Peptid aus 39 Aminosäuren und dualer Agonist am GIP- und GLP-1-Rezeptor",
+      "whatItIs": "{name} ist ein einzelnes Peptid aus 39 Aminosäuren, das als Agonist sowohl am Rezeptor des glukoseabhängigen insulinotropen Polypeptids (GIP) als auch am GLP-1-Rezeptor wirkt. Eine C20-Fettdisäure-Seitenkette bindet an Albumin und verlängert die Plasmahalbwertszeit. Das Design mit zwei Rezeptoren macht es zu einer Referenzsubstanz für die Inkretin-Pharmakologie. Die Forschung vergleicht seine Signalgebung an jedem Rezeptor und seine metabolischen Messgrößen in Tiermodellen mit denen reiner GLP-1-Rezeptoragonisten.",
       "research": [
         {
-          "label": "Receptor pharmacology",
-          "text": "cAMP signalling and receptor-bias assays at the GIP and GLP-1 receptors."
+          "label": "Rezeptorpharmakologie",
+          "text": "cAMP-Signalgebung und Rezeptor-Bias-Assays am GIP- und GLP-1-Rezeptor."
         },
         {
-          "label": "Rodent metabolic models",
-          "text": "glucose tolerance, insulin secretion, food intake and body-weight readouts in diet-induced obese animals."
+          "label": "Metabolische Nagetiermodelle",
+          "text": "Glukosetoleranz, Insulinsekretion, Futteraufnahme und Körpergewicht als Messgrößen bei Tieren mit ernährungsinduzierter Adipositas."
         }
       ]
     },
     "retatrutide": {
-      "identity": "a single peptide agonist at the GIP, GLP-1 and glucagon receptors",
-      "whatItIs": "{name} is a single synthetic peptide that acts as an agonist at three receptors: the glucose-dependent insulinotropic polypeptide (GIP) receptor, the GLP-1 receptor and the glucagon receptor. The glucagon-receptor activity is the main difference from dual GIP/GLP-1 agonists. It is a reference compound for multi-receptor incretin and glucagon pharmacology, and research compares it with single- and dual-receptor agonists in cell assays and animal models.",
+      "identity": "ein einzelner Peptidagonist an den GIP-, GLP-1- und Glukagonrezeptoren",
+      "whatItIs": "{name} ist ein einzelnes synthetisches Peptid, das als Agonist an drei Rezeptoren wirkt: dem Rezeptor des glukoseabhängigen insulinotropen Polypeptids (GIP), dem GLP-1-Rezeptor und dem Glukagonrezeptor. Die Aktivität am Glukagonrezeptor ist der wesentliche Unterschied zu dualen GIP/GLP-1-Agonisten. Es ist eine Referenzsubstanz für die Multirezeptor-Pharmakologie von Inkretinen und Glukagon, und die Forschung vergleicht es in Zell-Assays und Tiermodellen mit Agonisten an einem oder zwei Rezeptoren.",
       "research": [
         {
-          "label": "Receptor pharmacology",
-          "text": "cAMP signalling at the GIP, GLP-1 and glucagon receptors in cell assays."
+          "label": "Rezeptorpharmakologie",
+          "text": "cAMP-Signalgebung an den GIP-, GLP-1- und Glukagonrezeptoren in Zell-Assays."
         },
         {
-          "label": "Rodent metabolic models",
-          "text": "energy expenditure, glucose and body-weight readouts."
+          "label": "Metabolische Nagetiermodelle",
+          "text": "Energieverbrauch, Glukose und Körpergewicht als Messgrößen."
         },
         {
-          "label": "Hepatic lipid studies",
-          "text": "liver fat and lipid-metabolism readouts linked to glucagon-receptor activity."
+          "label": "Studien zu Leberlipiden",
+          "text": "Leberfett und Lipidstoffwechsel als Messgrößen im Zusammenhang mit der Aktivität am Glukagonrezeptor."
         }
       ]
     },
     "mots-c": {
-      "identity": "a 16-amino-acid mitochondrial-derived peptide studied in AMPK signalling and energy-metabolism research",
-      "whatItIs": "MOTS-c is a 16-amino-acid peptide encoded by a short open reading frame in the mitochondrial 12S rRNA gene, and it belongs to the mitochondrial-derived peptide class. Published work reports that it can move to the nucleus under metabolic stress and influence nuclear gene expression. It is also linked to AMPK pathway activation and to cellular energy metabolism in skeletal muscle models. It is a reference compound for mitochondrial-to-nuclear signalling and cellular energy-metabolism research.",
+      "identity": "ein mitochondrial abgeleitetes Peptid aus 16 Aminosäuren, untersucht in der Forschung zur AMPK-Signalgebung und zum Energiestoffwechsel",
+      "whatItIs": "MOTS-c ist ein Peptid aus 16 Aminosäuren, kodiert von einem kurzen offenen Leserahmen im mitochondrialen 12S-rRNA-Gen, und gehört zu den mitochondrial abgeleiteten Peptiden. Publizierte Arbeiten berichten, dass es unter metabolischem Stress in den Zellkern wandern und die nukleäre Genexpression beeinflussen kann. Es wird zudem mit der AMPK-Aktivierung und dem zellulären Energiestoffwechsel in Skelettmuskelmodellen verknüpft. Es ist eine Referenzsubstanz für die mitochondrial-nukleäre Signalgebung und den zellulären Energiestoffwechsel.",
       "research": [
         {
-          "label": "Skeletal muscle cell models",
-          "text": "AMPK activation and glucose-uptake readouts."
+          "label": "Skelettmuskelzell-Modelle",
+          "text": "AMPK-Aktivierung und Glukoseaufnahme als Messgrößen."
         },
         {
-          "label": "Rodent metabolic models",
-          "text": "insulin sensitivity and energy-metabolism readouts."
+          "label": "Metabolische Nagetiermodelle",
+          "text": "Insulinsensitivität und Energiestoffwechsel als Messgrößen."
         }
       ]
     },
     "nad-plus": {
-      "identity": "nicotinamide adenine dinucleotide, a redox coenzyme studied in energy metabolism",
-      "whatItIs": "NAD+ (nicotinamide adenine dinucleotide) is a dinucleotide coenzyme, not a peptide, present in all living cells. It carries electrons in the redox reactions of glycolysis and mitochondrial respiration. It is also a substrate for NAD+-consuming enzymes, including sirtuins, poly(ADP-ribose) polymerases (PARPs) and CD38. Published research reports that tissue NAD+ levels decline with age in animal models. It is a reference compound in cellular energy-metabolism and sirtuin research.",
+      "identity": "Nicotinamidadenindinukleotid, ein Redox-Coenzym, untersucht im Energiestoffwechsel",
+      "whatItIs": "NAD+ (Nicotinamidadenindinukleotid) ist ein Dinukleotid-Coenzym, kein Peptid, und kommt in allen lebenden Zellen vor. Es überträgt Elektronen in den Redoxreaktionen der Glykolyse und der mitochondrialen Atmung. Außerdem ist es Substrat NAD+-verbrauchender Enzyme, darunter Sirtuine, Poly(ADP-Ribose)-Polymerasen (PARPs) und CD38. Publizierte Forschung berichtet, dass der NAD+-Gehalt von Geweben in Tiermodellen mit dem Alter abnimmt. Es ist eine Referenzsubstanz in der Forschung zum zellulären Energiestoffwechsel und zu Sirtuinen.",
       "research": [
         {
-          "label": "Cell assays",
-          "text": "NAD+/NADH ratio, sirtuin activity and PARP activity readouts."
+          "label": "Zell-Assays",
+          "text": "NAD+/NADH-Verhältnis, Sirtuin-Aktivität und PARP-Aktivität als Messgrößen."
         },
         {
-          "label": "Mitochondrial studies",
-          "text": "respiration and redox-state measurements in isolated mitochondria and cells."
+          "label": "Mitochondriale Studien",
+          "text": "Messungen von Atmung und Redoxstatus in isolierten Mitochondrien und Zellen."
         },
         {
-          "label": "Ageing models",
-          "text": "tissue NAD+ measurement in aged rodents."
+          "label": "Alterungsmodelle",
+          "text": "Messung des NAD+-Gehalts in Geweben gealterter Nagetiere."
         }
       ]
     },
     "pt-141": {
-      "identity": "bremelanotide, a cyclic heptapeptide MC3R/MC4R agonist studied in central signalling",
-      "whatItIs": "PT-141 (bremelanotide) is a synthetic cyclic heptapeptide analogue of α-melanocyte-stimulating hormone (α-MSH). It acts mainly as an agonist at the melanocortin receptors MC3R and MC4R, which are expressed in the central nervous system. Its development began in melanocortin research on pigmentation, and later work focused on central melanocortin signalling. It is a reference compound for MC4R pharmacology and hypothalamic pathway research.",
+      "identity": "Bremelanotid, ein zyklisches Heptapeptid und Agonist an MC3R/MC4R, untersucht in der zentralen Signalgebung",
+      "whatItIs": "PT-141 (Bremelanotid) ist ein synthetisches zyklisches Heptapeptid-Analogon des α-Melanozyten-stimulierenden Hormons (α-MSH). Es wirkt hauptsächlich als Agonist an den Melanocortin-Rezeptoren MC3R und MC4R, die im zentralen Nervensystem exprimiert werden. Seine Entwicklung begann in der Melanocortin-Forschung zur Pigmentierung, spätere Arbeiten konzentrierten sich auf die zentrale Melanocortin-Signalgebung. Es ist eine Referenzsubstanz für die MC4R-Pharmakologie und die Forschung zu hypothalamischen Signalwegen.",
       "research": [
         {
-          "label": "Receptor pharmacology",
-          "text": "MC3R and MC4R binding and cAMP signalling assays."
+          "label": "Rezeptorpharmakologie",
+          "text": "MC3R- und MC4R-Bindungs-Assays sowie cAMP-Signal-Assays."
         },
         {
-          "label": "Central signalling studies",
-          "text": "hypothalamic melanocortin pathway readouts in rodent behavioural models."
+          "label": "Studien zur zentralen Signalgebung",
+          "text": "Messgrößen des hypothalamischen Melanocortin-Signalwegs in Verhaltensmodellen an Nagetieren."
         }
       ]
     },
     "selank": {
-      "identity": "a synthetic heptapeptide analogue of tuftsin studied in GABAergic and neuropeptide research",
-      "whatItIs": "Selank (TP-7) is a synthetic heptapeptide developed from tuftsin, an endogenous immunomodulatory tetrapeptide, and it is classed as a tuftsin analogue. Russian research groups developed it as a research tool. Published animal work links it to GABAergic modulation, BDNF expression in the hippocampus and inhibition of enkephalin-degrading enzymes. It is a reference compound in stress-response, anxiety-model and neuropeptide research in rodents.",
+      "identity": "ein synthetisches Heptapeptid-Analogon von Tuftsin, untersucht in der GABAergen und der Neuropeptid-Forschung",
+      "whatItIs": "Selank (TP-7) ist ein synthetisches Heptapeptid, das aus Tuftsin, einem endogenen immunmodulatorischen Tetrapeptid, entwickelt wurde, und wird als Tuftsin-Analogon eingeordnet. Russische Forschungsgruppen entwickelten es als Forschungswerkzeug. Publizierte Tierstudien bringen es mit GABAerger Modulation, BDNF-Expression im Hippocampus und der Hemmung enkephalinabbauender Enzyme in Verbindung. Es ist eine Referenzsubstanz in der Forschung zu Stressreaktionen, Angstmodellen und Neuropeptiden an Nagetieren.",
       "research": [
         {
-          "label": "Rodent behavioural models",
-          "text": "anxiety-related behaviour tests with neurochemical readouts."
+          "label": "Verhaltensmodelle an Nagetieren",
+          "text": "Tests zu angstbezogenem Verhalten mit neurochemischen Messgrößen."
         },
         {
-          "label": "Gene-expression studies",
-          "text": "GABA-system and BDNF expression readouts in brain tissue."
+          "label": "Genexpressionsstudien",
+          "text": "Expression des GABA-Systems und von BDNF als Messgrößen im Hirngewebe."
         }
       ]
     },
     "semax": {
-      "identity": "the synthetic heptapeptide MEHFPGP, an ACTH(4–10) analogue studied in neurotrophin research",
-      "whatItIs": "Semax is a synthetic heptapeptide, Met-Glu-His-Phe-Pro-Gly-Pro (MEHFPGP). Its sequence is derived from the N-terminal region of adrenocorticotropic hormone (ACTH), and it is classed as an ACTH(4–10) analogue. Published animal work links it to BDNF and NGF expression in the hippocampus and cortex and to changes in enkephalin degradation. It is a reference compound for neurotrophic pathway and cerebral ischaemia research in rodent models.",
+      "identity": "das synthetische Heptapeptid MEHFPGP, ein ACTH(4–10)-Analogon, untersucht in der Neurotrophin-Forschung",
+      "whatItIs": "Semax ist ein synthetisches Heptapeptid, Met-Glu-His-Phe-Pro-Gly-Pro (MEHFPGP). Seine Sequenz leitet sich von der N-terminalen Region des adrenocorticotropen Hormons (ACTH) ab, und es wird als ACTH(4–10)-Analogon eingeordnet. Publizierte Tierstudien bringen es mit der BDNF- und NGF-Expression in Hippocampus und Cortex sowie mit Veränderungen des Enkephalinabbaus in Verbindung. Es ist eine Referenzsubstanz für die Forschung zu neurotrophen Signalwegen und zerebraler Ischämie in Nagetiermodellen.",
       "research": [
         {
-          "label": "Neurotrophin studies",
-          "text": "BDNF and NGF expression readouts in rodent brain tissue."
+          "label": "Neurotrophin-Studien",
+          "text": "BDNF- und NGF-Expression als Messgrößen im Hirngewebe von Nagetieren."
         },
         {
-          "label": "Cerebral ischaemia models",
-          "text": "gene-expression and histology readouts in rodents."
+          "label": "Modelle zerebraler Ischämie",
+          "text": "Genexpression und Histologie als Messgrößen bei Nagetieren."
         },
         {
-          "label": "Behavioural models",
-          "text": "learning and memory tests in rodents."
+          "label": "Verhaltensmodelle",
+          "text": "Lern- und Gedächtnistests bei Nagetieren."
         }
       ]
     },
     "ss-31": {
-      "identity": "elamipretide, a mitochondria-targeted tetrapeptide that binds cardiolipin, studied in bioenergetics research",
-      "whatItIs": "SS-31 (elamipretide; also published as Bendavia and MTP-131) is a cell-permeable aromatic-cationic tetrapeptide. It accumulates in the inner mitochondrial membrane, where it binds cardiolipin, the phospholipid that supports the electron-transport-chain complexes and cristae structure. Preclinical studies report effects on cristae architecture, cardiolipin peroxidation and reactive-oxygen-species production. It is a reference compound for mitochondrial bioenergetics and cardiolipin biology in cell, isolated-mitochondria and animal models.",
+      "identity": "Elamipretid, ein auf Mitochondrien ausgerichtetes Tetrapeptid, das Cardiolipin bindet, untersucht in der Bioenergetik-Forschung",
+      "whatItIs": "SS-31 (Elamipretid; auch als Bendavia und MTP-131 publiziert) ist ein zellgängiges aromatisch-kationisches Tetrapeptid. Es reichert sich in der inneren Mitochondrienmembran an und bindet dort Cardiolipin, das Phospholipid, das Atmungskettenkomplexe und Cristae-Struktur stützt. Präklinische Studien berichten Effekte auf Cristae-Architektur, Cardiolipin-Peroxidation und Bildung reaktiver Sauerstoffspezies. Es dient als Referenzsubstanz für mitochondriale Bioenergetik und Cardiolipin-Biologie in Zellen, isolierten Mitochondrien und Tiermodellen.",
       "research": [
         {
-          "label": "Isolated mitochondria",
-          "text": "respiration, ATP synthesis and reactive-oxygen-species readouts."
+          "label": "Isolierte Mitochondrien",
+          "text": "Atmung, ATP-Synthese und reaktive Sauerstoffspezies als Messgrößen."
         },
         {
-          "label": "Ischaemia–reperfusion models",
-          "text": "cardiac and renal tissue readouts in animals."
+          "label": "Ischämie-Reperfusions-Modelle",
+          "text": "Messgrößen in Herz- und Nierengewebe bei Tieren."
         },
         {
-          "label": "Membrane biology",
-          "text": "cardiolipin binding and peroxidation assays."
+          "label": "Membranbiologie",
+          "text": "Assays zur Cardiolipin-Bindung und Cardiolipin-Peroxidation."
         }
       ]
     },
     "tesamorelin": {
-      "identity": "a synthetic GHRH(1-44) analogue studied in growth hormone axis research",
-      "whatItIs": "Tesamorelin is a synthetic analogue of the full 44-amino-acid human growth hormone-releasing hormone (GHRH), with a trans-3-hexenoyl group at the N-terminus. The modification increases resistance to DPP-4 degradation. It acts at pituitary GHRH receptors, and published studies report pulsatile release of endogenous growth hormone with higher IGF-1 concentrations. It is a reference compound for GHRH-receptor pharmacology and growth hormone axis research.",
+      "identity": "ein synthetisches GHRH(1-44)-Analogon, untersucht in der Forschung zur Wachstumshormon-Achse",
+      "whatItIs": "Tesamorelin ist ein synthetisches Analogon des vollständigen humanen Growth-Hormone-Releasing-Hormons (GHRH) aus 44 Aminosäuren, mit einer trans-3-Hexenoyl-Gruppe am N-Terminus. Die Modifikation erhöht die Resistenz gegen den Abbau durch DPP-4. Es wirkt an hypophysären GHRH-Rezeptoren, und publizierte Studien berichten eine pulsatile Freisetzung von endogenem Wachstumshormon mit höheren IGF-1-Konzentrationen. Es ist eine Referenzsubstanz für die GHRH-Rezeptor-Pharmakologie und die Forschung zur Wachstumshormon-Achse.",
       "research": [
         {
-          "label": "Receptor pharmacology",
-          "text": "GHRH-receptor activation and cAMP readouts in pituitary cells."
+          "label": "Rezeptorpharmakologie",
+          "text": "GHRH-Rezeptor-Aktivierung und cAMP als Messgrößen in Hypophysenzellen."
         },
         {
-          "label": "Endocrine studies",
-          "text": "growth hormone pulse and IGF-1 readouts."
+          "label": "Endokrinologische Studien",
+          "text": "Wachstumshormon-Pulse und IGF-1 als Messgrößen."
         },
         {
-          "label": "Body-composition studies",
-          "text": "adipose-tissue imaging endpoints in published research."
+          "label": "Studien zur Körperzusammensetzung",
+          "text": "bildgebende Endpunkte des Fettgewebes in publizierter Forschung."
         }
       ]
     },
     "thymosin-beta-4": {
-      "identity": "a 43-amino-acid G-actin-sequestering peptide studied in cytoskeleton and cell-migration research",
-      "whatItIs": "Thymosin beta-4 (Tβ4) is a naturally occurring 43-amino-acid peptide and one of the main G-actin-sequestering molecules in mammalian cells. By binding monomeric actin, it regulates the pool of actin available for filament assembly, which affects cell motility. The synthetic fragment TB-500 is modelled on its actin-binding region. Thymosin beta-4 is a reference compound for actin-cytoskeleton and cell-migration research in cell and animal models.",
+      "identity": "ein G-Aktin-sequestrierendes Peptid aus 43 Aminosäuren, untersucht in der Zytoskelett- und Zellmigrationsforschung",
+      "whatItIs": "Thymosin beta-4 (Tβ4) ist ein natürlich vorkommendes Peptid aus 43 Aminosäuren und eines der wichtigsten G-Aktin-sequestrierenden Moleküle in Säugetierzellen. Durch die Bindung von monomerem Aktin reguliert es den Aktin-Pool, der für den Filamentaufbau verfügbar ist, was die Zellmotilität beeinflusst. Das synthetische Fragment TB-500 ist seiner aktinbindenden Region nachempfunden. Thymosin beta-4 ist eine Referenzsubstanz für die Forschung zum Aktin-Zytoskelett und zur Zellmigration in Zell- und Tiermodellen.",
       "research": [
         {
-          "label": "Cell-migration assays",
-          "text": "actin dynamics and endothelial or keratinocyte migration readouts."
+          "label": "Zellmigrations-Assays",
+          "text": "Aktindynamik sowie Migration von Endothelzellen oder Keratinozyten als Messgrößen."
         },
         {
-          "label": "Rodent tissue-injury models",
-          "text": "dermal and cardiac histology readouts, including angiogenesis markers."
+          "label": "Gewebeverletzungsmodelle an Nagetieren",
+          "text": "dermale und kardiale Histologie als Messgrößen, einschließlich Angiogenesemarkern."
         }
       ]
     },
     "bacteriostatic-water": {
-      "identity": "sterile water with 0.9% benzyl alcohol, a laboratory diluent for lyophilized peptides",
-      "whatItIs": "Bacteriostatic water is sterile water that contains 0.9% benzyl alcohol as a preservative, which is the standard composition for this diluent. The benzyl alcohol limits microbial growth in the vial after the stopper is punctured. Laboratories use it to reconstitute lyophilized peptides and to prepare working solutions. It is not suitable for every compound, and some peptides need a different solvent, such as acetic acid water. Check compatibility on the compound data sheet.",
+      "identity": "steriles Wasser mit 0,9 % Benzylalkohol, ein Labor-Verdünnungsmittel für lyophilisierte Peptide",
+      "whatItIs": "Bakteriostatisches Wasser ist steriles Wasser mit 0,9 % Benzylalkohol als Konservierungsmittel; dies ist die Standardzusammensetzung dieses Verdünnungsmittels. Der Benzylalkohol begrenzt das mikrobielle Wachstum im Vial, nachdem der Stopfen durchstochen wurde. Labore verwenden es, um lyophilisierte Peptide zu rekonstituieren und Arbeitslösungen anzusetzen. Es ist nicht für jede Verbindung geeignet, und manche Peptide benötigen ein anderes Lösungsmittel, etwa Essigsäurewasser. Prüfen Sie die Kompatibilität im Datenblatt der Verbindung.",
       "research": [
         {
-          "label": "Reconstitution",
-          "text": "dissolution of lyophilized research peptides for bench work."
+          "label": "Lösen lyophilisierter Peptide",
+          "text": "Rekonstitution lyophilisierter Forschungspeptide für Laborarbeiten."
         },
         {
-          "label": "Working solutions",
-          "text": "dilution steps in methods that specify a preserved aqueous diluent."
+          "label": "Arbeitslösungen",
+          "text": "Verdünnungsschritte in Methoden, die ein konserviertes wässriges Verdünnungsmittel vorsehen."
         }
       ]
     },
     "acetic-acid-water": {
-      "identity": "dilute acetic acid in sterile water, a laboratory diluent for poorly soluble peptides",
-      "whatItIs": "Acetic acid water is a dilute solution of acetic acid in sterile water. Laboratories use it as a diluent for peptides that dissolve poorly in neutral water, because a mildly acidic solvent can increase the solubility of some peptide sequences. The acetic acid concentration is as printed on the vial label. Before use, confirm on the compound data sheet that an acidic diluent is compatible with the peptide and with the planned assay.",
+      "identity": "verdünnte Essigsäure in sterilem Wasser, ein Labor-Verdünnungsmittel für schwer lösliche Peptide",
+      "whatItIs": "Essigsäurewasser ist eine verdünnte Lösung von Essigsäure in sterilem Wasser. Labore verwenden es als Verdünnungsmittel für Peptide, die sich in neutralem Wasser schlecht lösen, weil ein schwach saures Lösungsmittel die Löslichkeit mancher Peptidsequenzen erhöhen kann. Die Essigsäurekonzentration entspricht der Angabe auf dem Vial-Etikett. Bestätigen Sie vor der Verwendung im Datenblatt der Verbindung, dass ein saures Verdünnungsmittel mit dem Peptid und dem geplanten Assay kompatibel ist.",
       "research": [
         {
-          "label": "Poorly soluble peptides",
-          "text": "reconstitution where neutral water or bacteriostatic water gives incomplete dissolution."
+          "label": "Schwer lösliche Peptide",
+          "text": "Rekonstitution, wenn neutrales oder bakteriostatisches Wasser zu einer unvollständigen Lösung führt."
         },
         {
-          "label": "Solvent selection",
-          "text": "comparison of diluents during laboratory method development."
+          "label": "Wahl des Lösungsmittels",
+          "text": "Vergleich von Verdünnungsmitteln während der Methodenentwicklung im Labor."
         }
       ]
     },
     "dual-chamber-device": {
-      "identity": "a reusable aluminium device for Supreme Biologics dual-chamber cartridges, with no needle included",
-      "whatItIs": "This is a reusable aluminium device from Supreme Biologics for its dual-chamber cartridges. It holds one Supreme Biologics dual-chamber cartridge at a time and contains no compound of its own. No needle is included, and the cartridges are sold separately on their own product pages. The device fits only the Supreme Biologics dual-chamber system. The Supreme Biologics reusable pen for single-chamber refill cartridges is a separate system.",
+      "identity": "ein wiederverwendbares Aluminiumgerät für Doppelkammer-Kartuschen von Supreme Biologics, ohne Nadel",
+      "whatItIs": "Dies ist ein wiederverwendbares Aluminiumgerät von Supreme Biologics für die hauseigenen Doppelkammer-Kartuschen. Es nimmt jeweils eine Doppelkammer-Kartusche von Supreme Biologics auf und enthält selbst keine Substanz. Eine Nadel ist nicht enthalten, und die Kartuschen werden separat auf ihren eigenen Produktseiten verkauft. Das Gerät passt nur zum Doppelkammer-System von Supreme Biologics. Der wiederverwendbare Pen von Supreme Biologics für Einkammer-Nachfüllkartuschen ist ein separates System.",
       "research": [
         {
-          "label": "Compatible with",
-          "text": "Supreme Biologics dual-chamber cartridges listed on this site."
+          "label": "Kompatibel mit",
+          "text": "den auf dieser Website gelisteten Doppelkammer-Kartuschen von Supreme Biologics."
         },
         {
-          "label": "Not compatible with",
-          "text": "single-chamber refill cartridges for the Supreme Biologics reusable pen, or cartridges from other manufacturers."
+          "label": "Nicht kompatibel mit",
+          "text": "Einkammer-Nachfüllkartuschen für den wiederverwendbaren Pen von Supreme Biologics oder Kartuschen anderer Hersteller."
         }
       ]
     }
   },
   "diluentNames": {
     "bacteriostatic-water": {
-      "title": "Bacteriostatic Water",
-      "noun": "bacteriostatic water"
+      "title": "Bakteriostatisches Wasser",
+      "noun": "bakteriostatisches Wasser"
     },
     "acetic-acid-water": {
-      "title": "Acetic Acid Water",
-      "noun": "acetic acid water"
+      "title": "Essigsäurewasser",
+      "noun": "Essigsäurewasser"
     }
   },
   "headings": {
-    "whatItIs": "What it is",
-    "researchContext": "Research context",
-    "laboratoryUse": "Laboratory use",
-    "compatibility": "Compatibility",
-    "quality": "Quality and testing",
-    "storage": "Storage and handling",
-    "inTheBox": "In the box",
-    "manufacturer": "Manufacturer and delivery"
+    "whatItIs": "Was es ist",
+    "researchContext": "Forschungskontext",
+    "laboratoryUse": "Verwendung im Labor",
+    "compatibility": "Kompatibilität",
+    "quality": "Qualität und Prüfung",
+    "storage": "Lagerung und Handhabung",
+    "inTheBox": "Lieferumfang",
+    "manufacturer": "Hersteller und Lieferung"
   },
   "formats": {
-    "vial": "lyophilized vial",
-    "pen": "ready-mixed pen",
-    "multidose": "reusable pen with single-chamber refill",
-    "dual": "dual-chamber cartridges",
-    "spray": "spray-format vial",
-    "diluent": "diluent vial",
-    "device": "dual-chamber cartridge device"
+    "vial": "lyophilisiertes Vial",
+    "pen": "gebrauchsfertiger Pen",
+    "multidose": "wiederverwendbarer Pen mit Einkammer-Nachfüllkartusche",
+    "dual": "Doppelkammer-Kartuschen",
+    "spray": "Vial im Sprühformat",
+    "diluent": "Vial mit Verdünnungsmittel",
+    "device": "Gerät für Doppelkammer-Kartuschen"
   },
   "list": {
     "separator": ", ",
-    "lastSeparator": " and "
+    "lastSeparator": " und "
   },
   "sized": "{name} {size}",
   "quality": {
-    "purity": "Stated purity: {purity}%. The batch COA gives the analytical method and results.",
-    "purityUnknown": "Purity: see the batch COA.",
-    "cas": "CAS number: {cas}.",
-    "formula": "Molecular formula: {formula}.",
-    "coaRef": "Refer to the batch certificate of analysis (COA) for the batch number and test data.",
-    "deviceNoCoa": "The device contains no compound, so no certificate of analysis applies.",
-    "deviceInspect": "Check the device for damage on arrival.",
-    "compositionBac": "Composition: sterile water with 0.9% benzyl alcohol.",
-    "compositionAa": "Composition: dilute acetic acid in sterile water. The concentration is as printed on the vial label.",
-    "checkLot": "Check the lot number and expiry date on the label.",
-    "checkSolution": "Do not use the solution if it is cloudy, discoloured or contains particles, or if the seal is damaged."
+    "purity": "Angegebene Reinheit: {purity} %. Das COA der Charge nennt die Analysemethode und die Ergebnisse.",
+    "purityUnknown": "Reinheit: siehe COA der Charge.",
+    "cas": "CAS-Nummer: {cas}.",
+    "formula": "Summenformel: {formula}.",
+    "coaRef": "Chargennummer und Prüfdaten finden Sie im Analysenzertifikat (COA) der Charge.",
+    "deviceNoCoa": "Das Gerät enthält keine Substanz, daher gibt es kein Analysenzertifikat.",
+    "deviceInspect": "Prüfen Sie das Gerät bei Erhalt auf Beschädigungen.",
+    "compositionBac": "Zusammensetzung: steriles Wasser mit 0,9 % Benzylalkohol.",
+    "compositionAa": "Zusammensetzung: verdünnte Essigsäure in sterilem Wasser. Die Konzentration entspricht der Angabe auf dem Vial-Etikett.",
+    "checkLot": "Prüfen Sie Chargennummer und Verfallsdatum auf dem Etikett.",
+    "checkSolution": "Verwenden Sie die Lösung nicht, wenn sie trüb oder verfärbt ist oder Partikel enthält oder wenn das Siegel beschädigt ist."
   },
   "storage": {
     "powder": [
-      "Lyophilized powder: store at -20°C for long-term storage, or at 2–8°C for short-term storage.",
-      "Keep dry and protected from light.",
-      "After reconstitution, store at 2–8°C and use within 30 days."
+      "Lyophilisiertes Pulver: zur Langzeitlagerung bei -20°C, zur kurzfristigen Lagerung bei 2–8°C aufbewahren.",
+      "Trocken und lichtgeschützt aufbewahren.",
+      "Nach der Rekonstitution bei 2–8°C lagern und innerhalb von 30 Tagen verwenden."
     ],
     "dualDry": [
-      "Unmixed cartridges (lyophilized powder): store at -20°C for long-term storage, or at 2–8°C for short-term storage.",
-      "Keep dry and protected from light.",
-      "After the diluent is added and mixed, store at 2–8°C and use within 30 days."
+      "Ungemischte Kartuschen (lyophilisiertes Pulver): zur Langzeitlagerung bei -20°C, zur kurzfristigen Lagerung bei 2–8°C aufbewahren.",
+      "Trocken und lichtgeschützt aufbewahren.",
+      "Nach Zugabe und Mischen des Verdünnungsmittels bei 2–8°C lagern und innerhalb von 30 Tagen verwenden."
     ],
     "dualWithDiluent": [
-      "Unmixed cartridges contain liquid diluent in one chamber: store at 2–8°C unless the label states otherwise.",
-      "Keep protected from light.",
-      "After mixing, store at 2–8°C and use within 30 days."
+      "Ungemischte Kartuschen enthalten in einer Kammer flüssiges Verdünnungsmittel: bei 2–8°C lagern, sofern das Etikett nichts anderes angibt.",
+      "Lichtgeschützt aufbewahren.",
+      "Nach dem Mischen bei 2–8°C lagern und innerhalb von 30 Tagen verwenden."
     ],
     "liquid": [
-      "Supplied as ready-mixed liquid: store at 2–8°C and keep protected from light.",
-      "After first use, keep at 2–8°C and use within 30 days.",
-      "Follow the expiry date on the product label."
+      "Geliefert als gebrauchsfertige Flüssigkeit: bei 2–8°C und lichtgeschützt lagern.",
+      "Nach der ersten Verwendung bei 2–8°C aufbewahren und innerhalb von 30 Tagen verwenden.",
+      "Beachten Sie das Verfallsdatum auf dem Produktetikett."
     ],
     "device": [
-      "Keep the device clean and dry between uses.",
-      "Store cartridges as described on their own product pages."
+      "Das Gerät zwischen den Verwendungen sauber und trocken halten.",
+      "Kartuschen wie auf ihren eigenen Produktseiten beschrieben lagern."
     ],
     "aceticAcid": [
-      "Store sealed at room temperature.",
-      "Single-use only: discard any remaining volume after first puncture."
+      "Verschlossen bei Raumtemperatur lagern.",
+      "Nur zur einmaligen Verwendung: Restvolumen nach dem ersten Anstechen verwerfen."
     ],
     "bacRoomTemp": [
-      "Store sealed vials at room temperature, upright and protected from light.",
-      "After first puncture, store at 2–8°C and follow the discard date on the product label."
+      "Verschlossene Vials aufrecht, lichtgeschützt und bei Raumtemperatur lagern.",
+      "Nach dem ersten Anstechen bei 2–8°C lagern und das Verwurfsdatum auf dem Produktetikett beachten."
     ],
     "bacLabel": [
-      "Keep the vial sealed until first use.",
-      "Follow the storage and opened-vial instructions on the product label."
+      "Das Vial bis zur ersten Verwendung verschlossen halten.",
+      "Die Hinweise zur Lagerung und zum angebrochenen Vial auf dem Produktetikett beachten."
     ]
   },
   "box": {
     "vial": [
-      "One vial of {sized} as lyophilized powder. The stated amount is the total in the vial.",
-      "Diluent is not included. Bacteriostatic water and acetic acid water are sold separately."
+      "Ein Vial {sized} als lyophilisiertes Pulver. Die angegebene Menge ist die Gesamtmenge im Vial.",
+      "Kein Verdünnungsmittel enthalten. Bakteriostatisches Wasser und Essigsäurewasser sind separat erhältlich."
     ],
     "pen": [
-      "One {brand} pen containing {sized} as ready-mixed liquid.",
-      "The stated amount is the total in the pen, not the amount per click.",
-      "No diluent is needed."
+      "Ein Pen von {brand} mit {sized} als gebrauchsfertige Flüssigkeit.",
+      "Die angegebene Menge ist die Gesamtmenge im Pen, nicht die Menge pro Klick.",
+      "Kein Verdünnungsmittel erforderlich."
     ],
     "multidose": [
-      "**First purchase** — the Supreme Biologics reusable pen with one matching {sized} single-chamber refill cartridge.",
-      "**Refill only** — one {sized} single-chamber refill cartridge for an existing compatible pen.",
-      "The refill contains ready-mixed liquid. The label states the total per cartridge, not the amount per click."
+      "**Erstkauf** — der wiederverwendbare Pen von Supreme Biologics mit einer passenden Einkammer-Nachfüllkartusche {sized}.",
+      "**Nur Nachfüllung** — eine Einkammer-Nachfüllkartusche {sized} für einen vorhandenen kompatiblen Pen.",
+      "Die Nachfüllkartusche enthält gebrauchsfertige Flüssigkeit. Das Etikett gibt die Gesamtmenge pro Kartusche an, nicht die Menge pro Klick."
     ],
-    "dualOptions": "Options (amount per cartridge × cartridges per box): {options}.",
-    "dualWithDiluentIntro": "One box of {count} dual-chamber cartridges. The selected amount is per cartridge, and the price is for one complete box.",
-    "dualWithDiluentNote": "Peptide powder and clear diluent are held in separate chambers until mixing. The diluent is included.",
-    "dualDryIntro": "One box of glass dual-chamber cartridges, with no needle.",
-    "dualDryNote": "The peptide chamber holds lyophilized powder. The diluent chamber ships empty, and bacteriostatic water is not included.",
-    "deviceSoldSeparately": "The compatible Supreme Biologics dual-chamber device is sold separately.",
-    "defaultCartridgeCount": "four",
+    "dualOptions": "Optionen (Menge pro Kartusche × Kartuschen pro Packung): {options}.",
+    "dualWithDiluentIntro": "Eine Packung mit {count} Doppelkammer-Kartuschen. Die gewählte Menge gilt pro Kartusche, der Preis gilt für eine komplette Packung.",
+    "dualWithDiluentNote": "Peptidpulver und klares Verdünnungsmittel befinden sich bis zum Mischen in getrennten Kammern. Das Verdünnungsmittel ist enthalten.",
+    "dualDryIntro": "Eine Packung Doppelkammer-Kartuschen aus Glas, ohne Nadel.",
+    "dualDryNote": "Die Peptidkammer enthält lyophilisiertes Pulver. Die Kammer für das Verdünnungsmittel wird leer geliefert, und bakteriostatisches Wasser ist nicht enthalten.",
+    "deviceSoldSeparately": "Das kompatible Doppelkammer-Gerät von Supreme Biologics ist separat erhältlich.",
+    "defaultCartridgeCount": "vier",
     "spray": [
-      "One spray-format vial with a stated total of {sized}.",
-      "See the product label for the concentration and pack contents."
+      "Ein Vial im Sprühformat mit einer angegebenen Gesamtmenge von {sized}.",
+      "Konzentration und Packungsinhalt sind auf dem Produktetikett angegeben."
     ],
-    "diluent": "One {size} vial of {noun}.",
-    "diluentNoSize": "One vial of {noun}.",
+    "diluent": "Ein Vial {noun}, {size}.",
+    "diluentNoSize": "Ein Vial {noun}.",
     "device": [
-      "One reusable dual-chamber cartridge device (1 piece).",
-      "No needle is included.",
-      "Cartridges are sold separately."
+      "Ein wiederverwendbares Gerät für Doppelkammer-Kartuschen (1 Stück).",
+      "Keine Nadel enthalten.",
+      "Kartuschen sind separat erhältlich."
     ]
   },
   "manufacturer": {
-    "vial": "{brand} manufactures this {name} product and supplies it as one sealed vial of lyophilized powder.",
-    "pen": "{brand} manufactures this {name} product as a ready-mixed pen.",
-    "multidose": "Supreme Biologics manufactures both the reusable pen and the {name} single-chamber refill cartridges.",
-    "dual": "Supreme Biologics manufactures these {name} dual-chamber cartridges.",
-    "dualCustom": "Custom box combinations are available on request via LINE.",
-    "spray": "{brand} manufactures this {name} product in a spray-format vial.",
-    "diluent": "{brand} manufactures this {size} {noun} vial.",
-    "diluentNoSize": "{brand} manufactures this {noun} vial.",
-    "device": "Supreme Biologics manufactures this device for its own dual-chamber cartridge system.",
-    "otherFormats": "Other {brand} formats on this site: {list}.",
-    "alsoAvailable": "{name} is also available from {list}.",
-    "sizedFormat": "{size} {format}",
-    "delivery": "Orders are dispatched within 24 hours. Delivery takes 3–5 business days in Asia and about 9 days to Europe and other regions.",
-    "researchUse": "For laboratory research use only. Not for human or veterinary use."
+    "vial": "{brand} produziert dieses {name} und liefert es als ein versiegeltes Vial mit lyophilisiertem Pulver.",
+    "pen": "{brand} produziert dieses {name} als gebrauchsfertigen Pen.",
+    "multidose": "Supreme Biologics produziert sowohl den wiederverwendbaren Pen als auch die Einkammer-Nachfüllkartuschen mit {name}.",
+    "dual": "Supreme Biologics produziert diese Doppelkammer-Kartuschen mit {name}.",
+    "dualCustom": "Individuelle Packungskombinationen sind auf Anfrage über LINE erhältlich.",
+    "spray": "{brand} produziert dieses {name} in einem Vial im Sprühformat.",
+    "diluent": "{brand} produziert dieses Vial {noun} ({size}).",
+    "diluentNoSize": "{brand} produziert dieses Vial {noun}.",
+    "device": "Supreme Biologics produziert dieses Gerät für das hauseigene Doppelkammer-Kartuschensystem.",
+    "otherFormats": "Weitere Formate von {brand} auf dieser Website: {list}.",
+    "alsoAvailable": "{name} ist auch erhältlich von {list}.",
+    "sizedFormat": "{format} ({size})",
+    "delivery": "Bestellungen werden innerhalb von 24 Stunden versandt. Die Lieferung dauert in Asien 3–5 Werktage und nach Europa und in andere Regionen etwa 9 Tage.",
+    "researchUse": "Nur für die Laborforschung. Nicht zur Anwendung am Menschen oder Tier."
   },
   "short": {
     "lead": "{sized} — {identity}.",
-    "vial": "{lead} Supplied by {brand} as one vial of lyophilized powder, {suffix}",
-    "pen": "{lead} Supplied by {brand} as ready-mixed liquid in a pen, {suffix}",
-    "multidose": "{lead} Single-chamber refill for the Supreme Biologics reusable pen, {suffix}",
-    "dual": "{lead} Supreme Biologics dual-chamber cartridges, sold by the box, {suffix}",
-    "spray": "{lead} Supplied by {brand} in a spray-format vial, {suffix}",
-    "diluent": "{lead} Supplied by {brand}, {suffix}",
-    "device": "{identityCapitalized}. Cartridges are sold separately. Supreme Biologics hardware, {suffix}",
-    "suffix": "for laboratory research use only."
+    "vial": "{lead} Geliefert von {brand} als ein Vial mit lyophilisiertem Pulver, {suffix}",
+    "pen": "{lead} Geliefert von {brand} als gebrauchsfertige Flüssigkeit in einem Pen, {suffix}",
+    "multidose": "{lead} Einkammer-Nachfüllkartusche für den wiederverwendbaren Pen von Supreme Biologics, {suffix}",
+    "dual": "{lead} Doppelkammer-Kartuschen von Supreme Biologics, pro Packung verkauft, {suffix}",
+    "spray": "{lead} Geliefert von {brand} in einem Vial im Sprühformat, {suffix}",
+    "diluent": "{lead} Geliefert von {brand}, {suffix}",
+    "device": "{identityCapitalized}. Kartuschen sind separat erhältlich. Hardware von Supreme Biologics, {suffix}",
+    "suffix": "ausschließlich für die Laborforschung."
   }
 }

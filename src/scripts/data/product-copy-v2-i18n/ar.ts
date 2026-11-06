@@ -1,520 +1,518 @@
 /**
- * Product copy v2 — ARABIC (ar).
- * STUB: every value below is still the English text. Translators replace the values;
- * keep the keys, the `{placeholder}` tokens and the `**` markers. Rules: ./types.ts.
- * The script refuses to write `ar` while this object is identical to en.ts.
+ * Product copy v2 — ARABIC (ar). Modern Standard Arabic, translated from en.ts (2026-11-06).
+ * Type: ProductCopyLocale (./types.ts). Translator rules are in ./types.ts.
  */
 import type { ProductCopyLocale } from "./types"
 
 export const ar: ProductCopyLocale = {
   "compounds": {
     "bpc-157": {
-      "identity": "a synthetic 15-amino-acid gastric pentadecapeptide studied in angiogenesis and mucosal biology",
-      "whatItIs": "BPC-157 is a synthetic 15-amino-acid peptide, also published as stable gastric pentadecapeptide BPC 157 and PL 14736. Its sequence derives from a protein isolated from gastric juice. Published preclinical work describes interactions with VEGFR2 signalling, the nitric oxide system and fibroblast migration. Researchers use it as a reference compound in studies of angiogenesis, connective-tissue biology and gastrointestinal mucosal biology in animal and cell models.",
+      "identity": "ببتيد معدي خماسي عشري اصطناعي مكوّن من 15 حمضًا أمينيًا، يُدرس في أبحاث تكوّن الأوعية الدموية وبيولوجيا الأغشية المخاطية",
+      "whatItIs": "BPC-157 ببتيد اصطناعي مكوّن من 15 حمضًا أمينيًا، ويُنشر أيضًا باسم stable gastric pentadecapeptide BPC 157 وباسم PL 14736. يُشتق تسلسله من بروتين معزول من العصارة المعدية. تصف الأعمال ما قبل السريرية المنشورة تفاعلات مع إشارات VEGFR2 ونظام أكسيد النيتريك وهجرة الخلايا الليفية. يستخدمه الباحثون مركبًا مرجعيًا في دراسات تكوّن الأوعية الدموية وبيولوجيا النسيج الضام وبيولوجيا الغشاء المخاطي المعدي المعوي في النماذج الحيوانية والخلوية.",
       "research": [
         {
-          "label": "Tendon and ligament injury models",
-          "text": "rodent models with histology and biomechanical readouts."
+          "label": "نماذج إصابة الأوتار والأربطة",
+          "text": "نماذج في القوارض مع قراءات نسيجية وميكانيكية حيوية."
         },
         {
-          "label": "Gastrointestinal mucosa models",
-          "text": "rodent lesion models with lesion area and mucosal histology as readouts."
+          "label": "نماذج الغشاء المخاطي المعدي المعوي",
+          "text": "نماذج آفات في القوارض تُقاس فيها مساحة الآفة والبنية النسيجية للغشاء المخاطي."
         },
         {
-          "label": "Endothelial cell assays",
-          "text": "VEGFR2 phosphorylation, nitric oxide signalling and cell-migration readouts in vitro."
+          "label": "اختبارات الخلايا البطانية",
+          "text": "قراءات فسفرة VEGFR2 وإشارات أكسيد النيتريك وهجرة الخلايا في المختبر."
         }
       ]
     },
     "aod-9604": {
-      "identity": "a synthetic growth hormone fragment (176–191) studied in lipid-metabolism research",
-      "whatItIs": "AOD-9604 is a synthetic peptide based on the C-terminal region (amino acids 176–191) of human growth hormone, with an added N-terminal tyrosine. Researchers study this fragment apart from the full hormone to examine which structural regions relate to lipid metabolism. Published preclinical work focused on adipocyte lipolysis and lipogenesis assays and on rodent metabolic models. Growth hormone fragments, including AOD-9604, are listed under S2 on the WADA Prohibited List.",
+      "identity": "جزء اصطناعي من هرمون النمو (176–191) يُدرس في أبحاث استقلاب الدهون",
+      "whatItIs": "AOD-9604 ببتيد اصطناعي يستند إلى المنطقة الطرفية C (الأحماض الأمينية 176–191) من هرمون النمو البشري، مع إضافة حمض التيروزين عند الطرف N. يدرس الباحثون هذا الجزء بمعزل عن الهرمون الكامل لفحص المناطق البنيوية المرتبطة باستقلاب الدهون. ركّزت الأعمال ما قبل السريرية المنشورة على اختبارات تحلّل الدهون وتخليقها في الخلايا الدهنية وعلى نماذج الاستقلاب في القوارض. أجزاء هرمون النمو، ومنها AOD-9604، مدرجة ضمن الفئة S2 في قائمة المحظورات الصادرة عن WADA.",
       "research": [
         {
-          "label": "Adipocyte assays",
-          "text": "lipolysis and lipogenesis readouts in isolated fat cells."
+          "label": "اختبارات الخلايا الدهنية",
+          "text": "قراءات تحلّل الدهون وتخليقها في خلايا دهنية معزولة."
         },
         {
-          "label": "Rodent metabolic models",
-          "text": "body-composition and plasma lipid readouts compared with full-length growth hormone."
+          "label": "نماذج الاستقلاب في القوارض",
+          "text": "قراءات تركيب الجسم ودهون البلازما مقارنةً بهرمون النمو الكامل الطول."
         },
         {
-          "label": "Structure–function studies",
-          "text": "comparison of growth hormone fragments with the parent hormone, including IGF-1 readouts."
+          "label": "دراسات العلاقة بين البنية والوظيفة",
+          "text": "مقارنة أجزاء هرمون النمو بالهرمون الأصلي، بما في ذلك قراءات IGF-1."
         }
       ]
     },
     "cjc-1295-no-dac": {
-      "identity": "Modified GRF (1-29), a GHRH analogue without the DAC linker",
-      "whatItIs": "CJC-1295 without DAC, also published as Modified GRF (1-29), is a synthetic analogue of the first 29 amino acids of growth hormone-releasing hormone (GHRH). Amino-acid substitutions give resistance to cleavage by dipeptidyl peptidase-4 (DPP-4). It has no drug affinity complex (DAC) linker, so it does not bind albumin, and its reported half-life is about 30 minutes. It is studied as a reference agonist at the pituitary GHRH receptor.",
+      "identity": "Modified GRF (1-29)، وهو نظير لـ GHRH من دون رابط DAC",
+      "whatItIs": "CJC-1295 من دون DAC، ويُنشر أيضًا باسم Modified GRF (1-29)، نظير اصطناعي لأول 29 حمضًا أمينيًا من الهرمون المُطلِق لهرمون النمو (GHRH). تمنحه استبدالات في الأحماض الأمينية مقاومةً للانشطار بواسطة إنزيم dipeptidyl peptidase-4 (DPP-4). لا يحتوي على رابط drug affinity complex (DAC)، لذلك لا يرتبط بالألبومين، ويبلغ عمر النصف المُبلَّغ عنه نحو 30 دقيقة. يُدرس بوصفه ناهضًا مرجعيًا لمستقبل GHRH في الغدة النخامية.",
       "research": [
         {
-          "label": "Pituitary cell models",
-          "text": "GHRH-receptor activation with cAMP and growth hormone release as readouts."
+          "label": "نماذج خلايا الغدة النخامية",
+          "text": "تنشيط مستقبل GHRH مع قراءات cAMP وإفراز هرمون النمو."
         },
         {
-          "label": "Animal endocrine studies",
-          "text": "growth hormone pulse profiles and IGF-1 readouts."
+          "label": "دراسات الغدد الصماء الحيوانية",
+          "text": "أنماط نبضات هرمون النمو وقراءات IGF-1."
         },
         {
-          "label": "Peptide stability studies",
-          "text": "DPP-4 resistance compared with native GHRH(1-29)."
+          "label": "دراسات ثبات الببتيد",
+          "text": "مقاومة DPP-4 مقارنةً بـ GHRH(1-29) الطبيعي."
         }
       ]
     },
     "cjc-1295": {
-      "identity": "a DPP-4-resistant synthetic GHRH(1-29) analogue studied at the GHRH receptor",
-      "whatItIs": "CJC-1295 is a synthetic analogue of the first 29 amino acids of growth hormone-releasing hormone (GHRH), with amino-acid substitutions that give resistance to dipeptidyl peptidase-4 (DPP-4). In the literature the name covers two forms: one with a drug affinity complex (DAC) linker that binds albumin, and one without it, also called Modified GRF (1-29). Check the product label and the batch COA for the exact form. Both forms are studied as agonists at the pituitary GHRH receptor.",
+      "identity": "نظير اصطناعي لـ GHRH(1-29) مقاوم لـ DPP-4، يُدرس عند مستقبل GHRH",
+      "whatItIs": "CJC-1295 نظير اصطناعي لأول 29 حمضًا أمينيًا من الهرمون المُطلِق لهرمون النمو (GHRH)، مع استبدالات في الأحماض الأمينية تمنحه مقاومةً لإنزيم dipeptidyl peptidase-4 (DPP-4). في الأدبيات العلمية يشمل هذا الاسم شكلين: شكل يحتوي على رابط drug affinity complex (DAC) يرتبط بالألبومين، وشكل من دونه يُسمى أيضًا Modified GRF (1-29). تحقّق من ملصق المنتج ومن شهادة التحليل (COA) للدفعة لمعرفة الشكل بدقة. يُدرس الشكلان كلاهما بوصفهما ناهضين لمستقبل GHRH في الغدة النخامية.",
       "research": [
         {
-          "label": "GHRH-receptor pharmacology",
-          "text": "receptor binding and cAMP signalling in pituitary cell models."
+          "label": "علم أدوية مستقبل GHRH",
+          "text": "الارتباط بالمستقبل وإشارات cAMP في نماذج خلايا الغدة النخامية."
         },
         {
-          "label": "Endocrine axis studies",
-          "text": "growth hormone and IGF-1 readouts in animal models."
+          "label": "دراسات محور الغدد الصماء",
+          "text": "قراءات هرمون النمو وIGF-1 في النماذج الحيوانية."
         }
       ]
     },
     "dsip": {
-      "identity": "delta sleep-inducing peptide, a nonapeptide studied in sleep physiology and neuroendocrine research",
-      "whatItIs": "DSIP (delta sleep-inducing peptide) is a nonapeptide first isolated from the cerebral venous blood of rabbits during induced sleep. It is classed as a neuropeptide, but no specific receptor has been identified and its mechanism is not fully characterised. Published research links it to sleep architecture, stress-hormone regulation and corticotropin release. It is a reference compound for neuroendocrine and sleep-physiology studies in animal models.",
+      "identity": "الببتيد المُحرِّض لنوم دلتا، وهو ببتيد تساعي يُدرس في أبحاث فسيولوجيا النوم والغدد الصماء العصبية",
+      "whatItIs": "DSIP (delta sleep-inducing peptide) ببتيد تساعي عُزل لأول مرة من الدم الوريدي الدماغي للأرانب أثناء نوم مُحرَّض. يُصنَّف ضمن الببتيدات العصبية، لكن لم يُحدَّد له مستقبل نوعي، ولم تُوصف آلية عمله وصفًا كاملًا. تربطه الأبحاث المنشورة ببنية النوم وتنظيم هرمونات الإجهاد وإفراز الكورتيكوتروبين. وهو مركب مرجعي لدراسات الغدد الصماء العصبية وفسيولوجيا النوم في النماذج الحيوانية.",
       "research": [
         {
-          "label": "Sleep-physiology models",
-          "text": "EEG recordings of slow-wave (delta) sleep in rodents and rabbits."
+          "label": "نماذج فسيولوجيا النوم",
+          "text": "تسجيلات EEG للنوم ذي الموجات البطيئة (دلتا) في القوارض والأرانب."
         },
         {
-          "label": "Neuroendocrine studies",
-          "text": "corticotropin and stress-hormone readouts in animal models."
+          "label": "دراسات الغدد الصماء العصبية",
+          "text": "قراءات الكورتيكوتروبين وهرمونات الإجهاد في النماذج الحيوانية."
         }
       ]
     },
     "epithalon": {
-      "identity": "the synthetic tetrapeptide Ala-Glu-Asp-Gly, studied in telomerase and pineal-function research",
-      "whatItIs": "Epithalon (epitalon) is a synthetic tetrapeptide, Ala-Glu-Asp-Gly, modelled on epithalamin, a polypeptide extract of the bovine pineal gland. Vladimir Khavinson's group at the Saint Petersburg Institute of Bioregulation and Gerontology developed it. Reported mechanisms include induction of telomerase activity in cell culture and effects on pineal melatonin production. It is studied as a reference compound in research on cellular ageing and pineal gland function.",
+      "identity": "الببتيد الرباعي الاصطناعي Ala-Glu-Asp-Gly، يُدرس في أبحاث التيلوميراز ووظيفة الغدة الصنوبرية",
+      "whatItIs": "Epithalon (epitalon) ببتيد رباعي اصطناعي، Ala-Glu-Asp-Gly، صُمّم على غرار epithalamin، وهو مستخلص عديد ببتيدي من الغدة الصنوبرية البقرية. طوّرته مجموعة Vladimir Khavinson في Saint Petersburg Institute of Bioregulation and Gerontology. تشمل الآليات المُبلَّغ عنها تحفيز نشاط التيلوميراز في مزارع الخلايا وتأثيرات على إنتاج الميلاتونين في الغدة الصنوبرية. يُدرس مركبًا مرجعيًا في أبحاث شيخوخة الخلايا ووظيفة الغدة الصنوبرية.",
       "research": [
         {
-          "label": "Cell-culture models",
-          "text": "telomerase activity and telomere length readouts."
+          "label": "نماذج مزارع الخلايا",
+          "text": "قراءات نشاط التيلوميراز وطول التيلومير."
         },
         {
-          "label": "Pineal function studies",
-          "text": "melatonin production readouts in animal models."
+          "label": "دراسات وظيفة الغدة الصنوبرية",
+          "text": "قراءات إنتاج الميلاتونين في النماذج الحيوانية."
         },
         {
-          "label": "Ageing models",
-          "text": "biomarker readouts in aged rodents."
+          "label": "نماذج الشيخوخة",
+          "text": "قراءات المؤشرات الحيوية في القوارض المسنّة."
         }
       ]
     },
     "ghk-cu": {
-      "identity": "the copper(II) complex of glycyl-L-histidyl-L-lysine, studied as a copper-delivery molecule",
-      "whatItIs": "GHK-Cu is the copper(II) complex of the tripeptide glycyl-L-histidyl-L-lysine. GHK was first isolated from human plasma and has since been found in saliva and urine. The peptide binds Cu²⁺ with high affinity and is studied as a copper-delivery molecule. Copper is a cofactor for lysyl oxidase, the enzyme that crosslinks collagen and elastin. GHK-Cu is also a cosmetic ingredient under the INCI name copper tripeptide-1. Its solutions are typically blue.",
+      "identity": "معقّد النحاس (II) مع glycyl-L-histidyl-L-lysine، يُدرس بوصفه جزيئًا ناقلًا للنحاس",
+      "whatItIs": "GHK-Cu هو معقّد النحاس (II) مع الببتيد الثلاثي glycyl-L-histidyl-L-lysine. عُزل GHK أولًا من البلازما البشرية، ثم وُجد لاحقًا في اللعاب والبول. يرتبط الببتيد بأيون Cu²⁺ بألفة عالية، ويُدرس بوصفه جزيئًا ناقلًا للنحاس. النحاس عامل مساعد لإنزيم lysyl oxidase، وهو الإنزيم الذي يُكوّن الروابط المتصالبة في الكولاجين والإيلاستين. GHK-Cu أيضًا مكوّن تجميلي يحمل اسم INCI وهو copper tripeptide-1. محاليله زرقاء اللون عادةً.",
       "research": [
         {
-          "label": "Fibroblast cultures",
-          "text": "collagen, elastin and glycosaminoglycan synthesis readouts."
+          "label": "مزارع الخلايا الليفية",
+          "text": "قراءات تخليق الكولاجين والإيلاستين والغليكوزامينوغليكان."
         },
         {
-          "label": "Gene-expression studies",
-          "text": "transcriptional profiling of cells exposed to GHK."
+          "label": "دراسات التعبير الجيني",
+          "text": "التنميط النسخي للخلايا المعرّضة لـ GHK."
         },
         {
-          "label": "Dermal models",
-          "text": "extracellular-matrix histology in skin models."
+          "label": "نماذج الأدمة",
+          "text": "البنية النسيجية للمطرس خارج الخلوي في نماذج الجلد."
         }
       ]
     },
     "ipamorelin": {
-      "identity": "a synthetic pentapeptide ghrelin-receptor (GHS-R1a) agonist studied in receptor-selectivity research",
-      "whatItIs": "Ipamorelin is a synthetic pentapeptide growth hormone secretagogue and an agonist of the ghrelin receptor (GHS-R1a) on pituitary somatotroph cells. The GHS-R1a pathway is separate from the GHRH receptor pathway. Published animal studies describe ipamorelin as selective: growth hormone release occurred without the marked ACTH or cortisol increase reported for older GHRP compounds. It is a reference compound for GHS-R1a pharmacology and receptor-selectivity studies.",
+      "identity": "ببتيد خماسي اصطناعي ناهض لمستقبل الغريلين (GHS-R1a)، يُدرس في أبحاث انتقائية المستقبلات",
+      "whatItIs": "Ipamorelin ببتيد خماسي اصطناعي من مُحفّزات إفراز هرمون النمو، وناهض لمستقبل الغريلين (GHS-R1a) على الخلايا الجسدية التغذوية في الغدة النخامية. مسار GHS-R1a منفصل عن مسار مستقبل GHRH. تصف الدراسات الحيوانية المنشورة ipamorelin بأنه انتقائي: إذ حدث إفراز هرمون النمو من دون الارتفاع الملحوظ في ACTH أو الكورتيزول الذي أُبلغ عنه مع مركبات GHRP الأقدم. وهو مركب مرجعي لعلم أدوية GHS-R1a ودراسات انتقائية المستقبلات.",
       "research": [
         {
-          "label": "Receptor pharmacology",
-          "text": "GHS-R1a binding and signalling assays."
+          "label": "علم أدوية المستقبلات",
+          "text": "اختبارات الارتباط والإشارات الخاصة بـ GHS-R1a."
         },
         {
-          "label": "Animal endocrine studies",
-          "text": "growth hormone, ACTH and cortisol readouts compared with other GHRP compounds."
+          "label": "دراسات الغدد الصماء الحيوانية",
+          "text": "قراءات هرمون النمو وACTH والكورتيزول مقارنةً بمركبات GHRP الأخرى."
         }
       ]
     },
     "kisspeptin-10": {
-      "identity": "the C-terminal decapeptide of kisspeptin, a KISS1R (GPR54) agonist",
-      "whatItIs": "Kisspeptin-10 is a decapeptide that corresponds to the C-terminal region of kisspeptin, the product of the KISS1 gene. It is an agonist at the kisspeptin receptor KISS1R, also known as GPR54. KISS1R is expressed on hypothalamic GnRH neurons, and kisspeptin signalling is studied as an upstream regulator of the hypothalamic-pituitary-gonadal axis. Kisspeptin-10 is a reference agonist in reproductive neuroendocrinology research in cell and animal models.",
+      "identity": "الببتيد العشري الطرفي C من الكيسببتين، وهو ناهض لمستقبل KISS1R (GPR54)",
+      "whatItIs": "Kisspeptin-10 ببتيد عشري يقابل المنطقة الطرفية C من الكيسببتين، وهو ناتج الجين KISS1. يعمل ناهضًا لمستقبل الكيسببتين KISS1R، المعروف أيضًا باسم GPR54. يُعبَّر عن KISS1R على عصبونات GnRH في الوطاء، وتُدرس إشارات الكيسببتين بوصفها مُنظِّمًا علويًا للمحور الوطائي النخامي التناسلي. Kisspeptin-10 ناهض مرجعي في أبحاث الغدد الصماء العصبية التناسلية في النماذج الخلوية والحيوانية.",
       "research": [
         {
-          "label": "Receptor assays",
-          "text": "KISS1R (GPR54) activation and downstream signalling in cell models."
+          "label": "اختبارات المستقبلات",
+          "text": "تنشيط KISS1R (GPR54) والإشارات اللاحقة في النماذج الخلوية."
         },
         {
-          "label": "Neuroendocrine studies",
-          "text": "GnRH and luteinising hormone (LH) readouts in animal models."
+          "label": "دراسات الغدد الصماء العصبية",
+          "text": "قراءات GnRH والهرمون المُلوتِن (LH) في النماذج الحيوانية."
         }
       ]
     },
     "kpv": {
-      "identity": "the tripeptide Lys-Pro-Val (α-MSH 11–13), studied in inflammation and epithelial biology",
-      "whatItIs": "KPV is the tripeptide Lys-Pro-Val, which corresponds to residues 11–13 at the C-terminus of α-melanocyte-stimulating hormone (α-MSH). Published work describes anti-inflammatory signalling activity for this fragment, including effects on NF-κB pathway readouts, without the MC1R-linked pigmentation activity of full-length α-MSH. Its small size has made it a subject of formulation research. It is studied as a reference fragment in inflammation and epithelial biology.",
+      "identity": "الببتيد الثلاثي Lys-Pro-Val (α-MSH 11–13)، يُدرس في أبحاث الالتهاب وبيولوجيا الظهارة",
+      "whatItIs": "KPV هو الببتيد الثلاثي Lys-Pro-Val، ويقابل البقايا 11–13 عند الطرف C من الهرمون المُنبِّه للخلايا الميلانينية ألفا (α-MSH). تصف الأعمال المنشورة نشاطًا إشاريًا مضادًا للالتهاب لهذا الجزء، بما في ذلك تأثيرات على قراءات مسار NF-κB، من دون نشاط التصبّغ المرتبط بـ MC1R الذي يميّز α-MSH الكامل الطول. جعله صغر حجمه موضوعًا لأبحاث الصياغة. يُدرس جزءًا مرجعيًا في أبحاث الالتهاب وبيولوجيا الظهارة.",
       "research": [
         {
-          "label": "Intestinal inflammation models",
-          "text": "rodent colitis models with cytokine and histology readouts."
+          "label": "نماذج التهاب الأمعاء",
+          "text": "نماذج التهاب القولون في القوارض مع قراءات السيتوكينات والبنية النسيجية."
         },
         {
-          "label": "Epithelial cell assays",
-          "text": "NF-κB activation and pro-inflammatory cytokine readouts."
+          "label": "اختبارات الخلايا الظهارية",
+          "text": "قراءات تنشيط NF-κB والسيتوكينات المُحفِّزة للالتهاب."
         }
       ]
     },
     "tirzepatide": {
-      "identity": "a 39-amino-acid dual GIP and GLP-1 receptor agonist peptide",
-      "whatItIs": "{name} is a single 39-amino-acid peptide that acts as an agonist at both the glucose-dependent insulinotropic polypeptide (GIP) receptor and the GLP-1 receptor. A C20 fatty-diacid side chain binds albumin and extends the plasma half-life. The dual-receptor design makes it a reference compound for incretin pharmacology. Research compares its signalling at each receptor, and its metabolic readouts in animal models, with those of single-receptor GLP-1 agonists.",
+      "identity": "ببتيد مكوّن من 39 حمضًا أمينيًا، ناهض مزدوج لمستقبلَي GIP وGLP-1",
+      "whatItIs": "{name} ببتيد مفرد مكوّن من 39 حمضًا أمينيًا يعمل ناهضًا لكلٍّ من مستقبل glucose-dependent insulinotropic polypeptide (GIP) ومستقبل GLP-1. ترتبط سلسلة جانبية من حمض دهني ثنائي الكربوكسيل C20 بالألبومين وتُطيل عمر النصف في البلازما. يجعله التصميم الثنائي المستقبل مركبًا مرجعيًا لعلم أدوية الإنكريتينات. تقارن الأبحاث إشاراته عند كل مستقبل، وقراءاته الاستقلابية في النماذج الحيوانية، بتلك الخاصة بنواهض GLP-1 الأحادية المستقبل.",
       "research": [
         {
-          "label": "Receptor pharmacology",
-          "text": "cAMP signalling and receptor-bias assays at the GIP and GLP-1 receptors."
+          "label": "علم أدوية المستقبلات",
+          "text": "اختبارات إشارات cAMP وانحياز المستقبل عند مستقبلَي GIP وGLP-1."
         },
         {
-          "label": "Rodent metabolic models",
-          "text": "glucose tolerance, insulin secretion, food intake and body-weight readouts in diet-induced obese animals."
+          "label": "نماذج الاستقلاب في القوارض",
+          "text": "قراءات تحمّل الغلوكوز وإفراز الإنسولين وتناول الطعام ووزن الجسم في حيوانات مصابة بالسمنة المُحدَثة غذائيًا."
         }
       ]
     },
     "retatrutide": {
-      "identity": "a single peptide agonist at the GIP, GLP-1 and glucagon receptors",
-      "whatItIs": "{name} is a single synthetic peptide that acts as an agonist at three receptors: the glucose-dependent insulinotropic polypeptide (GIP) receptor, the GLP-1 receptor and the glucagon receptor. The glucagon-receptor activity is the main difference from dual GIP/GLP-1 agonists. It is a reference compound for multi-receptor incretin and glucagon pharmacology, and research compares it with single- and dual-receptor agonists in cell assays and animal models.",
+      "identity": "ببتيد مفرد ناهض لمستقبلات GIP وGLP-1 والغلوكاغون",
+      "whatItIs": "{name} ببتيد اصطناعي مفرد يعمل ناهضًا لثلاثة مستقبلات: مستقبل glucose-dependent insulinotropic polypeptide (GIP) ومستقبل GLP-1 ومستقبل الغلوكاغون. يمثّل النشاط عند مستقبل الغلوكاغون الفرق الرئيسي عن النواهض المزدوجة لـ GIP/GLP-1. وهو مركب مرجعي لعلم أدوية الإنكريتينات والغلوكاغون المتعدد المستقبلات، وتقارنه الأبحاث بالنواهض الأحادية والثنائية المستقبل في الاختبارات الخلوية والنماذج الحيوانية.",
       "research": [
         {
-          "label": "Receptor pharmacology",
-          "text": "cAMP signalling at the GIP, GLP-1 and glucagon receptors in cell assays."
+          "label": "علم أدوية المستقبلات",
+          "text": "إشارات cAMP عند مستقبلات GIP وGLP-1 والغلوكاغون في الاختبارات الخلوية."
         },
         {
-          "label": "Rodent metabolic models",
-          "text": "energy expenditure, glucose and body-weight readouts."
+          "label": "نماذج الاستقلاب في القوارض",
+          "text": "قراءات استهلاك الطاقة والغلوكوز ووزن الجسم."
         },
         {
-          "label": "Hepatic lipid studies",
-          "text": "liver fat and lipid-metabolism readouts linked to glucagon-receptor activity."
+          "label": "دراسات الدهون الكبدية",
+          "text": "قراءات دهون الكبد واستقلاب الدهون المرتبطة بالنشاط عند مستقبل الغلوكاغون."
         }
       ]
     },
     "mots-c": {
-      "identity": "a 16-amino-acid mitochondrial-derived peptide studied in AMPK signalling and energy-metabolism research",
-      "whatItIs": "MOTS-c is a 16-amino-acid peptide encoded by a short open reading frame in the mitochondrial 12S rRNA gene, and it belongs to the mitochondrial-derived peptide class. Published work reports that it can move to the nucleus under metabolic stress and influence nuclear gene expression. It is also linked to AMPK pathway activation and to cellular energy metabolism in skeletal muscle models. It is a reference compound for mitochondrial-to-nuclear signalling and cellular energy-metabolism research.",
+      "identity": "ببتيد مشتق من الميتوكوندريا مكوّن من 16 حمضًا أمينيًا، يُدرس في أبحاث إشارات AMPK واستقلاب الطاقة",
+      "whatItIs": "MOTS-c ببتيد مكوّن من 16 حمضًا أمينيًا يُرمِّزه إطار قراءة مفتوح قصير في جين 12S rRNA الميتوكوندري، وينتمي إلى فئة الببتيدات المشتقة من الميتوكوندريا. تُفيد الأعمال المنشورة بأنه قد ينتقل إلى النواة تحت الإجهاد الاستقلابي ويؤثر في التعبير الجيني النووي. ويرتبط أيضًا بتنشيط مسار AMPK وباستقلاب الطاقة الخلوي في نماذج العضلات الهيكلية. وهو مركب مرجعي لأبحاث الإشارات من الميتوكوندريا إلى النواة واستقلاب الطاقة الخلوي.",
       "research": [
         {
-          "label": "Skeletal muscle cell models",
-          "text": "AMPK activation and glucose-uptake readouts."
+          "label": "نماذج خلايا العضلات الهيكلية",
+          "text": "قراءات تنشيط AMPK وامتصاص الغلوكوز."
         },
         {
-          "label": "Rodent metabolic models",
-          "text": "insulin sensitivity and energy-metabolism readouts."
+          "label": "نماذج الاستقلاب في القوارض",
+          "text": "قراءات الحساسية للإنسولين واستقلاب الطاقة."
         }
       ]
     },
     "nad-plus": {
-      "identity": "nicotinamide adenine dinucleotide, a redox coenzyme studied in energy metabolism",
-      "whatItIs": "NAD+ (nicotinamide adenine dinucleotide) is a dinucleotide coenzyme, not a peptide, present in all living cells. It carries electrons in the redox reactions of glycolysis and mitochondrial respiration. It is also a substrate for NAD+-consuming enzymes, including sirtuins, poly(ADP-ribose) polymerases (PARPs) and CD38. Published research reports that tissue NAD+ levels decline with age in animal models. It is a reference compound in cellular energy-metabolism and sirtuin research.",
+      "identity": "nicotinamide adenine dinucleotide، وهو مرافق إنزيمي للأكسدة والاختزال يُدرس في أبحاث استقلاب الطاقة",
+      "whatItIs": "NAD+ (nicotinamide adenine dinucleotide) مرافق إنزيمي ثنائي النيوكليوتيد، وليس ببتيدًا، ويوجد في جميع الخلايا الحية. ينقل الإلكترونات في تفاعلات الأكسدة والاختزال في التحلّل السكري والتنفس الميتوكوندري. وهو أيضًا ركيزة للإنزيمات المستهلكة لـ NAD+، ومنها السيرتوينات وإنزيمات poly(ADP-ribose) polymerase (PARP) وCD38. تُفيد الأبحاث المنشورة بأن مستويات NAD+ في الأنسجة تنخفض مع التقدم في العمر في النماذج الحيوانية. وهو مركب مرجعي في أبحاث استقلاب الطاقة الخلوي والسيرتوينات.",
       "research": [
         {
-          "label": "Cell assays",
-          "text": "NAD+/NADH ratio, sirtuin activity and PARP activity readouts."
+          "label": "الاختبارات الخلوية",
+          "text": "قراءات نسبة NAD+/NADH ونشاط السيرتوينات ونشاط PARP."
         },
         {
-          "label": "Mitochondrial studies",
-          "text": "respiration and redox-state measurements in isolated mitochondria and cells."
+          "label": "دراسات الميتوكوندريا",
+          "text": "قياسات التنفس وحالة الأكسدة والاختزال في الميتوكوندريا المعزولة والخلايا."
         },
         {
-          "label": "Ageing models",
-          "text": "tissue NAD+ measurement in aged rodents."
+          "label": "نماذج الشيخوخة",
+          "text": "قياس NAD+ في أنسجة القوارض المسنّة."
         }
       ]
     },
     "pt-141": {
-      "identity": "bremelanotide, a cyclic heptapeptide MC3R/MC4R agonist studied in central signalling",
-      "whatItIs": "PT-141 (bremelanotide) is a synthetic cyclic heptapeptide analogue of α-melanocyte-stimulating hormone (α-MSH). It acts mainly as an agonist at the melanocortin receptors MC3R and MC4R, which are expressed in the central nervous system. Its development began in melanocortin research on pigmentation, and later work focused on central melanocortin signalling. It is a reference compound for MC4R pharmacology and hypothalamic pathway research.",
+      "identity": "bremelanotide، ببتيد سباعي حلقي ناهض لمستقبلَي MC3R/MC4R، يُدرس في أبحاث الإشارات المركزية",
+      "whatItIs": "PT-141 (bremelanotide) نظير اصطناعي حلقي سباعي الببتيد للهرمون المُنبِّه للخلايا الميلانينية ألفا (α-MSH). يعمل أساسًا ناهضًا لمستقبلَي الميلانوكورتين MC3R وMC4R، اللذين يُعبَّر عنهما في الجهاز العصبي المركزي. بدأ تطويره في أبحاث الميلانوكورتين المتعلقة بالتصبّغ، ثم ركّزت الأعمال اللاحقة على إشارات الميلانوكورتين المركزية. وهو مركب مرجعي لعلم أدوية MC4R وأبحاث المسارات الوطائية.",
       "research": [
         {
-          "label": "Receptor pharmacology",
-          "text": "MC3R and MC4R binding and cAMP signalling assays."
+          "label": "علم أدوية المستقبلات",
+          "text": "اختبارات الارتباط بـ MC3R وMC4R وإشارات cAMP."
         },
         {
-          "label": "Central signalling studies",
-          "text": "hypothalamic melanocortin pathway readouts in rodent behavioural models."
+          "label": "دراسات الإشارات المركزية",
+          "text": "قراءات مسار الميلانوكورتين الوطائي في النماذج السلوكية للقوارض."
         }
       ]
     },
     "selank": {
-      "identity": "a synthetic heptapeptide analogue of tuftsin studied in GABAergic and neuropeptide research",
-      "whatItIs": "Selank (TP-7) is a synthetic heptapeptide developed from tuftsin, an endogenous immunomodulatory tetrapeptide, and it is classed as a tuftsin analogue. Russian research groups developed it as a research tool. Published animal work links it to GABAergic modulation, BDNF expression in the hippocampus and inhibition of enkephalin-degrading enzymes. It is a reference compound in stress-response, anxiety-model and neuropeptide research in rodents.",
+      "identity": "ببتيد سباعي اصطناعي نظير للتفتسين، يُدرس في أبحاث النظام الغاباوي والببتيدات العصبية",
+      "whatItIs": "Selank (TP-7) ببتيد سباعي اصطناعي طُوِّر من التفتسين، وهو ببتيد رباعي داخلي المنشأ مُعدِّل للمناعة، ويُصنَّف نظيرًا للتفتسين. طوّرته مجموعات بحثية روسية أداةً بحثية. تربطه الأعمال الحيوانية المنشورة بتعديل النظام الغاباوي، وبالتعبير عن BDNF في الحُصين، وبتثبيط الإنزيمات المُفكِّكة للإنكيفالين. وهو مركب مرجعي في أبحاث الاستجابة للإجهاد ونماذج القلق والببتيدات العصبية في القوارض.",
       "research": [
         {
-          "label": "Rodent behavioural models",
-          "text": "anxiety-related behaviour tests with neurochemical readouts."
+          "label": "النماذج السلوكية في القوارض",
+          "text": "اختبارات السلوك المرتبط بالقلق مع قراءات كيميائية عصبية."
         },
         {
-          "label": "Gene-expression studies",
-          "text": "GABA-system and BDNF expression readouts in brain tissue."
+          "label": "دراسات التعبير الجيني",
+          "text": "قراءات التعبير عن نظام GABA وBDNF في نسيج الدماغ."
         }
       ]
     },
     "semax": {
-      "identity": "the synthetic heptapeptide MEHFPGP, an ACTH(4–10) analogue studied in neurotrophin research",
-      "whatItIs": "Semax is a synthetic heptapeptide, Met-Glu-His-Phe-Pro-Gly-Pro (MEHFPGP). Its sequence is derived from the N-terminal region of adrenocorticotropic hormone (ACTH), and it is classed as an ACTH(4–10) analogue. Published animal work links it to BDNF and NGF expression in the hippocampus and cortex and to changes in enkephalin degradation. It is a reference compound for neurotrophic pathway and cerebral ischaemia research in rodent models.",
+      "identity": "الببتيد السباعي الاصطناعي MEHFPGP، نظير لـ ACTH(4–10) يُدرس في أبحاث العوامل التغذوية العصبية",
+      "whatItIs": "Semax ببتيد سباعي اصطناعي، Met-Glu-His-Phe-Pro-Gly-Pro (MEHFPGP). يُشتق تسلسله من المنطقة الطرفية N من الهرمون الموجِّه لقشر الكظر (ACTH)، ويُصنَّف نظيرًا لـ ACTH(4–10). تربطه الأعمال الحيوانية المنشورة بالتعبير عن BDNF وNGF في الحُصين والقشرة الدماغية، وبتغيّرات في تفكّك الإنكيفالين. وهو مركب مرجعي لأبحاث مسارات العوامل التغذوية العصبية ونقص التروية الدماغية في نماذج القوارض.",
       "research": [
         {
-          "label": "Neurotrophin studies",
-          "text": "BDNF and NGF expression readouts in rodent brain tissue."
+          "label": "دراسات العوامل التغذوية العصبية",
+          "text": "قراءات التعبير عن BDNF وNGF في نسيج دماغ القوارض."
         },
         {
-          "label": "Cerebral ischaemia models",
-          "text": "gene-expression and histology readouts in rodents."
+          "label": "نماذج نقص التروية الدماغية",
+          "text": "قراءات التعبير الجيني والبنية النسيجية في القوارض."
         },
         {
-          "label": "Behavioural models",
-          "text": "learning and memory tests in rodents."
+          "label": "النماذج السلوكية",
+          "text": "اختبارات التعلّم والذاكرة في القوارض."
         }
       ]
     },
     "ss-31": {
-      "identity": "elamipretide, a mitochondria-targeted tetrapeptide that binds cardiolipin, studied in bioenergetics research",
-      "whatItIs": "SS-31 (elamipretide; also published as Bendavia and MTP-131) is a cell-permeable aromatic-cationic tetrapeptide. It accumulates in the inner mitochondrial membrane, where it binds cardiolipin, the phospholipid that supports the electron-transport-chain complexes and cristae structure. Preclinical studies report effects on cristae architecture, cardiolipin peroxidation and reactive-oxygen-species production. It is a reference compound for mitochondrial bioenergetics and cardiolipin biology in cell, isolated-mitochondria and animal models.",
+      "identity": "elamipretide، ببتيد رباعي موجَّه إلى الميتوكوندريا يرتبط بالكارديوليبين، يُدرس في أبحاث الطاقة الحيوية",
+      "whatItIs": "SS-31 (elamipretide، ويُنشر أيضًا باسم Bendavia وMTP-131) ببتيد رباعي عطري موجب الشحنة قادر على النفاذ إلى الخلايا. يتراكم في الغشاء الداخلي للميتوكوندريا، حيث يرتبط بالكارديوليبين، وهو الفوسفوليبيد الذي يدعم معقّدات سلسلة نقل الإلكترونات وبنية الأعراف. تُفيد الدراسات ما قبل السريرية بتأثيرات على بنية الأعراف وبيروكسدة الكارديوليبين وإنتاج أنواع الأكسجين التفاعلية. وهو مركب مرجعي للطاقة الحيوية الميتوكوندرية وبيولوجيا الكارديوليبين في النماذج الخلوية ونماذج الميتوكوندريا المعزولة والنماذج الحيوانية.",
       "research": [
         {
-          "label": "Isolated mitochondria",
-          "text": "respiration, ATP synthesis and reactive-oxygen-species readouts."
+          "label": "الميتوكوندريا المعزولة",
+          "text": "قراءات التنفس وتخليق ATP وأنواع الأكسجين التفاعلية."
         },
         {
-          "label": "Ischaemia–reperfusion models",
-          "text": "cardiac and renal tissue readouts in animals."
+          "label": "نماذج نقص التروية وعودة التروية",
+          "text": "قراءات أنسجة القلب والكلى في الحيوانات."
         },
         {
-          "label": "Membrane biology",
-          "text": "cardiolipin binding and peroxidation assays."
+          "label": "بيولوجيا الأغشية",
+          "text": "اختبارات الارتباط بالكارديوليبين والبيروكسدة."
         }
       ]
     },
     "tesamorelin": {
-      "identity": "a synthetic GHRH(1-44) analogue studied in growth hormone axis research",
-      "whatItIs": "Tesamorelin is a synthetic analogue of the full 44-amino-acid human growth hormone-releasing hormone (GHRH), with a trans-3-hexenoyl group at the N-terminus. The modification increases resistance to DPP-4 degradation. It acts at pituitary GHRH receptors, and published studies report pulsatile release of endogenous growth hormone with higher IGF-1 concentrations. It is a reference compound for GHRH-receptor pharmacology and growth hormone axis research.",
+      "identity": "نظير اصطناعي لـ GHRH(1-44) يُدرس في أبحاث محور هرمون النمو",
+      "whatItIs": "Tesamorelin نظير اصطناعي للهرمون البشري المُطلِق لهرمون النمو (GHRH) الكامل المكوّن من 44 حمضًا أمينيًا، مع مجموعة trans-3-hexenoyl عند الطرف N. يزيد هذا التعديل المقاومة للتفكّك بواسطة DPP-4. يعمل عند مستقبلات GHRH في الغدة النخامية، وتُفيد الدراسات المنشورة بإفراز نبضي لهرمون النمو الداخلي مع تراكيز أعلى من IGF-1. وهو مركب مرجعي لعلم أدوية مستقبل GHRH وأبحاث محور هرمون النمو.",
       "research": [
         {
-          "label": "Receptor pharmacology",
-          "text": "GHRH-receptor activation and cAMP readouts in pituitary cells."
+          "label": "علم أدوية المستقبلات",
+          "text": "قراءات تنشيط مستقبل GHRH وcAMP في خلايا الغدة النخامية."
         },
         {
-          "label": "Endocrine studies",
-          "text": "growth hormone pulse and IGF-1 readouts."
+          "label": "دراسات الغدد الصماء",
+          "text": "قراءات نبضات هرمون النمو وIGF-1."
         },
         {
-          "label": "Body-composition studies",
-          "text": "adipose-tissue imaging endpoints in published research."
+          "label": "دراسات تركيب الجسم",
+          "text": "نقاط نهاية تصوير النسيج الدهني في الأبحاث المنشورة."
         }
       ]
     },
     "thymosin-beta-4": {
-      "identity": "a 43-amino-acid G-actin-sequestering peptide studied in cytoskeleton and cell-migration research",
-      "whatItIs": "Thymosin beta-4 (Tβ4) is a naturally occurring 43-amino-acid peptide and one of the main G-actin-sequestering molecules in mammalian cells. By binding monomeric actin, it regulates the pool of actin available for filament assembly, which affects cell motility. The synthetic fragment TB-500 is modelled on its actin-binding region. Thymosin beta-4 is a reference compound for actin-cytoskeleton and cell-migration research in cell and animal models.",
+      "identity": "ببتيد مكوّن من 43 حمضًا أمينيًا يحتجز الأكتين G، يُدرس في أبحاث الهيكل الخلوي وهجرة الخلايا",
+      "whatItIs": "Thymosin beta-4 (Tβ4) ببتيد طبيعي المنشأ مكوّن من 43 حمضًا أمينيًا، وهو أحد الجزيئات الرئيسية التي تحتجز الأكتين G في خلايا الثدييات. يرتبط بالأكتين الأحادي، فيُنظّم مخزون الأكتين المتاح لتجميع الخيوط، وهذا يؤثر في حركة الخلايا. صُمّم الجزء الاصطناعي TB-500 على غرار منطقته الرابطة للأكتين. Thymosin beta-4 مركب مرجعي لأبحاث الهيكل الخلوي الأكتيني وهجرة الخلايا في النماذج الخلوية والحيوانية.",
       "research": [
         {
-          "label": "Cell-migration assays",
-          "text": "actin dynamics and endothelial or keratinocyte migration readouts."
+          "label": "اختبارات هجرة الخلايا",
+          "text": "قراءات ديناميكية الأكتين وهجرة الخلايا البطانية أو الخلايا الكيراتينية."
         },
         {
-          "label": "Rodent tissue-injury models",
-          "text": "dermal and cardiac histology readouts, including angiogenesis markers."
+          "label": "نماذج إصابة الأنسجة في القوارض",
+          "text": "قراءات نسيجية للأدمة والقلب، بما في ذلك مؤشرات تكوّن الأوعية الدموية."
         }
       ]
     },
     "bacteriostatic-water": {
-      "identity": "sterile water with 0.9% benzyl alcohol, a laboratory diluent for lyophilized peptides",
-      "whatItIs": "Bacteriostatic water is sterile water that contains 0.9% benzyl alcohol as a preservative, which is the standard composition for this diluent. The benzyl alcohol limits microbial growth in the vial after the stopper is punctured. Laboratories use it to reconstitute lyophilized peptides and to prepare working solutions. It is not suitable for every compound, and some peptides need a different solvent, such as acetic acid water. Check compatibility on the compound data sheet.",
+      "identity": "ماء معقّم يحتوي على 0.9% كحول بنزيلي، وهو مُذيب مخبري للببتيدات المجفّدة بالتجميد",
+      "whatItIs": "الماء البكتيريوستاتي ماء معقّم يحتوي على 0.9% كحول بنزيلي مادةً حافظة، وهو التركيب القياسي لهذا المُذيب. يحدّ الكحول البنزيلي من نمو الميكروبات داخل القارورة بعد ثقب السدادة. تستخدمه المختبرات لإذابة الببتيدات المجفّدة بالتجميد ولإعداد المحاليل العاملة. لا يناسب كل المركبات، وتحتاج بعض الببتيدات إلى مُذيب آخر، مثل ماء حمض الأسيتيك. تحقّق من التوافق في صحيفة بيانات المركب.",
       "research": [
         {
-          "label": "Reconstitution",
-          "text": "dissolution of lyophilized research peptides for bench work."
+          "label": "إعادة الإذابة",
+          "text": "إذابة ببتيدات بحثية مجفّدة بالتجميد للعمل المخبري."
         },
         {
-          "label": "Working solutions",
-          "text": "dilution steps in methods that specify a preserved aqueous diluent."
+          "label": "المحاليل العاملة",
+          "text": "خطوات التخفيف في الطرائق التي تنصّ على مُذيب مائي يحتوي على مادة حافظة."
         }
       ]
     },
     "acetic-acid-water": {
-      "identity": "dilute acetic acid in sterile water, a laboratory diluent for poorly soluble peptides",
-      "whatItIs": "Acetic acid water is a dilute solution of acetic acid in sterile water. Laboratories use it as a diluent for peptides that dissolve poorly in neutral water, because a mildly acidic solvent can increase the solubility of some peptide sequences. The acetic acid concentration is as printed on the vial label. Before use, confirm on the compound data sheet that an acidic diluent is compatible with the peptide and with the planned assay.",
+      "identity": "حمض أسيتيك مخفّف في ماء معقّم، وهو مُذيب مخبري للببتيدات الضعيفة الذوبان",
+      "whatItIs": "ماء حمض الأسيتيك محلول مخفّف من حمض الأسيتيك في ماء معقّم. تستخدمه المختبرات مُذيبًا للببتيدات التي تذوب بصعوبة في الماء المتعادل، لأن المُذيب الحمضي الخفيف قد يزيد قابلية ذوبان بعض تسلسلات الببتيد. تركيز حمض الأسيتيك هو المطبوع على ملصق القارورة. قبل الاستخدام، تأكّد من صحيفة بيانات المركب أن المُذيب الحمضي متوافق مع الببتيد ومع الاختبار المخطّط له.",
       "research": [
         {
-          "label": "Poorly soluble peptides",
-          "text": "reconstitution where neutral water or bacteriostatic water gives incomplete dissolution."
+          "label": "الببتيدات الضعيفة الذوبان",
+          "text": "إعادة الإذابة عندما لا يُذيب الماء المتعادل أو الماء البكتيريوستاتي الببتيد إذابةً كاملة."
         },
         {
-          "label": "Solvent selection",
-          "text": "comparison of diluents during laboratory method development."
+          "label": "اختيار المُذيب",
+          "text": "مقارنة المُذيبات أثناء تطوير الطرائق المخبرية."
         }
       ]
     },
     "dual-chamber-device": {
-      "identity": "a reusable aluminium device for Supreme Biologics dual-chamber cartridges, with no needle included",
-      "whatItIs": "This is a reusable aluminium device from Supreme Biologics for its dual-chamber cartridges. It holds one Supreme Biologics dual-chamber cartridge at a time and contains no compound of its own. No needle is included, and the cartridges are sold separately on their own product pages. The device fits only the Supreme Biologics dual-chamber system. The Supreme Biologics reusable pen for single-chamber refill cartridges is a separate system.",
+      "identity": "جهاز ألومنيوم قابل لإعادة الاستخدام لخراطيش Supreme Biologics الثنائية الحجرة، من دون إبرة",
+      "whatItIs": "هذا جهاز ألومنيوم قابل لإعادة الاستخدام من Supreme Biologics لخراطيشها الثنائية الحجرة. يحمل خرطوشة واحدة ثنائية الحجرة من Supreme Biologics في كل مرة، ولا يحتوي على أي مركب. لا تُرفق معه إبرة، وتُباع الخراطيش بشكل منفصل في صفحات المنتجات الخاصة بها. يتوافق الجهاز مع نظام Supreme Biologics الثنائي الحجرة فقط. أما قلم Supreme Biologics القابل لإعادة الاستخدام لخراطيش إعادة التعبئة الأحادية الحجرة فهو نظام منفصل.",
       "research": [
         {
-          "label": "Compatible with",
-          "text": "Supreme Biologics dual-chamber cartridges listed on this site."
+          "label": "متوافق مع",
+          "text": "خراطيش Supreme Biologics الثنائية الحجرة المعروضة على هذا الموقع."
         },
         {
-          "label": "Not compatible with",
-          "text": "single-chamber refill cartridges for the Supreme Biologics reusable pen, or cartridges from other manufacturers."
+          "label": "غير متوافق مع",
+          "text": "خراطيش إعادة التعبئة الأحادية الحجرة لقلم Supreme Biologics القابل لإعادة الاستخدام، أو خراطيش الشركات المصنّعة الأخرى."
         }
       ]
     }
   },
   "diluentNames": {
     "bacteriostatic-water": {
-      "title": "Bacteriostatic Water",
-      "noun": "bacteriostatic water"
+      "title": "ماء بكتيريوستاتي",
+      "noun": "ماء بكتيريوستاتي"
     },
     "acetic-acid-water": {
-      "title": "Acetic Acid Water",
-      "noun": "acetic acid water"
+      "title": "ماء حمض الأسيتيك",
+      "noun": "ماء حمض الأسيتيك"
     }
   },
   "headings": {
-    "whatItIs": "What it is",
-    "researchContext": "Research context",
-    "laboratoryUse": "Laboratory use",
-    "compatibility": "Compatibility",
-    "quality": "Quality and testing",
-    "storage": "Storage and handling",
-    "inTheBox": "In the box",
-    "manufacturer": "Manufacturer and delivery"
+    "whatItIs": "ما هو",
+    "researchContext": "السياق البحثي",
+    "laboratoryUse": "الاستخدام المخبري",
+    "compatibility": "التوافق",
+    "quality": "الجودة والاختبار",
+    "storage": "التخزين والتعامل",
+    "inTheBox": "محتويات العلبة",
+    "manufacturer": "الشركة المصنّعة والتوصيل"
   },
   "formats": {
-    "vial": "lyophilized vial",
-    "pen": "ready-mixed pen",
-    "multidose": "reusable pen with single-chamber refill",
-    "dual": "dual-chamber cartridges",
-    "spray": "spray-format vial",
-    "diluent": "diluent vial",
-    "device": "dual-chamber cartridge device"
+    "vial": "قارورة مجفّدة بالتجميد",
+    "pen": "قلم جاهز الخلط",
+    "multidose": "قلم قابل لإعادة الاستخدام مع خرطوشة إعادة تعبئة أحادية الحجرة",
+    "dual": "خراطيش ثنائية الحجرة",
+    "spray": "قارورة بصيغة بخّاخ",
+    "diluent": "قارورة مُذيب",
+    "device": "جهاز للخراطيش الثنائية الحجرة"
   },
   "list": {
-    "separator": ", ",
-    "lastSeparator": " and "
+    "separator": "، ",
+    "lastSeparator": " و"
   },
   "sized": "{name} {size}",
   "quality": {
-    "purity": "Stated purity: {purity}%. The batch COA gives the analytical method and results.",
-    "purityUnknown": "Purity: see the batch COA.",
-    "cas": "CAS number: {cas}.",
-    "formula": "Molecular formula: {formula}.",
-    "coaRef": "Refer to the batch certificate of analysis (COA) for the batch number and test data.",
-    "deviceNoCoa": "The device contains no compound, so no certificate of analysis applies.",
-    "deviceInspect": "Check the device for damage on arrival.",
-    "compositionBac": "Composition: sterile water with 0.9% benzyl alcohol.",
-    "compositionAa": "Composition: dilute acetic acid in sterile water. The concentration is as printed on the vial label.",
-    "checkLot": "Check the lot number and expiry date on the label.",
-    "checkSolution": "Do not use the solution if it is cloudy, discoloured or contains particles, or if the seal is damaged."
+    "purity": "النقاوة المُعلنة: {purity}%. تبيّن شهادة التحليل (COA) للدفعة طريقة التحليل ونتائجه.",
+    "purityUnknown": "النقاوة: راجع شهادة التحليل (COA) للدفعة.",
+    "cas": "رقم CAS: {cas}.",
+    "formula": "الصيغة الجزيئية: {formula}.",
+    "coaRef": "راجع شهادة التحليل (COA) للدفعة لمعرفة رقم الدفعة وبيانات الاختبار.",
+    "deviceNoCoa": "لا يحتوي الجهاز على أي مركب، لذلك لا تنطبق عليه شهادة تحليل.",
+    "deviceInspect": "افحص الجهاز بحثًا عن أي تلف عند الاستلام.",
+    "compositionBac": "التركيب: ماء معقّم يحتوي على 0.9% كحول بنزيلي.",
+    "compositionAa": "التركيب: حمض أسيتيك مخفّف في ماء معقّم. التركيز هو المطبوع على ملصق القارورة.",
+    "checkLot": "تحقّق من رقم الدفعة وتاريخ انتهاء الصلاحية على الملصق.",
+    "checkSolution": "لا تستخدم المحلول إذا كان عكرًا أو متغيّر اللون أو يحتوي على جسيمات، أو إذا كان الختم تالفًا."
   },
   "storage": {
     "powder": [
-      "Lyophilized powder: store at -20°C for long-term storage, or at 2–8°C for short-term storage.",
-      "Keep dry and protected from light.",
-      "After reconstitution, store at 2–8°C and use within 30 days."
+      "المسحوق المجفّد بالتجميد: يُخزَّن عند -20°C للتخزين الطويل الأمد، أو عند 2–8°C للتخزين القصير الأمد.",
+      "يُحفظ جافًا وبعيدًا عن الضوء.",
+      "بعد الإذابة، يُخزَّن عند 2–8°C ويُستخدم خلال 30 يومًا."
     ],
     "dualDry": [
-      "Unmixed cartridges (lyophilized powder): store at -20°C for long-term storage, or at 2–8°C for short-term storage.",
-      "Keep dry and protected from light.",
-      "After the diluent is added and mixed, store at 2–8°C and use within 30 days."
+      "الخراطيش غير المخلوطة (مسحوق مجفّد بالتجميد): تُخزَّن عند -20°C للتخزين الطويل الأمد، أو عند 2–8°C للتخزين القصير الأمد.",
+      "تُحفظ جافةً وبعيدًا عن الضوء.",
+      "بعد إضافة المُذيب وخلطه، تُخزَّن عند 2–8°C وتُستخدم خلال 30 يومًا."
     ],
     "dualWithDiluent": [
-      "Unmixed cartridges contain liquid diluent in one chamber: store at 2–8°C unless the label states otherwise.",
-      "Keep protected from light.",
-      "After mixing, store at 2–8°C and use within 30 days."
+      "تحتوي الخراطيش غير المخلوطة على مُذيب سائل في إحدى الحجرتين: تُخزَّن عند 2–8°C ما لم يذكر الملصق خلاف ذلك.",
+      "تُحفظ بعيدًا عن الضوء.",
+      "بعد الخلط، تُخزَّن عند 2–8°C وتُستخدم خلال 30 يومًا."
     ],
     "liquid": [
-      "Supplied as ready-mixed liquid: store at 2–8°C and keep protected from light.",
-      "After first use, keep at 2–8°C and use within 30 days.",
-      "Follow the expiry date on the product label."
+      "يُورَّد سائلًا جاهز الخلط: يُخزَّن عند 2–8°C ويُحفظ بعيدًا عن الضوء.",
+      "بعد الاستخدام الأول، يُحفظ عند 2–8°C ويُستخدم خلال 30 يومًا.",
+      "اتّبع تاريخ انتهاء الصلاحية المذكور على ملصق المنتج."
     ],
     "device": [
-      "Keep the device clean and dry between uses.",
-      "Store cartridges as described on their own product pages."
+      "حافظ على نظافة الجهاز وجفافه بين مرات الاستخدام.",
+      "خزّن الخراطيش وفق التعليمات الواردة في صفحات المنتجات الخاصة بها."
     ],
     "aceticAcid": [
-      "Store sealed at room temperature.",
-      "Single-use only: discard any remaining volume after first puncture."
+      "يُخزَّن مختومًا في درجة حرارة الغرفة.",
+      "للاستخدام مرة واحدة فقط: تخلّص من أي كمية متبقية بعد الثقب الأول."
     ],
     "bacRoomTemp": [
-      "Store sealed vials at room temperature, upright and protected from light.",
-      "After first puncture, store at 2–8°C and follow the discard date on the product label."
+      "تُخزَّن القوارير المختومة في درجة حرارة الغرفة، في وضع قائم وبعيدًا عن الضوء.",
+      "بعد الثقب الأول، تُخزَّن عند 2–8°C ويُتّبع تاريخ التخلّص المذكور على ملصق المنتج."
     ],
     "bacLabel": [
-      "Keep the vial sealed until first use.",
-      "Follow the storage and opened-vial instructions on the product label."
+      "أبقِ القارورة مختومة حتى الاستخدام الأول.",
+      "اتّبع تعليمات التخزين وتعليمات القارورة المفتوحة المذكورة على ملصق المنتج."
     ]
   },
   "box": {
     "vial": [
-      "One vial of {sized} as lyophilized powder. The stated amount is the total in the vial.",
-      "Diluent is not included. Bacteriostatic water and acetic acid water are sold separately."
+      "قارورة واحدة من {sized} على شكل مسحوق مجفّد بالتجميد. الكمية المذكورة هي الإجمالي في القارورة.",
+      "المُذيب غير مُرفق. يُباع الماء البكتيريوستاتي وماء حمض الأسيتيك بشكل منفصل."
     ],
     "pen": [
-      "One {brand} pen containing {sized} as ready-mixed liquid.",
-      "The stated amount is the total in the pen, not the amount per click.",
-      "No diluent is needed."
+      "قلم واحد من {brand} يحتوي على {sized} على شكل سائل جاهز الخلط.",
+      "الكمية المذكورة هي الإجمالي في القلم، وليست الكمية لكل نقرة.",
+      "لا حاجة إلى مُذيب."
     ],
     "multidose": [
-      "**First purchase** — the Supreme Biologics reusable pen with one matching {sized} single-chamber refill cartridge.",
-      "**Refill only** — one {sized} single-chamber refill cartridge for an existing compatible pen.",
-      "The refill contains ready-mixed liquid. The label states the total per cartridge, not the amount per click."
+      "**الشراء الأول** — قلم Supreme Biologics القابل لإعادة الاستخدام مع خرطوشة إعادة تعبئة أحادية الحجرة واحدة مطابقة من {sized}.",
+      "**إعادة التعبئة فقط** — خرطوشة إعادة تعبئة أحادية الحجرة واحدة من {sized} لقلم متوافق موجود لديك.",
+      "تحتوي خرطوشة إعادة التعبئة على سائل جاهز الخلط. يذكر الملصق الإجمالي لكل خرطوشة، وليس الكمية لكل نقرة."
     ],
-    "dualOptions": "Options (amount per cartridge × cartridges per box): {options}.",
-    "dualWithDiluentIntro": "One box of {count} dual-chamber cartridges. The selected amount is per cartridge, and the price is for one complete box.",
-    "dualWithDiluentNote": "Peptide powder and clear diluent are held in separate chambers until mixing. The diluent is included.",
-    "dualDryIntro": "One box of glass dual-chamber cartridges, with no needle.",
-    "dualDryNote": "The peptide chamber holds lyophilized powder. The diluent chamber ships empty, and bacteriostatic water is not included.",
-    "deviceSoldSeparately": "The compatible Supreme Biologics dual-chamber device is sold separately.",
-    "defaultCartridgeCount": "four",
+    "dualOptions": "الخيارات (الكمية لكل خرطوشة × عدد الخراطيش في العلبة): {options}.",
+    "dualWithDiluentIntro": "علبة واحدة تحتوي على {count} خراطيش ثنائية الحجرة. الكمية المختارة هي لكل خرطوشة، والسعر لعلبة كاملة واحدة.",
+    "dualWithDiluentNote": "يُحفظ مسحوق الببتيد والمُذيب الشفاف في حجرتين منفصلتين حتى الخلط. المُذيب مُرفق.",
+    "dualDryIntro": "علبة واحدة من الخراطيش الزجاجية الثنائية الحجرة، من دون إبرة.",
+    "dualDryNote": "تحتوي حجرة الببتيد على مسحوق مجفّد بالتجميد. تُشحن حجرة المُذيب فارغة، والماء البكتيريوستاتي غير مُرفق.",
+    "deviceSoldSeparately": "يُباع جهاز Supreme Biologics المتوافق للخراطيش الثنائية الحجرة بشكل منفصل.",
+    "defaultCartridgeCount": "4",
     "spray": [
-      "One spray-format vial with a stated total of {sized}.",
-      "See the product label for the concentration and pack contents."
+      "قارورة واحدة بصيغة بخّاخ بإجمالي مُعلن قدره {sized}.",
+      "راجع ملصق المنتج لمعرفة التركيز ومحتويات العبوة."
     ],
-    "diluent": "One {size} vial of {noun}.",
-    "diluentNoSize": "One vial of {noun}.",
+    "diluent": "قارورة واحدة سعة {size} من {noun}.",
+    "diluentNoSize": "قارورة واحدة من {noun}.",
     "device": [
-      "One reusable dual-chamber cartridge device (1 piece).",
-      "No needle is included.",
-      "Cartridges are sold separately."
+      "جهاز واحد قابل لإعادة الاستخدام للخراطيش الثنائية الحجرة (قطعة واحدة).",
+      "لا تُرفق إبرة.",
+      "تُباع الخراطيش بشكل منفصل."
     ]
   },
   "manufacturer": {
-    "vial": "{brand} manufactures this {name} product and supplies it as one sealed vial of lyophilized powder.",
-    "pen": "{brand} manufactures this {name} product as a ready-mixed pen.",
-    "multidose": "Supreme Biologics manufactures both the reusable pen and the {name} single-chamber refill cartridges.",
-    "dual": "Supreme Biologics manufactures these {name} dual-chamber cartridges.",
-    "dualCustom": "Custom box combinations are available on request via LINE.",
-    "spray": "{brand} manufactures this {name} product in a spray-format vial.",
-    "diluent": "{brand} manufactures this {size} {noun} vial.",
-    "diluentNoSize": "{brand} manufactures this {noun} vial.",
-    "device": "Supreme Biologics manufactures this device for its own dual-chamber cartridge system.",
-    "otherFormats": "Other {brand} formats on this site: {list}.",
-    "alsoAvailable": "{name} is also available from {list}.",
-    "sizedFormat": "{size} {format}",
-    "delivery": "Orders are dispatched within 24 hours. Delivery takes 3–5 business days in Asia and about 9 days to Europe and other regions.",
-    "researchUse": "For laboratory research use only. Not for human or veterinary use."
+    "vial": "تصنّع {brand} منتج {name} هذا وتورّده في قارورة واحدة مختومة من مسحوق مجفّد بالتجميد.",
+    "pen": "تصنّع {brand} منتج {name} هذا على شكل قلم جاهز الخلط.",
+    "multidose": "تصنّع Supreme Biologics كلًّا من القلم القابل لإعادة الاستخدام وخراطيش إعادة التعبئة الأحادية الحجرة من {name}.",
+    "dual": "تصنّع Supreme Biologics خراطيش {name} الثنائية الحجرة هذه.",
+    "dualCustom": "تتوفر تشكيلات علب مخصّصة عند الطلب عبر LINE.",
+    "spray": "تصنّع {brand} منتج {name} هذا في قارورة بصيغة بخّاخ.",
+    "diluent": "تصنّع {brand} قارورة {noun} هذه سعة {size}.",
+    "diluentNoSize": "تصنّع {brand} قارورة {noun} هذه.",
+    "device": "تصنّع Supreme Biologics هذا الجهاز لنظام الخراطيش الثنائية الحجرة الخاص بها.",
+    "otherFormats": "صيغ أخرى من {brand} على هذا الموقع: {list}.",
+    "alsoAvailable": "يتوفر {name} أيضًا من {list}.",
+    "sizedFormat": "{format} {size}",
+    "delivery": "تُشحن الطلبات خلال 24 ساعة. يستغرق التوصيل 3–5 أيام عمل في آسيا، ونحو 9 أيام إلى أوروبا والمناطق الأخرى.",
+    "researchUse": "للاستخدام في الأبحاث المخبرية فقط. غير مخصّص للاستخدام البشري أو البيطري."
   },
   "short": {
     "lead": "{sized} — {identity}.",
-    "vial": "{lead} Supplied by {brand} as one vial of lyophilized powder, {suffix}",
-    "pen": "{lead} Supplied by {brand} as ready-mixed liquid in a pen, {suffix}",
-    "multidose": "{lead} Single-chamber refill for the Supreme Biologics reusable pen, {suffix}",
-    "dual": "{lead} Supreme Biologics dual-chamber cartridges, sold by the box, {suffix}",
-    "spray": "{lead} Supplied by {brand} in a spray-format vial, {suffix}",
-    "diluent": "{lead} Supplied by {brand}, {suffix}",
-    "device": "{identityCapitalized}. Cartridges are sold separately. Supreme Biologics hardware, {suffix}",
-    "suffix": "for laboratory research use only."
+    "vial": "{lead} توفّره {brand} في قارورة واحدة من مسحوق مجفّد بالتجميد، {suffix}",
+    "pen": "{lead} توفّره {brand} سائلًا جاهز الخلط في قلم، {suffix}",
+    "multidose": "{lead} خرطوشة إعادة تعبئة أحادية الحجرة لقلم Supreme Biologics القابل لإعادة الاستخدام، {suffix}",
+    "dual": "{lead} خراطيش Supreme Biologics الثنائية الحجرة، تُباع بالعلبة، {suffix}",
+    "spray": "{lead} توفّره {brand} في قارورة بصيغة بخّاخ، {suffix}",
+    "diluent": "{lead} توفّره {brand}، {suffix}",
+    "device": "{identityCapitalized}. تُباع الخراطيش بشكل منفصل. جهاز من Supreme Biologics، {suffix}",
+    "suffix": "للاستخدام في الأبحاث المخبرية فقط."
   }
 }

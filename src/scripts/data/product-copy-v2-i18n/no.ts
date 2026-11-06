@@ -1,520 +1,519 @@
 /**
- * Product copy v2 — NORWEGIAN (no).
- * STUB: every value below is still the English text. Translators replace the values;
- * keep the keys, the `{placeholder}` tokens and the `**` markers. Rules: ./types.ts.
- * The script refuses to write `no` while this object is identical to en.ts.
+ * Product copy v2 — NORWEGIAN BOKMÅL (no). Translated from en.ts (2026-11-06).
+ * Type: ProductCopyLocale (./types.ts). Keep the keys, the `{placeholder}` tokens and the
+ * `**` markers identical to en.ts. Translator rules: ./types.ts.
  */
 import type { ProductCopyLocale } from "./types"
 
 export const no: ProductCopyLocale = {
   "compounds": {
     "bpc-157": {
-      "identity": "a synthetic 15-amino-acid gastric pentadecapeptide studied in angiogenesis and mucosal biology",
-      "whatItIs": "BPC-157 is a synthetic 15-amino-acid peptide, also published as stable gastric pentadecapeptide BPC 157 and PL 14736. Its sequence derives from a protein isolated from gastric juice. Published preclinical work describes interactions with VEGFR2 signalling, the nitric oxide system and fibroblast migration. Researchers use it as a reference compound in studies of angiogenesis, connective-tissue biology and gastrointestinal mucosal biology in animal and cell models.",
+      "identity": "et syntetisk gastrisk pentadekapeptid med 15 aminosyrer som studeres innen angiogenese og slimhinnebiologi",
+      "whatItIs": "BPC-157 er et syntetisk peptid med 15 aminosyrer, også publisert som stable gastric pentadecapeptide BPC 157 og PL 14736. Sekvensen stammer fra et protein isolert fra magesaft. Publisert preklinisk forskning beskriver interaksjoner med VEGFR2-signalering, nitrogenoksidsystemet og fibroblastmigrasjon. Forskere bruker det som referansestoff i studier av angiogenese, bindevevsbiologi og gastrointestinal slimhinnebiologi i dyre- og cellemodeller.",
       "research": [
         {
-          "label": "Tendon and ligament injury models",
-          "text": "rodent models with histology and biomechanical readouts."
+          "label": "Skademodeller for sener og leddbånd",
+          "text": "gnagermodeller med histologiske og biomekaniske måleverdier."
         },
         {
-          "label": "Gastrointestinal mucosa models",
-          "text": "rodent lesion models with lesion area and mucosal histology as readouts."
+          "label": "Modeller av mage-tarm-slimhinnen",
+          "text": "lesjonsmodeller i gnagere med lesjonsareal og slimhinnehistologi som måleverdier."
         },
         {
-          "label": "Endothelial cell assays",
-          "text": "VEGFR2 phosphorylation, nitric oxide signalling and cell-migration readouts in vitro."
+          "label": "Endotelcelleanalyser",
+          "text": "VEGFR2-fosforylering, nitrogenoksidsignalering og cellemigrasjon som måleverdier in vitro."
         }
       ]
     },
     "aod-9604": {
-      "identity": "a synthetic growth hormone fragment (176–191) studied in lipid-metabolism research",
-      "whatItIs": "AOD-9604 is a synthetic peptide based on the C-terminal region (amino acids 176–191) of human growth hormone, with an added N-terminal tyrosine. Researchers study this fragment apart from the full hormone to examine which structural regions relate to lipid metabolism. Published preclinical work focused on adipocyte lipolysis and lipogenesis assays and on rodent metabolic models. Growth hormone fragments, including AOD-9604, are listed under S2 on the WADA Prohibited List.",
+      "identity": "et syntetisk veksthormonfragment (176–191) som studeres innen forskning på lipidmetabolisme",
+      "whatItIs": "AOD-9604 er et syntetisk peptid basert på den C-terminale regionen (aminosyre 176–191) av humant veksthormon, med et tilføyd N-terminalt tyrosin. Forskere studerer dette fragmentet atskilt fra hele hormonet for å undersøke hvilke strukturelle regioner som henger sammen med lipidmetabolisme. Publisert preklinisk forskning konsentrerte seg om lipolyse- og lipogeneseanalyser i adipocytter og om metabolske gnagermodeller. Veksthormonfragmenter, inkludert AOD-9604, står under S2 på WADAs dopingliste.",
       "research": [
         {
-          "label": "Adipocyte assays",
-          "text": "lipolysis and lipogenesis readouts in isolated fat cells."
+          "label": "Adipocyttanalyser",
+          "text": "lipolyse og lipogenese som måleverdier i isolerte fettceller."
         },
         {
-          "label": "Rodent metabolic models",
-          "text": "body-composition and plasma lipid readouts compared with full-length growth hormone."
+          "label": "Metabolske gnagermodeller",
+          "text": "kroppssammensetning og plasmalipider som måleverdier, sammenlignet med veksthormon i full lengde."
         },
         {
-          "label": "Structure–function studies",
-          "text": "comparison of growth hormone fragments with the parent hormone, including IGF-1 readouts."
+          "label": "Struktur–funksjon-studier",
+          "text": "sammenligning av veksthormonfragmenter med morhormonet, inkludert IGF-1-måleverdier."
         }
       ]
     },
     "cjc-1295-no-dac": {
-      "identity": "Modified GRF (1-29), a GHRH analogue without the DAC linker",
-      "whatItIs": "CJC-1295 without DAC, also published as Modified GRF (1-29), is a synthetic analogue of the first 29 amino acids of growth hormone-releasing hormone (GHRH). Amino-acid substitutions give resistance to cleavage by dipeptidyl peptidase-4 (DPP-4). It has no drug affinity complex (DAC) linker, so it does not bind albumin, and its reported half-life is about 30 minutes. It is studied as a reference agonist at the pituitary GHRH receptor.",
+      "identity": "Modified GRF (1-29), en GHRH-analog uten DAC-linker",
+      "whatItIs": "CJC-1295 uten DAC, også publisert som Modified GRF (1-29), er en syntetisk analog av de første 29 aminosyrene i veksthormonfrigjørende hormon (GHRH). Aminosyresubstitusjoner gir motstand mot spalting av dipeptidylpeptidase-4 (DPP-4). Den har ingen DAC-linker (drug affinity complex) og binder derfor ikke albumin, og den rapporterte halveringstiden er omtrent 30 minutter. Den studeres som referanseagonist ved GHRH-reseptoren i hypofysen.",
       "research": [
         {
-          "label": "Pituitary cell models",
-          "text": "GHRH-receptor activation with cAMP and growth hormone release as readouts."
+          "label": "Hypofysecellemodeller",
+          "text": "aktivering av GHRH-reseptoren med cAMP og frigjøring av veksthormon som måleverdier."
         },
         {
-          "label": "Animal endocrine studies",
-          "text": "growth hormone pulse profiles and IGF-1 readouts."
+          "label": "Endokrine dyrestudier",
+          "text": "pulsprofiler for veksthormon og IGF-1-måleverdier."
         },
         {
-          "label": "Peptide stability studies",
-          "text": "DPP-4 resistance compared with native GHRH(1-29)."
+          "label": "Peptidstabilitetsstudier",
+          "text": "DPP-4-resistens sammenlignet med nativt GHRH(1-29)."
         }
       ]
     },
     "cjc-1295": {
-      "identity": "a DPP-4-resistant synthetic GHRH(1-29) analogue studied at the GHRH receptor",
-      "whatItIs": "CJC-1295 is a synthetic analogue of the first 29 amino acids of growth hormone-releasing hormone (GHRH), with amino-acid substitutions that give resistance to dipeptidyl peptidase-4 (DPP-4). In the literature the name covers two forms: one with a drug affinity complex (DAC) linker that binds albumin, and one without it, also called Modified GRF (1-29). Check the product label and the batch COA for the exact form. Both forms are studied as agonists at the pituitary GHRH receptor.",
+      "identity": "en DPP-4-resistent syntetisk GHRH(1-29)-analog som studeres ved GHRH-reseptoren",
+      "whatItIs": "CJC-1295 er en syntetisk analog av de første 29 aminosyrene i veksthormonfrigjørende hormon (GHRH), med aminosyresubstitusjoner som gir motstand mot dipeptidylpeptidase-4 (DPP-4). I litteraturen dekker navnet to former: én med en DAC-linker (drug affinity complex) som binder albumin, og én uten, også kalt Modified GRF (1-29). Sjekk produktetiketten og batchens COA for nøyaktig form. Begge formene studeres som agonister ved GHRH-reseptoren i hypofysen.",
       "research": [
         {
-          "label": "GHRH-receptor pharmacology",
-          "text": "receptor binding and cAMP signalling in pituitary cell models."
+          "label": "GHRH-reseptorfarmakologi",
+          "text": "reseptorbinding og cAMP-signalering i hypofysecellemodeller."
         },
         {
-          "label": "Endocrine axis studies",
-          "text": "growth hormone and IGF-1 readouts in animal models."
+          "label": "Studier av den endokrine aksen",
+          "text": "veksthormon- og IGF-1-måleverdier i dyremodeller."
         }
       ]
     },
     "dsip": {
-      "identity": "delta sleep-inducing peptide, a nonapeptide studied in sleep physiology and neuroendocrine research",
-      "whatItIs": "DSIP (delta sleep-inducing peptide) is a nonapeptide first isolated from the cerebral venous blood of rabbits during induced sleep. It is classed as a neuropeptide, but no specific receptor has been identified and its mechanism is not fully characterised. Published research links it to sleep architecture, stress-hormone regulation and corticotropin release. It is a reference compound for neuroendocrine and sleep-physiology studies in animal models.",
+      "identity": "delta sleep-inducing peptide, et nonapeptid som studeres innen søvnfysiologi og nevroendokrin forskning",
+      "whatItIs": "DSIP (delta sleep-inducing peptide) er et nonapeptid som først ble isolert fra cerebralt veneblod fra kaniner under indusert søvn. Det klassifiseres som et nevropeptid, men ingen spesifikk reseptor er identifisert, og virkningsmekanismen er ikke fullt karakterisert. Publisert forskning knytter det til søvnarkitektur, regulering av stresshormoner og frigjøring av kortikotropin. Det er et referansestoff for nevroendokrine og søvnfysiologiske studier i dyremodeller.",
       "research": [
         {
-          "label": "Sleep-physiology models",
-          "text": "EEG recordings of slow-wave (delta) sleep in rodents and rabbits."
+          "label": "Søvnfysiologiske modeller",
+          "text": "EEG-registreringer av langsombølgesøvn (deltasøvn) hos gnagere og kaniner."
         },
         {
-          "label": "Neuroendocrine studies",
-          "text": "corticotropin and stress-hormone readouts in animal models."
+          "label": "Nevroendokrine studier",
+          "text": "kortikotropin og stresshormoner som måleverdier i dyremodeller."
         }
       ]
     },
     "epithalon": {
-      "identity": "the synthetic tetrapeptide Ala-Glu-Asp-Gly, studied in telomerase and pineal-function research",
-      "whatItIs": "Epithalon (epitalon) is a synthetic tetrapeptide, Ala-Glu-Asp-Gly, modelled on epithalamin, a polypeptide extract of the bovine pineal gland. Vladimir Khavinson's group at the Saint Petersburg Institute of Bioregulation and Gerontology developed it. Reported mechanisms include induction of telomerase activity in cell culture and effects on pineal melatonin production. It is studied as a reference compound in research on cellular ageing and pineal gland function.",
+      "identity": "det syntetiske tetrapeptidet Ala-Glu-Asp-Gly, som studeres innen forskning på telomerase og konglekjertelens funksjon",
+      "whatItIs": "Epithalon (epitalon) er et syntetisk tetrapeptid, Ala-Glu-Asp-Gly, utformet etter epithalamin, et polypeptidekstrakt fra konglekjertelen hos storfe. Vladimir Khavinsons gruppe ved Sankt Petersburg-instituttet for bioregulering og gerontologi utviklet det. Rapporterte mekanismer omfatter induksjon av telomeraseaktivitet i cellekultur og effekter på konglekjertelens melatoninproduksjon. Det studeres som referansestoff i forskning på cellulær aldring og konglekjertelens funksjon.",
       "research": [
         {
-          "label": "Cell-culture models",
-          "text": "telomerase activity and telomere length readouts."
+          "label": "Cellekulturmodeller",
+          "text": "telomeraseaktivitet og telomerlengde som måleverdier."
         },
         {
-          "label": "Pineal function studies",
-          "text": "melatonin production readouts in animal models."
+          "label": "Studier av konglekjertelens funksjon",
+          "text": "melatoninproduksjon som måleverdi i dyremodeller."
         },
         {
-          "label": "Ageing models",
-          "text": "biomarker readouts in aged rodents."
+          "label": "Aldringsmodeller",
+          "text": "biomarkører som måleverdier hos aldrende gnagere."
         }
       ]
     },
     "ghk-cu": {
-      "identity": "the copper(II) complex of glycyl-L-histidyl-L-lysine, studied as a copper-delivery molecule",
-      "whatItIs": "GHK-Cu is the copper(II) complex of the tripeptide glycyl-L-histidyl-L-lysine. GHK was first isolated from human plasma and has since been found in saliva and urine. The peptide binds Cu²⁺ with high affinity and is studied as a copper-delivery molecule. Copper is a cofactor for lysyl oxidase, the enzyme that crosslinks collagen and elastin. GHK-Cu is also a cosmetic ingredient under the INCI name copper tripeptide-1. Its solutions are typically blue.",
+      "identity": "kobber(II)-komplekset av glycyl-L-histidyl-L-lysin, som studeres som et kobberbærende molekyl",
+      "whatItIs": "GHK-Cu er kobber(II)-komplekset av tripeptidet glycyl-L-histidyl-L-lysin. GHK ble først isolert fra humant plasma og er siden påvist i spytt og urin. Peptidet binder Cu²⁺ med høy affinitet og studeres som et kobberbærende molekyl. Kobber er en kofaktor for lysyloksidase, enzymet som kryssbinder kollagen og elastin. GHK-Cu er også en kosmetisk ingrediens med INCI-navnet copper tripeptide-1. Løsningene er vanligvis blå.",
       "research": [
         {
-          "label": "Fibroblast cultures",
-          "text": "collagen, elastin and glycosaminoglycan synthesis readouts."
+          "label": "Fibroblastkulturer",
+          "text": "syntese av kollagen, elastin og glykosaminoglykaner som måleverdier."
         },
         {
-          "label": "Gene-expression studies",
-          "text": "transcriptional profiling of cells exposed to GHK."
+          "label": "Genuttrykksstudier",
+          "text": "transkripsjonsprofilering av celler eksponert for GHK."
         },
         {
-          "label": "Dermal models",
-          "text": "extracellular-matrix histology in skin models."
+          "label": "Dermale modeller",
+          "text": "histologi av ekstracellulær matriks i hudmodeller."
         }
       ]
     },
     "ipamorelin": {
-      "identity": "a synthetic pentapeptide ghrelin-receptor (GHS-R1a) agonist studied in receptor-selectivity research",
-      "whatItIs": "Ipamorelin is a synthetic pentapeptide growth hormone secretagogue and an agonist of the ghrelin receptor (GHS-R1a) on pituitary somatotroph cells. The GHS-R1a pathway is separate from the GHRH receptor pathway. Published animal studies describe ipamorelin as selective: growth hormone release occurred without the marked ACTH or cortisol increase reported for older GHRP compounds. It is a reference compound for GHS-R1a pharmacology and receptor-selectivity studies.",
+      "identity": "et syntetisk pentapeptid og ghrelinreseptoragonist (GHS-R1a) som studeres innen forskning på reseptorselektivitet",
+      "whatItIs": "Ipamorelin er et syntetisk pentapeptid, et veksthormonsekretagog og en agonist ved ghrelinreseptoren (GHS-R1a) på somatotrope celler i hypofysen. GHS-R1a-signalveien er atskilt fra GHRH-reseptorens signalvei. Publiserte dyrestudier beskriver ipamorelin som selektivt: veksthormon ble frigjort uten den markerte økningen i ACTH eller kortisol som er rapportert for eldre GHRP-stoffer. Det er et referansestoff for GHS-R1a-farmakologi og studier av reseptorselektivitet.",
       "research": [
         {
-          "label": "Receptor pharmacology",
-          "text": "GHS-R1a binding and signalling assays."
+          "label": "Reseptorfarmakologi",
+          "text": "GHS-R1a-bindings- og signaleringsanalyser."
         },
         {
-          "label": "Animal endocrine studies",
-          "text": "growth hormone, ACTH and cortisol readouts compared with other GHRP compounds."
+          "label": "Endokrine dyrestudier",
+          "text": "veksthormon, ACTH og kortisol som måleverdier, sammenlignet med andre GHRP-stoffer."
         }
       ]
     },
     "kisspeptin-10": {
-      "identity": "the C-terminal decapeptide of kisspeptin, a KISS1R (GPR54) agonist",
-      "whatItIs": "Kisspeptin-10 is a decapeptide that corresponds to the C-terminal region of kisspeptin, the product of the KISS1 gene. It is an agonist at the kisspeptin receptor KISS1R, also known as GPR54. KISS1R is expressed on hypothalamic GnRH neurons, and kisspeptin signalling is studied as an upstream regulator of the hypothalamic-pituitary-gonadal axis. Kisspeptin-10 is a reference agonist in reproductive neuroendocrinology research in cell and animal models.",
+      "identity": "det C-terminale dekapeptidet av kisspeptin, en KISS1R-agonist (GPR54)",
+      "whatItIs": "Kisspeptin-10 er et dekapeptid som tilsvarer den C-terminale regionen av kisspeptin, produktet av KISS1-genet. Det er en agonist ved kisspeptinreseptoren KISS1R, også kjent som GPR54. KISS1R uttrykkes på GnRH-nevroner i hypothalamus, og kisspeptinsignalering studeres som en oppstrøms regulator av hypothalamus–hypofyse–gonade-aksen. Kisspeptin-10 er en referanseagonist i reproduktiv nevroendokrinologisk forskning i celle- og dyremodeller.",
       "research": [
         {
-          "label": "Receptor assays",
-          "text": "KISS1R (GPR54) activation and downstream signalling in cell models."
+          "label": "Reseptoranalyser",
+          "text": "aktivering av KISS1R (GPR54) og nedstrøms signalering i cellemodeller."
         },
         {
-          "label": "Neuroendocrine studies",
-          "text": "GnRH and luteinising hormone (LH) readouts in animal models."
+          "label": "Nevroendokrine studier",
+          "text": "GnRH og luteiniserende hormon (LH) som måleverdier i dyremodeller."
         }
       ]
     },
     "kpv": {
-      "identity": "the tripeptide Lys-Pro-Val (α-MSH 11–13), studied in inflammation and epithelial biology",
-      "whatItIs": "KPV is the tripeptide Lys-Pro-Val, which corresponds to residues 11–13 at the C-terminus of α-melanocyte-stimulating hormone (α-MSH). Published work describes anti-inflammatory signalling activity for this fragment, including effects on NF-κB pathway readouts, without the MC1R-linked pigmentation activity of full-length α-MSH. Its small size has made it a subject of formulation research. It is studied as a reference fragment in inflammation and epithelial biology.",
+      "identity": "tripeptidet Lys-Pro-Val (α-MSH 11–13), som studeres innen inflammasjon og epitelbiologi",
+      "whatItIs": "KPV er tripeptidet Lys-Pro-Val, som tilsvarer aminosyre 11–13 ved C-terminalen av α-melanocyttstimulerende hormon (α-MSH). Publisert forskning beskriver antiinflammatorisk signaleringsaktivitet for dette fragmentet, blant annet effekter på måleverdier i NF-κB-signalveien, uten den MC1R-knyttede pigmenteringsaktiviteten til α-MSH i full lengde. Den lille størrelsen har gjort det til gjenstand for formuleringsforskning. Det studeres som referansefragment innen inflammasjon og epitelbiologi.",
       "research": [
         {
-          "label": "Intestinal inflammation models",
-          "text": "rodent colitis models with cytokine and histology readouts."
+          "label": "Modeller for tarminflammasjon",
+          "text": "kolittmodeller i gnagere med cytokiner og histologi som måleverdier."
         },
         {
-          "label": "Epithelial cell assays",
-          "text": "NF-κB activation and pro-inflammatory cytokine readouts."
+          "label": "Epitelcelleanalyser",
+          "text": "NF-κB-aktivering og proinflammatoriske cytokiner som måleverdier."
         }
       ]
     },
     "tirzepatide": {
-      "identity": "a 39-amino-acid dual GIP and GLP-1 receptor agonist peptide",
-      "whatItIs": "{name} is a single 39-amino-acid peptide that acts as an agonist at both the glucose-dependent insulinotropic polypeptide (GIP) receptor and the GLP-1 receptor. A C20 fatty-diacid side chain binds albumin and extends the plasma half-life. The dual-receptor design makes it a reference compound for incretin pharmacology. Research compares its signalling at each receptor, and its metabolic readouts in animal models, with those of single-receptor GLP-1 agonists.",
+      "identity": "et peptid med 39 aminosyrer som er dobbel agonist ved GIP- og GLP-1-reseptorene",
+      "whatItIs": "{name} er ett enkelt peptid med 39 aminosyrer som virker som agonist ved både reseptoren for glukoseavhengig insulinotropt polypeptid (GIP) og GLP-1-reseptoren. En C20-fettdisyre-sidekjede binder albumin og forlenger halveringstiden i plasma. Den doble reseptorutformingen gjør det til et referansestoff for inkretinfarmakologi. Forskningen sammenligner signaleringen ved hver reseptor, og de metabolske måleverdiene i dyremodeller, med tilsvarende data for GLP-1-agonister som virker ved én reseptor.",
       "research": [
         {
-          "label": "Receptor pharmacology",
-          "text": "cAMP signalling and receptor-bias assays at the GIP and GLP-1 receptors."
+          "label": "Reseptorfarmakologi",
+          "text": "cAMP-signalering og analyser av reseptorbias ved GIP- og GLP-1-reseptorene."
         },
         {
-          "label": "Rodent metabolic models",
-          "text": "glucose tolerance, insulin secretion, food intake and body-weight readouts in diet-induced obese animals."
+          "label": "Metabolske gnagermodeller",
+          "text": "glukosetoleranse, insulinsekresjon, fôrinntak og kroppsvekt som måleverdier hos dyr med diettindusert fedme."
         }
       ]
     },
     "retatrutide": {
-      "identity": "a single peptide agonist at the GIP, GLP-1 and glucagon receptors",
-      "whatItIs": "{name} is a single synthetic peptide that acts as an agonist at three receptors: the glucose-dependent insulinotropic polypeptide (GIP) receptor, the GLP-1 receptor and the glucagon receptor. The glucagon-receptor activity is the main difference from dual GIP/GLP-1 agonists. It is a reference compound for multi-receptor incretin and glucagon pharmacology, and research compares it with single- and dual-receptor agonists in cell assays and animal models.",
+      "identity": "ett enkelt peptid med agonistvirkning ved GIP-, GLP-1- og glukagonreseptorene",
+      "whatItIs": "{name} er ett enkelt syntetisk peptid som virker som agonist ved tre reseptorer: reseptoren for glukoseavhengig insulinotropt polypeptid (GIP), GLP-1-reseptoren og glukagonreseptoren. Aktiviteten ved glukagonreseptoren er den viktigste forskjellen fra doble GIP/GLP-1-agonister. Det er et referansestoff for inkretin- og glukagonfarmakologi med flere reseptorer, og forskningen sammenligner det med agonister ved én og to reseptorer i celleanalyser og dyremodeller.",
       "research": [
         {
-          "label": "Receptor pharmacology",
-          "text": "cAMP signalling at the GIP, GLP-1 and glucagon receptors in cell assays."
+          "label": "Reseptorfarmakologi",
+          "text": "cAMP-signalering ved GIP-, GLP-1- og glukagonreseptorene i celleanalyser."
         },
         {
-          "label": "Rodent metabolic models",
-          "text": "energy expenditure, glucose and body-weight readouts."
+          "label": "Metabolske gnagermodeller",
+          "text": "energiforbruk, glukose og kroppsvekt som måleverdier."
         },
         {
-          "label": "Hepatic lipid studies",
-          "text": "liver fat and lipid-metabolism readouts linked to glucagon-receptor activity."
+          "label": "Studier av leverlipider",
+          "text": "leverfett og lipidmetabolisme som måleverdier knyttet til aktivitet ved glukagonreseptoren."
         }
       ]
     },
     "mots-c": {
-      "identity": "a 16-amino-acid mitochondrial-derived peptide studied in AMPK signalling and energy-metabolism research",
-      "whatItIs": "MOTS-c is a 16-amino-acid peptide encoded by a short open reading frame in the mitochondrial 12S rRNA gene, and it belongs to the mitochondrial-derived peptide class. Published work reports that it can move to the nucleus under metabolic stress and influence nuclear gene expression. It is also linked to AMPK pathway activation and to cellular energy metabolism in skeletal muscle models. It is a reference compound for mitochondrial-to-nuclear signalling and cellular energy-metabolism research.",
+      "identity": "et mitokondrieavledet peptid med 16 aminosyrer som studeres innen AMPK-signalering og forskning på energimetabolisme",
+      "whatItIs": "MOTS-c er et peptid med 16 aminosyrer som kodes av en kort åpen leseramme i det mitokondrielle 12S rRNA-genet, og det tilhører klassen mitokondrieavledede peptider. Publisert forskning rapporterer at det kan flytte seg til cellekjernen ved metabolsk stress og påvirke kjernens genuttrykk. Det knyttes også til aktivering av AMPK-signalveien og til cellulær energimetabolisme i skjelettmuskelmodeller. Det er et referansestoff for signalering fra mitokondrie til cellekjerne og for forskning på cellulær energimetabolisme.",
       "research": [
         {
-          "label": "Skeletal muscle cell models",
-          "text": "AMPK activation and glucose-uptake readouts."
+          "label": "Skjelettmuskelcellemodeller",
+          "text": "AMPK-aktivering og glukoseopptak som måleverdier."
         },
         {
-          "label": "Rodent metabolic models",
-          "text": "insulin sensitivity and energy-metabolism readouts."
+          "label": "Metabolske gnagermodeller",
+          "text": "insulinfølsomhet og energimetabolisme som måleverdier."
         }
       ]
     },
     "nad-plus": {
-      "identity": "nicotinamide adenine dinucleotide, a redox coenzyme studied in energy metabolism",
-      "whatItIs": "NAD+ (nicotinamide adenine dinucleotide) is a dinucleotide coenzyme, not a peptide, present in all living cells. It carries electrons in the redox reactions of glycolysis and mitochondrial respiration. It is also a substrate for NAD+-consuming enzymes, including sirtuins, poly(ADP-ribose) polymerases (PARPs) and CD38. Published research reports that tissue NAD+ levels decline with age in animal models. It is a reference compound in cellular energy-metabolism and sirtuin research.",
+      "identity": "nikotinamidadenindinukleotid, et redokskoenzym som studeres innen energimetabolisme",
+      "whatItIs": "NAD+ (nikotinamidadenindinukleotid) er et dinukleotidkoenzym, ikke et peptid, som finnes i alle levende celler. Det overfører elektroner i redoksreaksjonene i glykolysen og den mitokondrielle respirasjonen. Det er også substrat for NAD+-forbrukende enzymer, blant annet sirtuiner, poly(ADP-ribose)-polymeraser (PARP) og CD38. Publisert forskning rapporterer at NAD+-nivået i vev synker med alderen i dyremodeller. Det er et referansestoff i forskning på cellulær energimetabolisme og sirtuiner.",
       "research": [
         {
-          "label": "Cell assays",
-          "text": "NAD+/NADH ratio, sirtuin activity and PARP activity readouts."
+          "label": "Celleanalyser",
+          "text": "NAD+/NADH-forhold, sirtuinaktivitet og PARP-aktivitet som måleverdier."
         },
         {
-          "label": "Mitochondrial studies",
-          "text": "respiration and redox-state measurements in isolated mitochondria and cells."
+          "label": "Mitokondriestudier",
+          "text": "målinger av respirasjon og redoksstatus i isolerte mitokondrier og celler."
         },
         {
-          "label": "Ageing models",
-          "text": "tissue NAD+ measurement in aged rodents."
+          "label": "Aldringsmodeller",
+          "text": "måling av NAD+ i vev hos aldrende gnagere."
         }
       ]
     },
     "pt-141": {
-      "identity": "bremelanotide, a cyclic heptapeptide MC3R/MC4R agonist studied in central signalling",
-      "whatItIs": "PT-141 (bremelanotide) is a synthetic cyclic heptapeptide analogue of α-melanocyte-stimulating hormone (α-MSH). It acts mainly as an agonist at the melanocortin receptors MC3R and MC4R, which are expressed in the central nervous system. Its development began in melanocortin research on pigmentation, and later work focused on central melanocortin signalling. It is a reference compound for MC4R pharmacology and hypothalamic pathway research.",
+      "identity": "bremelanotide, et syklisk heptapeptid og MC3R/MC4R-agonist som studeres innen sentral signalering",
+      "whatItIs": "PT-141 (bremelanotide) er et syntetisk syklisk heptapeptid og en analog av α-melanocyttstimulerende hormon (α-MSH). Det virker hovedsakelig som agonist ved melanokortinreseptorene MC3R og MC4R, som uttrykkes i sentralnervesystemet. Utviklingen begynte i melanokortinforskning på pigmentering, og senere arbeid konsentrerte seg om sentral melanokortinsignalering. Det er et referansestoff for MC4R-farmakologi og forskning på hypothalamiske signalveier.",
       "research": [
         {
-          "label": "Receptor pharmacology",
-          "text": "MC3R and MC4R binding and cAMP signalling assays."
+          "label": "Reseptorfarmakologi",
+          "text": "MC3R- og MC4R-binding samt cAMP-signaleringsanalyser."
         },
         {
-          "label": "Central signalling studies",
-          "text": "hypothalamic melanocortin pathway readouts in rodent behavioural models."
+          "label": "Studier av sentral signalering",
+          "text": "måleverdier fra den hypothalamiske melanokortinsignalveien i atferdsmodeller med gnagere."
         }
       ]
     },
     "selank": {
-      "identity": "a synthetic heptapeptide analogue of tuftsin studied in GABAergic and neuropeptide research",
-      "whatItIs": "Selank (TP-7) is a synthetic heptapeptide developed from tuftsin, an endogenous immunomodulatory tetrapeptide, and it is classed as a tuftsin analogue. Russian research groups developed it as a research tool. Published animal work links it to GABAergic modulation, BDNF expression in the hippocampus and inhibition of enkephalin-degrading enzymes. It is a reference compound in stress-response, anxiety-model and neuropeptide research in rodents.",
+      "identity": "et syntetisk heptapeptid og tuftsinanalog som studeres innen GABAerg forskning og nevropeptidforskning",
+      "whatItIs": "Selank (TP-7) er et syntetisk heptapeptid utviklet fra tuftsin, et endogent immunmodulerende tetrapeptid, og det klassifiseres som en tuftsinanalog. Russiske forskergrupper utviklet det som et forskningsverktøy. Publiserte dyrestudier knytter det til GABAerg modulering, BDNF-uttrykk i hippocampus og hemming av enkefalinnedbrytende enzymer. Det er et referansestoff i forskning på stressrespons, angstmodeller og nevropeptider hos gnagere.",
       "research": [
         {
-          "label": "Rodent behavioural models",
-          "text": "anxiety-related behaviour tests with neurochemical readouts."
+          "label": "Atferdsmodeller med gnagere",
+          "text": "tester av angstrelatert atferd med nevrokjemiske måleverdier."
         },
         {
-          "label": "Gene-expression studies",
-          "text": "GABA-system and BDNF expression readouts in brain tissue."
+          "label": "Genuttrykksstudier",
+          "text": "uttrykk i GABA-systemet og BDNF-uttrykk som måleverdier i hjernevev."
         }
       ]
     },
     "semax": {
-      "identity": "the synthetic heptapeptide MEHFPGP, an ACTH(4–10) analogue studied in neurotrophin research",
-      "whatItIs": "Semax is a synthetic heptapeptide, Met-Glu-His-Phe-Pro-Gly-Pro (MEHFPGP). Its sequence is derived from the N-terminal region of adrenocorticotropic hormone (ACTH), and it is classed as an ACTH(4–10) analogue. Published animal work links it to BDNF and NGF expression in the hippocampus and cortex and to changes in enkephalin degradation. It is a reference compound for neurotrophic pathway and cerebral ischaemia research in rodent models.",
+      "identity": "det syntetiske heptapeptidet MEHFPGP, en ACTH(4–10)-analog som studeres innen nevrotrofinforskning",
+      "whatItIs": "Semax er et syntetisk heptapeptid, Met-Glu-His-Phe-Pro-Gly-Pro (MEHFPGP). Sekvensen stammer fra den N-terminale regionen av adrenokortikotropt hormon (ACTH), og det klassifiseres som en ACTH(4–10)-analog. Publiserte dyrestudier knytter det til BDNF- og NGF-uttrykk i hippocampus og cortex og til endringer i nedbrytningen av enkefaliner. Det er et referansestoff for forskning på nevrotrofe signalveier og cerebral iskemi i gnagermodeller.",
       "research": [
         {
-          "label": "Neurotrophin studies",
-          "text": "BDNF and NGF expression readouts in rodent brain tissue."
+          "label": "Nevrotrofinstudier",
+          "text": "BDNF- og NGF-uttrykk som måleverdier i hjernevev fra gnagere."
         },
         {
-          "label": "Cerebral ischaemia models",
-          "text": "gene-expression and histology readouts in rodents."
+          "label": "Modeller for cerebral iskemi",
+          "text": "genuttrykk og histologi som måleverdier hos gnagere."
         },
         {
-          "label": "Behavioural models",
-          "text": "learning and memory tests in rodents."
+          "label": "Atferdsmodeller",
+          "text": "lærings- og hukommelsestester hos gnagere."
         }
       ]
     },
     "ss-31": {
-      "identity": "elamipretide, a mitochondria-targeted tetrapeptide that binds cardiolipin, studied in bioenergetics research",
-      "whatItIs": "SS-31 (elamipretide; also published as Bendavia and MTP-131) is a cell-permeable aromatic-cationic tetrapeptide. It accumulates in the inner mitochondrial membrane, where it binds cardiolipin, the phospholipid that supports the electron-transport-chain complexes and cristae structure. Preclinical studies report effects on cristae architecture, cardiolipin peroxidation and reactive-oxygen-species production. It is a reference compound for mitochondrial bioenergetics and cardiolipin biology in cell, isolated-mitochondria and animal models.",
+      "identity": "elamipretide, et mitokondrierettet tetrapeptid som binder kardiolipin og studeres innen bioenergetisk forskning",
+      "whatItIs": "SS-31 (elamipretide; også publisert som Bendavia og MTP-131) er et cellepermeabelt aromatisk-kationisk tetrapeptid. Det akkumuleres i den indre mitokondriemembranen, der det binder kardiolipin, fosfolipidet som støtter elektrontransportkjedens komplekser og kristastrukturen. Prekliniske studier rapporterer effekter på kristaarkitekturen, kardiolipinperoksidering og produksjon av reaktive oksygenforbindelser. Det er et referansestoff for mitokondriell bioenergetikk og kardiolipinbiologi i cellemodeller, isolerte mitokondrier og dyremodeller.",
       "research": [
         {
-          "label": "Isolated mitochondria",
-          "text": "respiration, ATP synthesis and reactive-oxygen-species readouts."
+          "label": "Isolerte mitokondrier",
+          "text": "respirasjon, ATP-syntese og reaktive oksygenforbindelser som måleverdier."
         },
         {
-          "label": "Ischaemia–reperfusion models",
-          "text": "cardiac and renal tissue readouts in animals."
+          "label": "Iskemi–reperfusjon-modeller",
+          "text": "måleverdier fra hjerte- og nyrevev hos dyr."
         },
         {
-          "label": "Membrane biology",
-          "text": "cardiolipin binding and peroxidation assays."
+          "label": "Membranbiologi",
+          "text": "analyser av kardiolipinbinding og peroksidering."
         }
       ]
     },
     "tesamorelin": {
-      "identity": "a synthetic GHRH(1-44) analogue studied in growth hormone axis research",
-      "whatItIs": "Tesamorelin is a synthetic analogue of the full 44-amino-acid human growth hormone-releasing hormone (GHRH), with a trans-3-hexenoyl group at the N-terminus. The modification increases resistance to DPP-4 degradation. It acts at pituitary GHRH receptors, and published studies report pulsatile release of endogenous growth hormone with higher IGF-1 concentrations. It is a reference compound for GHRH-receptor pharmacology and growth hormone axis research.",
+      "identity": "en syntetisk GHRH(1-44)-analog som studeres innen forskning på veksthormonaksen",
+      "whatItIs": "Tesamorelin er en syntetisk analog av hele det humane veksthormonfrigjørende hormonet (GHRH) med 44 aminosyrer, med en trans-3-heksenoylgruppe ved N-terminalen. Modifikasjonen øker motstanden mot nedbrytning av DPP-4. Den virker ved GHRH-reseptorer i hypofysen, og publiserte studier rapporterer pulsatil frigjøring av endogent veksthormon med høyere IGF-1-konsentrasjoner. Den er et referansestoff for GHRH-reseptorfarmakologi og forskning på veksthormonaksen.",
       "research": [
         {
-          "label": "Receptor pharmacology",
-          "text": "GHRH-receptor activation and cAMP readouts in pituitary cells."
+          "label": "Reseptorfarmakologi",
+          "text": "aktivering av GHRH-reseptoren og cAMP som måleverdier i hypofyseceller."
         },
         {
-          "label": "Endocrine studies",
-          "text": "growth hormone pulse and IGF-1 readouts."
+          "label": "Endokrine studier",
+          "text": "veksthormonpulser og IGF-1 som måleverdier."
         },
         {
-          "label": "Body-composition studies",
-          "text": "adipose-tissue imaging endpoints in published research."
+          "label": "Studier av kroppssammensetning",
+          "text": "bildebaserte endepunkter for fettvev i publisert forskning."
         }
       ]
     },
     "thymosin-beta-4": {
-      "identity": "a 43-amino-acid G-actin-sequestering peptide studied in cytoskeleton and cell-migration research",
-      "whatItIs": "Thymosin beta-4 (Tβ4) is a naturally occurring 43-amino-acid peptide and one of the main G-actin-sequestering molecules in mammalian cells. By binding monomeric actin, it regulates the pool of actin available for filament assembly, which affects cell motility. The synthetic fragment TB-500 is modelled on its actin-binding region. Thymosin beta-4 is a reference compound for actin-cytoskeleton and cell-migration research in cell and animal models.",
+      "identity": "et G-aktinsekvestrerende peptid med 43 aminosyrer som studeres innen forskning på cytoskjelett og cellemigrasjon",
+      "whatItIs": "Thymosin beta-4 (Tβ4) er et naturlig forekommende peptid med 43 aminosyrer og et av de viktigste G-aktinsekvestrerende molekylene i pattedyrceller. Ved å binde monomert aktin regulerer det mengden aktin som er tilgjengelig for filamentdannelse, noe som påvirker cellenes bevegelighet. Det syntetiske fragmentet TB-500 er utformet etter den aktinbindende regionen. Thymosin beta-4 er et referansestoff for forskning på aktincytoskjelettet og cellemigrasjon i celle- og dyremodeller.",
       "research": [
         {
-          "label": "Cell-migration assays",
-          "text": "actin dynamics and endothelial or keratinocyte migration readouts."
+          "label": "Cellemigrasjonsanalyser",
+          "text": "aktindynamikk og migrasjon av endotelceller eller keratinocytter som måleverdier."
         },
         {
-          "label": "Rodent tissue-injury models",
-          "text": "dermal and cardiac histology readouts, including angiogenesis markers."
+          "label": "Vevsskademodeller i gnagere",
+          "text": "dermal og kardial histologi som måleverdier, inkludert angiogenesemarkører."
         }
       ]
     },
     "bacteriostatic-water": {
-      "identity": "sterile water with 0.9% benzyl alcohol, a laboratory diluent for lyophilized peptides",
-      "whatItIs": "Bacteriostatic water is sterile water that contains 0.9% benzyl alcohol as a preservative, which is the standard composition for this diluent. The benzyl alcohol limits microbial growth in the vial after the stopper is punctured. Laboratories use it to reconstitute lyophilized peptides and to prepare working solutions. It is not suitable for every compound, and some peptides need a different solvent, such as acetic acid water. Check compatibility on the compound data sheet.",
+      "identity": "sterilt vann med 0,9 % benzylalkohol, et fortynningsmiddel til laboratoriebruk for frysetørkede peptider",
+      "whatItIs": "Bakteriostatisk vann er sterilt vann som inneholder 0,9 % benzylalkohol som konserveringsmiddel, som er standardsammensetningen for dette fortynningsmiddelet. Benzylalkoholen begrenser mikrobiell vekst i hetteglasset etter at proppen er punktert. Laboratorier bruker det til å rekonstituere frysetørkede peptider og til å lage arbeidsløsninger. Det passer ikke for alle stoffer, og enkelte peptider krever et annet løsemiddel, for eksempel eddiksyrevann. Sjekk kompatibiliteten i stoffets datablad.",
       "research": [
         {
-          "label": "Reconstitution",
-          "text": "dissolution of lyophilized research peptides for bench work."
+          "label": "Rekonstituering",
+          "text": "oppløsning av frysetørkede forskningspeptider til laboratoriearbeid."
         },
         {
-          "label": "Working solutions",
-          "text": "dilution steps in methods that specify a preserved aqueous diluent."
+          "label": "Arbeidsløsninger",
+          "text": "fortynningstrinn i metoder som angir et konservert vannbasert fortynningsmiddel."
         }
       ]
     },
     "acetic-acid-water": {
-      "identity": "dilute acetic acid in sterile water, a laboratory diluent for poorly soluble peptides",
-      "whatItIs": "Acetic acid water is a dilute solution of acetic acid in sterile water. Laboratories use it as a diluent for peptides that dissolve poorly in neutral water, because a mildly acidic solvent can increase the solubility of some peptide sequences. The acetic acid concentration is as printed on the vial label. Before use, confirm on the compound data sheet that an acidic diluent is compatible with the peptide and with the planned assay.",
+      "identity": "fortynnet eddiksyre i sterilt vann, et fortynningsmiddel til laboratoriebruk for tungtløselige peptider",
+      "whatItIs": "Eddiksyrevann er en fortynnet løsning av eddiksyre i sterilt vann. Laboratorier bruker det som fortynningsmiddel for peptider som løses dårlig i nøytralt vann, fordi et svakt surt løsemiddel kan øke løseligheten for enkelte peptidsekvenser. Eddiksyrekonsentrasjonen står på etiketten på hetteglasset. Bekreft i stoffets datablad før bruk at et surt fortynningsmiddel er kompatibelt med peptidet og med den planlagte analysen.",
       "research": [
         {
-          "label": "Poorly soluble peptides",
-          "text": "reconstitution where neutral water or bacteriostatic water gives incomplete dissolution."
+          "label": "Tungtløselige peptider",
+          "text": "rekonstituering der nøytralt vann eller bakteriostatisk vann gir ufullstendig oppløsning."
         },
         {
-          "label": "Solvent selection",
-          "text": "comparison of diluents during laboratory method development."
+          "label": "Valg av løsemiddel",
+          "text": "sammenligning av fortynningsmidler under utvikling av laboratoriemetoder."
         }
       ]
     },
     "dual-chamber-device": {
-      "identity": "a reusable aluminium device for Supreme Biologics dual-chamber cartridges, with no needle included",
-      "whatItIs": "This is a reusable aluminium device from Supreme Biologics for its dual-chamber cartridges. It holds one Supreme Biologics dual-chamber cartridge at a time and contains no compound of its own. No needle is included, and the cartridges are sold separately on their own product pages. The device fits only the Supreme Biologics dual-chamber system. The Supreme Biologics reusable pen for single-chamber refill cartridges is a separate system.",
+      "identity": "en gjenbrukbar aluminiumsenhet for tokammerpatroner fra Supreme Biologics, uten medfølgende nål",
+      "whatItIs": "Dette er en gjenbrukbar aluminiumsenhet fra Supreme Biologics for selskapets tokammerpatroner. Den holder én tokammerpatron fra Supreme Biologics om gangen og inneholder ikke noe eget stoff. Ingen nål følger med, og patronene selges separat på egne produktsider. Enheten passer bare til tokammersystemet fra Supreme Biologics. Den gjenbrukbare pennen fra Supreme Biologics for enkammerpatroner for påfylling er et separat system.",
       "research": [
         {
-          "label": "Compatible with",
-          "text": "Supreme Biologics dual-chamber cartridges listed on this site."
+          "label": "Kompatibel med",
+          "text": "tokammerpatroner fra Supreme Biologics som er oppført på dette nettstedet."
         },
         {
-          "label": "Not compatible with",
-          "text": "single-chamber refill cartridges for the Supreme Biologics reusable pen, or cartridges from other manufacturers."
+          "label": "Ikke kompatibel med",
+          "text": "enkammerpatroner for påfylling til den gjenbrukbare pennen fra Supreme Biologics, eller patroner fra andre produsenter."
         }
       ]
     }
   },
   "diluentNames": {
     "bacteriostatic-water": {
-      "title": "Bacteriostatic Water",
-      "noun": "bacteriostatic water"
+      "title": "Bakteriostatisk vann",
+      "noun": "bakteriostatisk vann"
     },
     "acetic-acid-water": {
-      "title": "Acetic Acid Water",
-      "noun": "acetic acid water"
+      "title": "Eddiksyrevann",
+      "noun": "eddiksyrevann"
     }
   },
   "headings": {
-    "whatItIs": "What it is",
-    "researchContext": "Research context",
-    "laboratoryUse": "Laboratory use",
-    "compatibility": "Compatibility",
-    "quality": "Quality and testing",
-    "storage": "Storage and handling",
-    "inTheBox": "In the box",
-    "manufacturer": "Manufacturer and delivery"
+    "whatItIs": "Hva det er",
+    "researchContext": "Forskningskontekst",
+    "laboratoryUse": "Laboratoriebruk",
+    "compatibility": "Kompatibilitet",
+    "quality": "Kvalitet og testing",
+    "storage": "Oppbevaring og håndtering",
+    "inTheBox": "I esken",
+    "manufacturer": "Produsent og levering"
   },
   "formats": {
-    "vial": "lyophilized vial",
-    "pen": "ready-mixed pen",
-    "multidose": "reusable pen with single-chamber refill",
-    "dual": "dual-chamber cartridges",
-    "spray": "spray-format vial",
-    "diluent": "diluent vial",
-    "device": "dual-chamber cartridge device"
+    "vial": "hetteglass med frysetørket pulver",
+    "pen": "ferdigblandet penn",
+    "multidose": "gjenbrukbar penn med enkammerpatron for påfylling",
+    "dual": "tokammerpatroner",
+    "spray": "hetteglass i sprayformat",
+    "diluent": "hetteglass med fortynningsmiddel",
+    "device": "enhet for tokammerpatroner"
   },
   "list": {
     "separator": ", ",
-    "lastSeparator": " and "
+    "lastSeparator": " og "
   },
   "sized": "{name} {size}",
   "quality": {
-    "purity": "Stated purity: {purity}%. The batch COA gives the analytical method and results.",
-    "purityUnknown": "Purity: see the batch COA.",
-    "cas": "CAS number: {cas}.",
-    "formula": "Molecular formula: {formula}.",
-    "coaRef": "Refer to the batch certificate of analysis (COA) for the batch number and test data.",
-    "deviceNoCoa": "The device contains no compound, so no certificate of analysis applies.",
-    "deviceInspect": "Check the device for damage on arrival.",
-    "compositionBac": "Composition: sterile water with 0.9% benzyl alcohol.",
-    "compositionAa": "Composition: dilute acetic acid in sterile water. The concentration is as printed on the vial label.",
-    "checkLot": "Check the lot number and expiry date on the label.",
-    "checkSolution": "Do not use the solution if it is cloudy, discoloured or contains particles, or if the seal is damaged."
+    "purity": "Oppgitt renhet: {purity}%. Batchens COA angir analysemetode og resultater.",
+    "purityUnknown": "Renhet: se batchens COA.",
+    "cas": "CAS-nummer: {cas}.",
+    "formula": "Molekylformel: {formula}.",
+    "coaRef": "Se batchens analysesertifikat (COA) for batchnummer og testdata.",
+    "deviceNoCoa": "Enheten inneholder ikke noe stoff, så et analysesertifikat er ikke aktuelt.",
+    "deviceInspect": "Kontroller enheten for skader ved mottak.",
+    "compositionBac": "Sammensetning: sterilt vann med 0,9 % benzylalkohol.",
+    "compositionAa": "Sammensetning: fortynnet eddiksyre i sterilt vann. Konsentrasjonen står på etiketten på hetteglasset.",
+    "checkLot": "Kontroller lotnummer og utløpsdato på etiketten.",
+    "checkSolution": "Ikke bruk løsningen hvis den er uklar, misfarget eller inneholder partikler, eller hvis forseglingen er skadet."
   },
   "storage": {
     "powder": [
-      "Lyophilized powder: store at -20°C for long-term storage, or at 2–8°C for short-term storage.",
-      "Keep dry and protected from light.",
-      "After reconstitution, store at 2–8°C and use within 30 days."
+      "Frysetørket pulver: oppbevares ved -20°C ved langtidslagring, eller ved 2–8°C ved korttidslagring.",
+      "Oppbevares tørt og beskyttet mot lys.",
+      "Etter rekonstituering: oppbevares ved 2–8°C og brukes innen 30 dager."
     ],
     "dualDry": [
-      "Unmixed cartridges (lyophilized powder): store at -20°C for long-term storage, or at 2–8°C for short-term storage.",
-      "Keep dry and protected from light.",
-      "After the diluent is added and mixed, store at 2–8°C and use within 30 days."
+      "Ublandede patroner (frysetørket pulver): oppbevares ved -20°C ved langtidslagring, eller ved 2–8°C ved korttidslagring.",
+      "Oppbevares tørt og beskyttet mot lys.",
+      "Når fortynningsmiddelet er tilsatt og blandet: oppbevares ved 2–8°C og brukes innen 30 dager."
     ],
     "dualWithDiluent": [
-      "Unmixed cartridges contain liquid diluent in one chamber: store at 2–8°C unless the label states otherwise.",
-      "Keep protected from light.",
-      "After mixing, store at 2–8°C and use within 30 days."
+      "Ublandede patroner inneholder flytende fortynningsmiddel i ett kammer: oppbevares ved 2–8°C med mindre etiketten angir noe annet.",
+      "Oppbevares beskyttet mot lys.",
+      "Etter blanding: oppbevares ved 2–8°C og brukes innen 30 dager."
     ],
     "liquid": [
-      "Supplied as ready-mixed liquid: store at 2–8°C and keep protected from light.",
-      "After first use, keep at 2–8°C and use within 30 days.",
-      "Follow the expiry date on the product label."
+      "Leveres som ferdigblandet væske: oppbevares ved 2–8°C og beskyttet mot lys.",
+      "Etter første bruk: oppbevares ved 2–8°C og brukes innen 30 dager.",
+      "Følg utløpsdatoen på produktetiketten."
     ],
     "device": [
-      "Keep the device clean and dry between uses.",
-      "Store cartridges as described on their own product pages."
+      "Hold enheten ren og tørr mellom hver bruk.",
+      "Oppbevar patronene slik det er beskrevet på deres egne produktsider."
     ],
     "aceticAcid": [
-      "Store sealed at room temperature.",
-      "Single-use only: discard any remaining volume after first puncture."
+      "Oppbevares forseglet ved romtemperatur.",
+      "Kun til engangsbruk: kast eventuelt gjenværende volum etter første punktering."
     ],
     "bacRoomTemp": [
-      "Store sealed vials at room temperature, upright and protected from light.",
-      "After first puncture, store at 2–8°C and follow the discard date on the product label."
+      "Oppbevar forseglede hetteglass ved romtemperatur, stående og beskyttet mot lys.",
+      "Etter første punktering: oppbevares ved 2–8°C, og følg kasseringsdatoen på produktetiketten."
     ],
     "bacLabel": [
-      "Keep the vial sealed until first use.",
-      "Follow the storage and opened-vial instructions on the product label."
+      "Hold hetteglasset forseglet til første bruk.",
+      "Følg anvisningene for oppbevaring og åpnet hetteglass på produktetiketten."
     ]
   },
   "box": {
     "vial": [
-      "One vial of {sized} as lyophilized powder. The stated amount is the total in the vial.",
-      "Diluent is not included. Bacteriostatic water and acetic acid water are sold separately."
+      "Ett hetteglass med {sized} som frysetørket pulver. Den oppgitte mengden er totalmengden i hetteglasset.",
+      "Fortynningsmiddel følger ikke med. Bakteriostatisk vann og eddiksyrevann selges separat."
     ],
     "pen": [
-      "One {brand} pen containing {sized} as ready-mixed liquid.",
-      "The stated amount is the total in the pen, not the amount per click.",
-      "No diluent is needed."
+      "Én penn fra {brand} som inneholder {sized} som ferdigblandet væske.",
+      "Den oppgitte mengden er totalmengden i pennen, ikke mengden per klikk.",
+      "Det trengs ikke noe fortynningsmiddel."
     ],
     "multidose": [
-      "**First purchase** — the Supreme Biologics reusable pen with one matching {sized} single-chamber refill cartridge.",
-      "**Refill only** — one {sized} single-chamber refill cartridge for an existing compatible pen.",
-      "The refill contains ready-mixed liquid. The label states the total per cartridge, not the amount per click."
+      "**Første kjøp** — den gjenbrukbare pennen fra Supreme Biologics med én tilhørende enkammerpatron for påfylling med {sized}.",
+      "**Kun påfylling** — én enkammerpatron for påfylling med {sized} til en eksisterende kompatibel penn.",
+      "Påfyllingspatronen inneholder ferdigblandet væske. Etiketten angir totalmengden per patron, ikke mengden per klikk."
     ],
-    "dualOptions": "Options (amount per cartridge × cartridges per box): {options}.",
-    "dualWithDiluentIntro": "One box of {count} dual-chamber cartridges. The selected amount is per cartridge, and the price is for one complete box.",
-    "dualWithDiluentNote": "Peptide powder and clear diluent are held in separate chambers until mixing. The diluent is included.",
-    "dualDryIntro": "One box of glass dual-chamber cartridges, with no needle.",
-    "dualDryNote": "The peptide chamber holds lyophilized powder. The diluent chamber ships empty, and bacteriostatic water is not included.",
-    "deviceSoldSeparately": "The compatible Supreme Biologics dual-chamber device is sold separately.",
-    "defaultCartridgeCount": "four",
+    "dualOptions": "Alternativer (mengde per patron × patroner per eske): {options}.",
+    "dualWithDiluentIntro": "Én eske med {count} tokammerpatroner. Den valgte mengden gjelder per patron, og prisen gjelder én komplett eske.",
+    "dualWithDiluentNote": "Peptidpulver og klart fortynningsmiddel holdes i separate kamre fram til blanding. Fortynningsmiddelet følger med.",
+    "dualDryIntro": "Én eske med tokammerpatroner av glass, uten nål.",
+    "dualDryNote": "Peptidkammeret inneholder frysetørket pulver. Kammeret for fortynningsmiddel leveres tomt, og bakteriostatisk vann følger ikke med.",
+    "deviceSoldSeparately": "Den kompatible tokammerenheten fra Supreme Biologics selges separat.",
+    "defaultCartridgeCount": "fire",
     "spray": [
-      "One spray-format vial with a stated total of {sized}.",
-      "See the product label for the concentration and pack contents."
+      "Ett hetteglass i sprayformat med en oppgitt totalmengde på {sized}.",
+      "Se produktetiketten for konsentrasjon og pakningens innhold."
     ],
-    "diluent": "One {size} vial of {noun}.",
-    "diluentNoSize": "One vial of {noun}.",
+    "diluent": "Ett hetteglass på {size} med {noun}.",
+    "diluentNoSize": "Ett hetteglass med {noun}.",
     "device": [
-      "One reusable dual-chamber cartridge device (1 piece).",
-      "No needle is included.",
-      "Cartridges are sold separately."
+      "Én gjenbrukbar enhet for tokammerpatroner (1 stk.).",
+      "Ingen nål følger med.",
+      "Patronene selges separat."
     ]
   },
   "manufacturer": {
-    "vial": "{brand} manufactures this {name} product and supplies it as one sealed vial of lyophilized powder.",
-    "pen": "{brand} manufactures this {name} product as a ready-mixed pen.",
-    "multidose": "Supreme Biologics manufactures both the reusable pen and the {name} single-chamber refill cartridges.",
-    "dual": "Supreme Biologics manufactures these {name} dual-chamber cartridges.",
-    "dualCustom": "Custom box combinations are available on request via LINE.",
-    "spray": "{brand} manufactures this {name} product in a spray-format vial.",
-    "diluent": "{brand} manufactures this {size} {noun} vial.",
-    "diluentNoSize": "{brand} manufactures this {noun} vial.",
-    "device": "Supreme Biologics manufactures this device for its own dual-chamber cartridge system.",
-    "otherFormats": "Other {brand} formats on this site: {list}.",
-    "alsoAvailable": "{name} is also available from {list}.",
+    "vial": "{brand} produserer dette produktet med {name} og leverer det som ett forseglet hetteglass med frysetørket pulver.",
+    "pen": "{brand} produserer dette produktet med {name} som en ferdigblandet penn.",
+    "multidose": "Supreme Biologics produserer både den gjenbrukbare pennen og enkammerpatronene for påfylling med {name}.",
+    "dual": "Supreme Biologics produserer disse tokammerpatronene med {name}.",
+    "dualCustom": "Tilpassede eskekombinasjoner er tilgjengelige på forespørsel via LINE.",
+    "spray": "{brand} produserer dette produktet med {name} i et hetteglass i sprayformat.",
+    "diluent": "{brand} produserer dette hetteglasset med {noun} på {size}.",
+    "diluentNoSize": "{brand} produserer dette hetteglasset med {noun}.",
+    "device": "Supreme Biologics produserer denne enheten for sitt eget system med tokammerpatroner.",
+    "otherFormats": "Andre formater fra {brand} på dette nettstedet: {list}.",
+    "alsoAvailable": "{name} er også tilgjengelig fra {list}.",
     "sizedFormat": "{size} {format}",
-    "delivery": "Orders are dispatched within 24 hours. Delivery takes 3–5 business days in Asia and about 9 days to Europe and other regions.",
-    "researchUse": "For laboratory research use only. Not for human or veterinary use."
+    "delivery": "Bestillinger sendes innen 24 timer. Leveringen tar 3–5 virkedager i Asia og omtrent 9 dager til Europa og andre regioner.",
+    "researchUse": "Kun til laboratorieforskning. Ikke til bruk på mennesker eller dyr."
   },
   "short": {
     "lead": "{sized} — {identity}.",
-    "vial": "{lead} Supplied by {brand} as one vial of lyophilized powder, {suffix}",
-    "pen": "{lead} Supplied by {brand} as ready-mixed liquid in a pen, {suffix}",
-    "multidose": "{lead} Single-chamber refill for the Supreme Biologics reusable pen, {suffix}",
-    "dual": "{lead} Supreme Biologics dual-chamber cartridges, sold by the box, {suffix}",
-    "spray": "{lead} Supplied by {brand} in a spray-format vial, {suffix}",
-    "diluent": "{lead} Supplied by {brand}, {suffix}",
-    "device": "{identityCapitalized}. Cartridges are sold separately. Supreme Biologics hardware, {suffix}",
-    "suffix": "for laboratory research use only."
+    "vial": "{lead} Leveres av {brand} som ett hetteglass med frysetørket pulver, {suffix}",
+    "pen": "{lead} Leveres av {brand} som ferdigblandet væske i en penn, {suffix}",
+    "multidose": "{lead} Enkammerpatron for påfylling til den gjenbrukbare pennen fra Supreme Biologics, {suffix}",
+    "dual": "{lead} Tokammerpatroner fra Supreme Biologics, selges per eske, {suffix}",
+    "spray": "{lead} Leveres av {brand} i et hetteglass i sprayformat, {suffix}",
+    "diluent": "{lead} Leveres av {brand}, {suffix}",
+    "device": "{identityCapitalized}. Patronene selges separat. Maskinvare fra Supreme Biologics, {suffix}",
+    "suffix": "kun til laboratorieforskning."
   }
 }
