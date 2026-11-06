@@ -1,6 +1,7 @@
 import { defineMiddlewares } from "@medusajs/medusa"
 import type { MedusaNextFunction, MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
 import { guardAddPromotion, guardCartUpdate } from "../utils/promo-rules"
+import { requirePaidCart } from "../utils/require-paid-cart"
 
 const STORE_URL = process.env.STORE_URL || "https://lifespansupply.com"
 
@@ -13,7 +14,9 @@ function googleCallbackRedirect(
   const originalJson = res.json.bind(res)
   res.json = (body: Record<string, unknown>) => {
     if (body?.token && req.path.includes("/callback")) {
-      res.redirect(`${STORE_URL}/auth/google/callback?token=${body.token}`)
+      res.redirect(
+        `${STORE_URL}/auth/google/callback?token=${encodeURIComponent(String(body.token))}`
+      )
       return res
     }
     return originalJson(body)
@@ -37,6 +40,12 @@ export default defineMiddlewares({
       matcher: "/store/carts/:id",
       method: ["POST"],
       middlewares: [guardCartUpdate],
+    },
+    {
+      // No order without a verified PayPal payment (see utils/require-paid-cart.ts)
+      matcher: "/store/carts/:id/complete",
+      method: ["POST"],
+      middlewares: [requirePaidCart],
     },
   ],
 })

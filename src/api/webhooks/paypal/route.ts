@@ -1,7 +1,12 @@
 import type { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
-import { ContainerRegistrationKeys, Modules } from "@medusajs/framework/utils"
-import type { ICartModuleService } from "@medusajs/framework/types"
+import { ContainerRegistrationKeys } from "@medusajs/framework/utils"
 import { completeCartWorkflow } from "@medusajs/medusa/core-flows"
+import { recordPaypalCapture } from "../../../utils/paypal-capture"
+import {
+  loadPaymentCart,
+  paypalAmountMatchesCart,
+  setPaidMarker,
+} from "../../../utils/paypal-paid"
 
 /**
  * PayPal webhook — third and final line of defence against paid-but-orphaned
@@ -12,7 +17,10 @@ import { completeCartWorkflow } from "@medusajs/medusa/core-flows"
  *
  * Flow: PayPal fires PAYMENT.CAPTURE.COMPLETED → we verify the signature →
  * read the cart id (we mirror it into the order's `custom_id` in
- * create-order) → if that cart isn't already an order, complete it.
+ * create-order) → if that cart isn't already an order, check that the
+ * captured amount equals the cart's CURRENT total (same conversion as the
+ * storefront) → write the paid marker (utils/paypal-paid.ts) → complete it.
+ * A mismatch is logged and NOT completed (cheap-cart → expensive-cart swap).
  *
  * Setup (one-time, PayPal dashboard):
  *   1. Developer Dashboard → your live app → Webhooks → Add webhook
@@ -93,6 +101,8 @@ export async function POST(req: MedusaRequest, res: MedusaResponse) {
     event_type?: string
     resource?: {
       id?: string
+      status?: string
+      amount?: { currency_code?: string; value?: string }
       custom_id?: string
       supplementary_data?: { related_ids?: { order_id?: string } }
     }
@@ -131,26 +141,66 @@ export async function POST(req: MedusaRequest, res: MedusaResponse) {
     return res.status(200).json({ ok: true, note: "no cart id" })
   }
 
+  const paypalOrderId =
+    event.resource?.supplementary_data?.related_ids?.order_id ?? null
+  const captureId = event.resource?.id ?? null
+
   try {
-    // Already an order? A completed cart has completed_at set (the client-side
-    // or capture-route completion won the race). Skip so we never double-run.
-    const cartModule = req.scope.resolve<ICartModuleService>(Modules.CART)
-    const cart = await cartModule.retrieveCart(cartId, {
-      select: ["id", "completed_at"],
-    })
-    if (cart.completed_at) {
-      logger.info(`[paypal-webhook] cart ${cartId} already completed — noop`)
-      return res.status(200).json({ ok: true, already_order: true })
+    const cart = await loadPaymentCart(req.scope, cartId)
+    if (!cart) {
+      logger.warn(`[paypal-webhook] cart ${cartId} not found — skipping`)
+      return res.status(200).json({ ok: true, note: "cart not found" })
     }
 
-    await completeCartWorkflow(req.scope).run({ input: { id: cartId } })
-    logger.info(`[paypal-webhook] RECOVERED order for cart ${cartId}`)
-    return res.status(200).json({ ok: true, completed: cartId })
+    // The captured amount must equal what the cart costs. A retry can't fix
+    // a mismatch, so ack with 200 and leave it for a human (refund).
+    if (
+      event.resource?.status !== "COMPLETED" ||
+      !paypalAmountMatchesCart(event.resource?.amount, cart.total, cart.currency_code)
+    ) {
+      logger.error(
+        `[paypal-webhook] PAID AMOUNT MISMATCH — NOT COMPLETING cart=${cartId} ` +
+          `capture=${captureId} status=${event.resource?.status} ` +
+          `captured=${JSON.stringify(event.resource?.amount)} ` +
+          `cart=${cart.total} ${cart.currency_code}`
+      )
+      return res.status(200).json({ ok: true, note: "amount mismatch" })
+    }
+
+    // Not yet an order (the capture route crashed / lost the race) → write
+    // the paid marker and complete. Already an order → only record capture.
+    if (!cart.completed_at) {
+      await setPaidMarker(cartId, {
+        paypal_order_id: paypalOrderId ?? "",
+        capture_id: captureId,
+        cart_total: cart.total,
+        cart_currency: cart.currency_code.toLowerCase(),
+        charge_value: String(event.resource?.amount?.value ?? ""),
+        charge_currency: String(event.resource?.amount?.currency_code ?? ""),
+        source: "webhook",
+        at: new Date().toISOString(),
+      })
+      await completeCartWorkflow(req.scope).run({ input: { id: cartId } })
+      logger.info(`[paypal-webhook] RECOVERED order for cart ${cartId}`)
+    }
+
+    // Mark the Medusa payment CAPTURED + store PayPal ids (idempotent). A
+    // failure returns 500 → PayPal retries → this branch runs again.
+    const rec = await recordPaypalCapture(req.scope, {
+      cartId,
+      paypalOrderId,
+      paypalCaptureId: captureId,
+    })
+    logger.info(
+      `[paypal-webhook] capture recorded cart=${cartId} order=${rec.orderId} ` +
+        `captured=${rec.captured.length} already=${rec.alreadyCaptured.length}`
+    )
+    return res.status(200).json({ ok: true, order_id: rec.orderId })
   } catch (e) {
     logger.error(
-      `[paypal-webhook] completion failed cart=${cartId}: ${(e as Error).message}`,
+      `[paypal-webhook] completion/capture failed cart=${cartId}: ${(e as Error).message}`,
     )
-    // 500 so PayPal retries — a transient DB blip shouldn't drop the order.
+    // 500 so PayPal retries — a transient DB/Redis blip shouldn't drop the order.
     return res.status(500).json({ error: "completion failed" })
   }
 }
